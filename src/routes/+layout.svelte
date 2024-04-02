@@ -2,8 +2,7 @@
     import { page } from '$app/stores';
 
     let pages = [
-        // { url: "./", title: "Home" },
-        { url: "about", title: "About" },
+        { url: "./", title: "About" },
         { url: "./visualization", title: "Visualization" },
         // add the rest of your pages here
     ];
