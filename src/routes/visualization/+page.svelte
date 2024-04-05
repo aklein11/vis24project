@@ -1,5 +1,7 @@
 <script>
     import data from '$lib/conversion_data.json';
+    import pie_data from '$lib/pie_data.json';
+    import year_build_data from '$lib/year_built_data_v2.json';
     // import Project from "$lib/Project.svelte";
     import Pie from '$lib/Pie.svelte';
     import * as d3 from 'd3';
@@ -7,8 +9,8 @@
 
     let query = "";
 
-    let filteredData, filteredByYear;
-    $: filteredData = data.filter(d => {
+    let filteredData;
+    $: filteredData = pie_data.filter(d => {
         if (query) {
             let values = Object.values(d).join("\n").toLowerCase();
 	        return values.includes(query.toLowerCase());
@@ -16,6 +18,7 @@
         return true;
     });
 
+    // let filteredByYear;
     // $: filteredByYear = filteredProjects.filter(project => {
     //     if (selectedYear) {
     //         return project.year === selectedYear;
@@ -23,20 +26,20 @@
     //     return true; // show all if none is selected
     // });
 
-    // let pieData, rolledData;
+    let pieData, rolledData;
 
-    // $: { 
-    //     pieData = {}
-    //     rolledData = d3.rollups(filteredProjects, v => v.length, d => d.year);
+    $: { 
+        pieData = {}
+        rolledData = d3.rollups(filteredData, c => c.Count_of_LU_prior, g => g.LU_prior_group);
 
-    //     pieData = rolledData.map(([year, count]) => {
-    //     return { value: count, label: year };
-    // });
-    // }
+        pieData = rolledData.map(([group, count]) => {
+        return { value: count, label: group };
+    });
+    }
 
-    // let selectedYearIndex = -1;
-    // let selectedYear;
-    // $: selectedYear = selectedYearIndex > -1 ? pieData[selectedYearIndex].label : null;
+    let selectedZipcodeIndex = -1;
+    let selectedZipcode;
+    $: selectedZipcode = selectedZipcodeIndex > -1 ? pieData[selectedZipcodeIndex].label : null;
 
 </script>
 
@@ -44,7 +47,7 @@
 	<title>Projects</title>
 </svelte:head> -->
 
-<!-- <Pie data={pieData} bind:selectedIndex={selectedYearIndex} /> -->
+<Pie data={pieData} bind:selectedIndex={selectedZipcodeIndex} />
 
 
 <input type="search" bind:value={query}
@@ -53,11 +56,11 @@
 
 <!-- <h1>Other { filteredByYear.length }</h1> -->
 <div class="about">
-    {#each filteredData as p}
-        <p>{p.ZIPCODE}</p>
-        <!-- <p>{p.post_group}</p> -->
-        <!-- <p>{p.count_of_address}</p> -->
-        <!-- <p>{p.Latitude_generated}</p> -->
-        <!-- <p>{p.longitude_generated}</p> -->
+    {#each filteredData as f}
+        <p>{f.ZIPCODE}</p>
+        <!-- <p>{f.post_group}</p> -->
+        <!-- <p>{f.count_of_address}</p> -->
+        <!-- <p>{f.Latitude_generated}</p> -->
+        <!-- <p>{f.longitude_generated}</p> -->
     {/each}
 </div>
