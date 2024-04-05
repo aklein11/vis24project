@@ -1,7 +1,7 @@
 <script>export let info={};</script>
 
 <article>
-    <h2>{info.title}</h2>
+    <h2>{info.ZIPCODE}</h2>
     <img src={info.image} alt="">
     <div>
         <p>{info.description}</p>

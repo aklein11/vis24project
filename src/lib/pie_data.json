@@ -1,0 +1,702 @@
+[
+    {
+        "ZIPCODE": "02215",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02215",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02210",
+        "LU_prior_group": "RC",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02136",
+        "LU_prior_group": "R1",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02136",
+        "LU_prior_group": "RC",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02136",
+        "LU_prior_group": "A",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02136",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 6
+    },
+    {
+        "ZIPCODE": "02136",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 20
+    },
+    {
+        "ZIPCODE": "02136",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 22
+    },
+    {
+        "ZIPCODE": "02136",
+        "LU_prior_group": "R3",
+        "Count_of_LU_prior": 8
+    },
+    {
+        "ZIPCODE": "02132",
+        "LU_prior_group": "E",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02132",
+        "LU_prior_group": "RC",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02132",
+        "LU_prior_group": "A",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02132",
+        "LU_prior_group": "R4",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02132",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 6
+    },
+    {
+        "ZIPCODE": "02132",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 11
+    },
+    {
+        "ZIPCODE": "02132",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 18
+    },
+    {
+        "ZIPCODE": "02132",
+        "LU_prior_group": "R3",
+        "Count_of_LU_prior": 4
+    },
+    {
+        "ZIPCODE": "02131",
+        "LU_prior_group": "CC",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02131",
+        "LU_prior_group": "RL",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02131",
+        "LU_prior_group": "R1",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02131",
+        "LU_prior_group": "RC",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02131",
+        "LU_prior_group": "A",
+        "Count_of_LU_prior": 5
+    },
+    {
+        "ZIPCODE": "02131",
+        "LU_prior_group": "R4",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02131",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 11
+    },
+    {
+        "ZIPCODE": "02131",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 70
+    },
+    {
+        "ZIPCODE": "02131",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 65
+    },
+    {
+        "ZIPCODE": "02131",
+        "LU_prior_group": "R3",
+        "Count_of_LU_prior": 32
+    },
+    {
+        "ZIPCODE": "02130",
+        "LU_prior_group": "E",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02130",
+        "LU_prior_group": "C",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02130",
+        "LU_prior_group": "CC",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02130",
+        "LU_prior_group": "RL",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02130",
+        "LU_prior_group": "R1",
+        "Count_of_LU_prior": 5
+    },
+    {
+        "ZIPCODE": "02130",
+        "LU_prior_group": "RC",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02130",
+        "LU_prior_group": "A",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02130",
+        "LU_prior_group": "R4",
+        "Count_of_LU_prior": 5
+    },
+    {
+        "ZIPCODE": "02130",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 16
+    },
+    {
+        "ZIPCODE": "02130",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 59
+    },
+    {
+        "ZIPCODE": "02130",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 43
+    },
+    {
+        "ZIPCODE": "02130",
+        "LU_prior_group": "R3",
+        "Count_of_LU_prior": 63
+    },
+    {
+        "ZIPCODE": "02129",
+        "LU_prior_group": "RL",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02129",
+        "LU_prior_group": "R1",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02129",
+        "LU_prior_group": "A",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02129",
+        "LU_prior_group": "R4",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02129",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 5
+    },
+    {
+        "ZIPCODE": "02129",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 11
+    },
+    {
+        "ZIPCODE": "02129",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 19
+    },
+    {
+        "ZIPCODE": "02129",
+        "LU_prior_group": "R3",
+        "Count_of_LU_prior": 25
+    },
+    {
+        "ZIPCODE": "02128",
+        "LU_prior_group": "CC",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02128",
+        "LU_prior_group": "RL",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02128",
+        "LU_prior_group": "R1",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02128",
+        "LU_prior_group": "RC",
+        "Count_of_LU_prior": 5
+    },
+    {
+        "ZIPCODE": "02128",
+        "LU_prior_group": "A",
+        "Count_of_LU_prior": 12
+    },
+    {
+        "ZIPCODE": "02128",
+        "LU_prior_group": "R4",
+        "Count_of_LU_prior": 18
+    },
+    {
+        "ZIPCODE": "02128",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02128",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 7
+    },
+    {
+        "ZIPCODE": "02128",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 40
+    },
+    {
+        "ZIPCODE": "02128",
+        "LU_prior_group": "R3",
+        "Count_of_LU_prior": 101
+    },
+    {
+        "ZIPCODE": "02127",
+        "LU_prior_group": "E",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02127",
+        "LU_prior_group": "C",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02127",
+        "LU_prior_group": "RL",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02127",
+        "LU_prior_group": "R1",
+        "Count_of_LU_prior": 8
+    },
+    {
+        "ZIPCODE": "02127",
+        "LU_prior_group": "RC",
+        "Count_of_LU_prior": 12
+    },
+    {
+        "ZIPCODE": "02127",
+        "LU_prior_group": "A",
+        "Count_of_LU_prior": 15
+    },
+    {
+        "ZIPCODE": "02127",
+        "LU_prior_group": "R4",
+        "Count_of_LU_prior": 15
+    },
+    {
+        "ZIPCODE": "02127",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 18
+    },
+    {
+        "ZIPCODE": "02127",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 36
+    },
+    {
+        "ZIPCODE": "02127",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 53
+    },
+    {
+        "ZIPCODE": "02127",
+        "LU_prior_group": "R3",
+        "Count_of_LU_prior": 55
+    },
+    {
+        "ZIPCODE": "02126",
+        "LU_prior_group": "A",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02126",
+        "LU_prior_group": "R4",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02126",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02126",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02126",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 7
+    },
+    {
+        "ZIPCODE": "02126",
+        "LU_prior_group": "R3",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02125",
+        "LU_prior_group": "RL",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02125",
+        "LU_prior_group": "A",
+        "Count_of_LU_prior": 4
+    },
+    {
+        "ZIPCODE": "02125",
+        "LU_prior_group": "R4",
+        "Count_of_LU_prior": 4
+    },
+    {
+        "ZIPCODE": "02125",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 8
+    },
+    {
+        "ZIPCODE": "02125",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 16
+    },
+    {
+        "ZIPCODE": "02125",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 17
+    },
+    {
+        "ZIPCODE": "02125",
+        "LU_prior_group": "R3",
+        "Count_of_LU_prior": 53
+    },
+    {
+        "ZIPCODE": "02124",
+        "LU_prior_group": "CL",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02124",
+        "LU_prior_group": "C",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02124",
+        "LU_prior_group": "CC",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02124",
+        "LU_prior_group": "RC",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02124",
+        "LU_prior_group": "A",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02124",
+        "LU_prior_group": "R4",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02124",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 7
+    },
+    {
+        "ZIPCODE": "02124",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 12
+    },
+    {
+        "ZIPCODE": "02124",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 29
+    },
+    {
+        "ZIPCODE": "02124",
+        "LU_prior_group": "R3",
+        "Count_of_LU_prior": 28
+    },
+    {
+        "ZIPCODE": "02122",
+        "LU_prior_group": "C",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02122",
+        "LU_prior_group": "RL",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02122",
+        "LU_prior_group": "R1",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02122",
+        "LU_prior_group": "R4",
+        "Count_of_LU_prior": 10
+    },
+    {
+        "ZIPCODE": "02122",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 6
+    },
+    {
+        "ZIPCODE": "02122",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 17
+    },
+    {
+        "ZIPCODE": "02122",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 22
+    },
+    {
+        "ZIPCODE": "02122",
+        "LU_prior_group": "R3",
+        "Count_of_LU_prior": 36
+    },
+    {
+        "ZIPCODE": "02121",
+        "LU_prior_group": "A",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02121",
+        "LU_prior_group": "R4",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02121",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02121",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 5
+    },
+    {
+        "ZIPCODE": "02121",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 6
+    },
+    {
+        "ZIPCODE": "02121",
+        "LU_prior_group": "R3",
+        "Count_of_LU_prior": 16
+    },
+    {
+        "ZIPCODE": "02120",
+        "LU_prior_group": "E",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02120",
+        "LU_prior_group": "CC",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02120",
+        "LU_prior_group": "RC",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02120",
+        "LU_prior_group": "A",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02120",
+        "LU_prior_group": "R4",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02120",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 13
+    },
+    {
+        "ZIPCODE": "02119",
+        "LU_prior_group": "I",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02119",
+        "LU_prior_group": "RL",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02119",
+        "LU_prior_group": "R1",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02119",
+        "LU_prior_group": "RC",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02119",
+        "LU_prior_group": "A",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02119",
+        "LU_prior_group": "R4",
+        "Count_of_LU_prior": 4
+    },
+    {
+        "ZIPCODE": "02119",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 5
+    },
+    {
+        "ZIPCODE": "02119",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 20
+    },
+    {
+        "ZIPCODE": "02119",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 12
+    },
+    {
+        "ZIPCODE": "02119",
+        "LU_prior_group": "R3",
+        "Count_of_LU_prior": 17
+    },
+    {
+        "ZIPCODE": "02118",
+        "LU_prior_group": "CC",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02118",
+        "LU_prior_group": "RC",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02118",
+        "LU_prior_group": "A",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02118",
+        "LU_prior_group": "R4",
+        "Count_of_LU_prior": 11
+    },
+    {
+        "ZIPCODE": "02118",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 5
+    },
+    {
+        "ZIPCODE": "02118",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 2
+    },
+    {
+        "ZIPCODE": "02118",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 19
+    },
+    {
+        "ZIPCODE": "02118",
+        "LU_prior_group": "R3",
+        "Count_of_LU_prior": 64
+    },
+    {
+        "ZIPCODE": "02115",
+        "LU_prior_group": "C",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02115",
+        "LU_prior_group": "RL",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02115",
+        "LU_prior_group": "R1",
+        "Count_of_LU_prior": 1
+    },
+    {
+        "ZIPCODE": "02115",
+        "LU_prior_group": "RC",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02115",
+        "LU_prior_group": "A",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02115",
+        "LU_prior_group": "R4",
+        "Count_of_LU_prior": 4
+    },
+    {
+        "ZIPCODE": "02115",
+        "LU_prior_group": "CM",
+        "Count_of_LU_prior": 3
+    },
+    {
+        "ZIPCODE": "02115",
+        "LU_prior_group": "CD",
+        "Count_of_LU_prior": 10
+    },
+    {
+        "ZIPCODE": "02115",
+        "LU_prior_group": "R2",
+        "Count_of_LU_prior": 36
+    },
+    {
+        "ZIPCODE": "02115",
+        "LU_prior_group": "R3",
+        "Count_of_LU_prior": 20
+    }
+]
