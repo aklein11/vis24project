@@ -30,11 +30,14 @@
 
     $: { 
         pieData = {}
-        rolledData = d3.rollups(filteredData, c => c.Count_of_LU_prior, g => g.LU_prior_group);
+        console.log(filteredData)
+        rolledData = d3.rollups(filteredData, v => d3.sum(v, d => d.Count_of_LU_prior), d => d.LU_prior_group);
+        console.log("Rolled ", rolledData)
 
         pieData = rolledData.map(([group, count]) => {
         return { value: count, label: group };
     });
+    console.log("pied ", pieData);
     }
 
     let selectedZipcodeIndex = -1;

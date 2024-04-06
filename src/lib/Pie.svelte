@@ -82,12 +82,6 @@
         max-width: 150px;
     }
 
-    .ledgend li {
-        display: flex;
-        align-items: center;
-        gap: 1em;
-    }
-
     .swatch {
         width: 1em;
         height: 1em;
