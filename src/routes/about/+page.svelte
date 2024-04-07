@@ -1,9 +1,3 @@
-<!-- <svelte:head>
-	<title>Visualisation</title>
-</svelte:head> -->
-<!-- <h1>move or import the following code as needed; \n placed here temporarioly for editing convenience.</h1> -->
-
-<!-- <svelte:window on:load={drawAxis}/> -->
 <script>
 	import * as d3 from 'd3';
 	import { onMount } from 'svelte';
@@ -38,9 +32,6 @@
 		.domain([0, d3.max(dataArray, d => d.count)])
 		.range([height, 0]);
 
-	// const colorScale = d3.scaleOrdinal(d3.schemeTableau10)
-	// 	.domain(dataArray.map(d => d.year));
-
 	// Axis generators
 	const xAxis = d3.axisBottom(xScale)
 		.tickFormat(d3.format('d')); // Remove comma from years
@@ -52,22 +43,6 @@
 	function drawAxis() {
 		d3.select('.x-axis').call(xAxis);
 		d3.select('.y-axis').call(yAxis);
-
-	
-		// // Add X axis label:
-		// d3.select('.x-axis').append('text')
-		// 	.attr('text-anchor', 'end')
-		// 	.attr('x', width/2 + margin.left)
-		// 	.attr('y', margin.bottom - 5)
-		// 	.text('Year Built');
-
-		// // Y axis label:
-		// d3.select('.y-axis').append('text')
-		// 	.attr('text-anchor', 'end')
-		// 	.attr('transform', 'rotate(-90)')
-		// 	.attr('y', -margin.left + 20)
-		// 	.attr('x', -margin.top - height/2 + 20)
-		// 	.text('Number of Buildings');
 	}
 
 	onMount(() => {
@@ -85,8 +60,6 @@
 						height={height - yScale(d.count)}
 						fill="orange" />
 		{/each}
-		<!-- <g transform={`translate(0, ${height})`} class="x-axis" />
-		<g class="y-axis" /> -->
 		<g transform={`translate(0, ${height})`} class="x-axis">
 			<!-- X axis will be drawn here by D3 -->
 			<text x={width / 2} y={40} text-anchor="middle" style="font-size: 16px">Year Built</text>
@@ -98,9 +71,6 @@
 	</g>
 </svg>
 
-<!-- {#if typeof document !== 'undefined'}
-	<svelte:window on:load={drawAxis}/>
-{/if} -->
 <style>
 	.bar {
 		stroke: white; 
