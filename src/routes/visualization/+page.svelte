@@ -1,16 +1,25 @@
 <script>
     import data from '$lib/conversion_data.json';
     import pie_data from '$lib/pie_data.json';
-    import year_build_data from '$lib/year_built_data_v2.json';
+    import year_built_data from '$lib/year_built_data_v2.json';
     // import Project from "$lib/Project.svelte";
     import Pie from '$lib/Pie.svelte';
+    import BarChart from '$lib/BarChart.svelte';
     import * as d3 from 'd3';
     export let hLevel = 2;
 
     let query = "";
 
-    let filteredData;
-    $: filteredData = pie_data.filter(d => {
+    let filteredPieData;
+    $: filteredPieData = pie_data.filter(d => {
+        if (query) {
+            let values = Object.values(d).join("\n").toLowerCase();
+	        return values.includes(query.toLowerCase());
+        }
+        return true;
+    });
+    let filteredYearBuiltData;
+    $: filteredYearBuiltData = year_built_data.filter(d => {
         if (query) {
             let values = Object.values(d).join("\n").toLowerCase();
 	        return values.includes(query.toLowerCase());
@@ -26,18 +35,43 @@
     //     return true; // show all if none is selected
     // });
 
-    let pieData, rolledData;
+    let margin = { top: 20, right: 30, bottom: 70, left: 60 };
+	let width = 960 - margin.left - margin.right;
+	// let height = 500 - margin.top - margin.bottom;
+    let barChartHeight;
+    let pieData, rolledData, aggYearBuiltData, yearBuiltDataArray, barChartYScale;
 
     $: { 
         pieData = {}
-        console.log(filteredData)
-        rolledData = d3.rollups(filteredData, v => d3.sum(v, d => d.Count_of_LU_prior), d => d.LU_prior_group);
+        console.log(filteredPieData)
+        rolledData = d3.rollups(filteredPieData, v => d3.sum(v, d => d.Count_of_LU_prior), d => d.LU_prior_group);
         console.log("Rolled ", rolledData)
+    	// Process the data to sum up the building counts for each decade
+	    aggYearBuiltData = filteredYearBuiltData.reduce((acc, cur) => {
+            Object.keys(cur).forEach(year => {
+                if (year !== 'ZIPCODE') {
+                    if (!acc[year]) acc[year] = 0;
+                    acc[year] += cur[year];
+                }
+            });
+            return acc;
+        }, {});
+        console.log("Agg Year Built", aggYearBuiltData);
+        yearBuiltDataArray = Object.keys(aggYearBuiltData)
+		.map(year => ({ year: parseInt(year), count: aggYearBuiltData[year] }))
+		.sort((a, b) => a.year - b.year);
+        console.log("Year Built Data Array ", yearBuiltDataArray);
+
+        // barChartHeight = d3.max(yearBuiltDataArray, d => d.count) - margin.top - margin.bottom;
+        // barChartHeight = 500 - margin.top - margin.bottom;
+        // barChartYScale = d3.scaleLinear()
+		// .domain([0, d3.max(yearBuiltDataArray, d => d.count)])
+		// .range([barChartHeight, 0]);
 
         pieData = rolledData.map(([group, count]) => {
-        return { value: count, label: group };
-    });
-    console.log("pied ", pieData);
+            return { value: count, label: group };
+        });
+        console.log("pied ", pieData);
     }
 
     let selectedZipcodeIndex = -1;
@@ -51,6 +85,8 @@
 </svelte:head> -->
 
 <Pie data={pieData} bind:selectedIndex={selectedZipcodeIndex} />
+<!-- <BarChart dataArray={yearBuiltDataArray} yScale={barChartYScale} height={barChartHeight}/> -->
+<BarChart dataArray={yearBuiltDataArray} />
 
 
 <input type="search" bind:value={query}
@@ -59,7 +95,7 @@
 
 <!-- <h1>Other { filteredByYear.length }</h1> -->
 <div class="about">
-    {#each filteredData as f}
+    {#each filteredPieData as f}
         <p>{f.ZIPCODE}</p>
         <!-- <p>{f.post_group}</p> -->
         <!-- <p>{f.count_of_address}</p> -->

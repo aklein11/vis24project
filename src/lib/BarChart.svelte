@@ -1,35 +1,37 @@
 <script>
 	import * as d3 from 'd3';
 	import { onMount } from 'svelte';
-	import json_data from '$lib/year_built_data_v2.json';
+	// import json_data from '$lib/year_built_data_v2.json';
+    export let dataArray = [];
+    // export let height;
+    // export let yScale;
 
 	let margin = { top: 20, right: 30, bottom: 70, left: 60 };
 	let width = 960 - margin.left - margin.right;
 	let height = 500 - margin.top - margin.bottom;
 
-	// Process the data to sum up the building counts for each decade
-	const data = json_data.reduce((acc, cur) => {
-		Object.keys(cur).forEach(year => {
-			if (year !== 'ZIPCODE') {
-				if (!acc[year]) acc[year] = 0;
-				acc[year] += cur[year];
-			}
-		});
-		return acc;
-	}, {});
-	console.log(data);
+	// // Process the data to sum up the building counts for each decade
+	// const data = json_data.reduce((acc, cur) => {
+	// 	Object.keys(cur).forEach(year => {
+	// 		if (year !== 'ZIPCODE') {
+	// 			if (!acc[year]) acc[year] = 0;
+	// 			acc[year] += cur[year];
+	// 		}
+	// 	});
+	// 	return acc;
+	// }, {});
 
 	// Convert object to array and sort by year
-	const dataArray = Object.keys(data)
-		.map(year => ({ year: parseInt(year), count: data[year] }))
-		.sort((a, b) => a.year - b.year);
+	// const dataArray = Object.keys(data)
+	// 	.map(year => ({ year: parseInt(year), count: data[year] }))
+	// 	.sort((a, b) => a.year - b.year);
 
 	const xScale = d3.scaleBand()
 		.domain(dataArray.map(d => d.year))
 		.range([0, width])
 		.padding(0.1);
 
-	const yScale = d3.scaleLinear()
+    const yScale = d3.scaleLinear()
 		.domain([0, d3.max(dataArray, d => d.count)])
 		.range([height, 0]);
 
