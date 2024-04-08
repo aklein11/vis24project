@@ -62,12 +62,12 @@
 
 </script>
 
-
+<h1>Types of Properties Converted to Condos</h1>
 
 <Pie data={pieData} bind:selectedIndex={selectedZipcodeIndex} />
 
 <input type="search" bind:value={query}
-    aria-label="Search projects" placeholder="🔍 Search projects…" 
+    aria-label="Search projects" placeholder="🔍Enter zipcode…" 
 />
 
 <!-- <h1>Other { filteredByYear.length }</h1> -->

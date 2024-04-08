@@ -60,12 +60,12 @@
 
 </script>
 
-
+<h1>Year Converted Property was Built</h1>
 <BarChart dataArray={yearBuiltDataArray} />
 
 
 <input type="search" bind:value={query}
-    aria-label="Search projects" placeholder="🔍 Search projects…" 
+    aria-label="Search projects" placeholder="🔍 Enter Zipcode…" 
 />
 
 <div class="about">

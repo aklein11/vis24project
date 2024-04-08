@@ -140,8 +140,9 @@
       drawChart('02108'); // Initially draw bubbles for a default zipcode
     });
 </script>
-  
-<input type="text" bind:value={zipcode} placeholder="Enter Zipcode">
+
+<h1>Complaints by Zipcode</h1>
+<input type="text" bind:value={zipcode} placeholder="Enter zipcode">
 <button on:click={updateChart}>Update Chart</button>
 <svg></svg>
 
