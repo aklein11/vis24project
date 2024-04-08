@@ -1,0 +1,68 @@
+:root {
+    --color-accent: #9adc8f; /* Replace with your preferred accent color */
+	color-scheme: light dark;
+}
+
+body {
+    /* Set line height to 1.5 times the font size
+       and use the OS’s UI font as the website font
+     */
+    font: 100%/1.5 system-ui;
+	max-width: 100ch;
+	margin-inline: auto;
+	padding: 5ch;
+	accent-color: var(--color-accent)
+}
+
+/* . before class name */
+.current {
+	border-bottom-width: 3px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 20px; /* Adjust the gap between grid items as needed */
+}
+
+img {
+    max-width: 100%;
+}
+
+form {
+    /* width: 100%; /* You can adjust the max-width as needed */
+	/*box-sizing: border-box; */
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 1em;
+}
+
+a { 
+	flex:1 
+}
+
+p {
+	font: 100%/1.5 system-ui;
+	font-size: 100%;
+}
+
+label {
+	/* Add some space before and after each label */
+	margin-block: 1em; /* em is a unit that scales with the font size */
+	display: grid;
+	grid-template-columns: subgrid;
+	grid-column: 1 / -1;
+}
+
+input, textarea {
+	/* Fill the whole available width. */
+	width: 100%;
+	/* Special sizing mode that makes the element’s width
+	   include internal spacing (padding) and borders
+	 */
+	box-sizing: border-box;
+	/* Use the same font and font metrics as the rest of the page */
+	font: inherit;
+	display: block;
+}
+
