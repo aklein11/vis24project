@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/pie_chart/+page.svelte";
+export { default as component } from "../../../../src/routes/bubblechart/+page.svelte";
