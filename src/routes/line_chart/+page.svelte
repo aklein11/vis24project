@@ -3,7 +3,7 @@
     import * as d3 from 'd3'; // If you're importing D3 as a module
   
     let zipcode = '';
-  
+   
 
     let svg; // Make the SVG element accessible outside of the drawChart function.
     let x, y; // Declare scales globally to update them later.
