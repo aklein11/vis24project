@@ -1,0 +1,841 @@
+﻿Zip Code,Description (group),Count of Description
+02135,Zoning,4
+02128,Zoning,1
+02127,Zoning,2
+02125,Zoning,1
+02122,Zoning,2
+02116,Zoning,4
+02215,Unclean Conditions,7
+02210,Unclean Conditions,2
+02136,Unclean Conditions,3
+02135,Unclean Conditions,11
+02134,Unclean Conditions,4
+02132,Unclean Conditions,2
+02130,Unclean Conditions,4
+02129,Unclean Conditions,1
+02128,Unclean Conditions,3
+02127,Unclean Conditions,4
+02125,Unclean Conditions,8
+02124,Unclean Conditions,9
+02122,Unclean Conditions,3
+02120,Unclean Conditions,3
+02119,Unclean Conditions,1
+02118,Unclean Conditions,12
+02116,Unclean Conditions,10
+02115,Unclean Conditions,4
+02114,Unclean Conditions,6
+02113,Unclean Conditions,5
+02111,Unclean Conditions,10
+02110,Unclean Conditions,2
+02109,Unclean Conditions,4
+02108,Unclean Conditions,3
+02135,Transporting refuse without pe,1
+02125,Transporting refuse without pe,1
+02119,Transporting refuse without pe,1
+02118,Transporting refuse without pe,2
+02115,Transporting refuse without pe,1
+02108,Transporting refuse without pe,2
+02215,Testing & Certification,2
+02134,Testing & Certification,1
+02131,Testing & Certification,1
+02130,Testing & Certification,1
+02129,Testing & Certification,1
+02128,Testing & Certification,2
+02127,Testing & Certification,4
+02126,Testing & Certification,1
+02125,Testing & Certification,1
+02118,Testing & Certification,8
+02116,Testing & Certification,14
+02115,Testing & Certification,21
+02114,Testing & Certification,13
+02113,Testing & Certification,10
+02109,Testing & Certification,2
+02108,Testing & Certification,2
+02116,Suspension or Revocation,1
+02110,Suspension or Revocation,1
+02136,Smoke and Carbon Monoxide Detector,2
+02134,Smoke and Carbon Monoxide Detector,2
+02131,Smoke and Carbon Monoxide Detector,2
+02127,Smoke and Carbon Monoxide Detector,2
+02125,Smoke and Carbon Monoxide Detector,1
+02124,Smoke and Carbon Monoxide Detector,2
+02122,Smoke and Carbon Monoxide Detector,1
+02120,Smoke and Carbon Monoxide Detector,1
+02118,Smoke and Carbon Monoxide Detector,2
+02116,Smoke and Carbon Monoxide Detector,1
+02115,Smoke and Carbon Monoxide Detector,3
+02114,Smoke and Carbon Monoxide Detector,3
+02113,Smoke and Carbon Monoxide Detector,1
+02111,Smoke and Carbon Monoxide Detector,3
+02215,Sidewalks are Not Clean,10
+02210,Sidewalks are Not Clean,4
+02136,Sidewalks are Not Clean,10
+02135,Sidewalks are Not Clean,91
+02134,Sidewalks are Not Clean,19
+02132,Sidewalks are Not Clean,9
+02131,Sidewalks are Not Clean,40
+02130,Sidewalks are Not Clean,144
+02129,Sidewalks are Not Clean,148
+02128,Sidewalks are Not Clean,43
+02127,Sidewalks are Not Clean,400
+02126,Sidewalks are Not Clean,5
+02125,Sidewalks are Not Clean,73
+02124,Sidewalks are Not Clean,56
+02122,Sidewalks are Not Clean,55
+02121,Sidewalks are Not Clean,8
+02120,Sidewalks are Not Clean,19
+02119,Sidewalks are Not Clean,22
+02118,Sidewalks are Not Clean,154
+02116,Sidewalks are Not Clean,70
+02115,Sidewalks are Not Clean,31
+02114,Sidewalks are Not Clean,24
+02113,Sidewalks are Not Clean,24
+02111,Sidewalks are Not Clean,15
+02109,Sidewalks are Not Clean,13
+02108,Sidewalks are Not Clean,13
+02215,Short Term Rental,3
+02210,Short Term Rental,1
+02135,Short Term Rental,12
+02134,Short Term Rental,6
+02131,Short Term Rental,1
+02130,Short Term Rental,3
+02127,Short Term Rental,10
+02125,Short Term Rental,2
+02124,Short Term Rental,3
+02122,Short Term Rental,2
+02120,Short Term Rental,1
+02119,Short Term Rental,1
+02118,Short Term Rental,4
+02116,Short Term Rental,17
+02115,Short Term Rental,5
+02114,Short Term Rental,1
+02113,Short Term Rental,5
+02111,Short Term Rental,1
+02108,Short Term Rental,2
+02134,Shopping Cart - 2,3
+02136,Shopping Cart - 1,1
+02134,Shopping Cart - 1,4
+02124,Shopping Cart - 1,1
+02118,Shopping Cart - 1,2
+02215,Roadway Repair,4
+02136,Roadway Repair,3
+02135,Roadway Repair,8
+02134,Roadway Repair,1
+02131,Roadway Repair,3
+02130,Roadway Repair,15
+02129,Roadway Repair,5
+02127,Roadway Repair,8
+02126,Roadway Repair,1
+02125,Roadway Repair,3
+02124,Roadway Repair,2
+02122,Roadway Repair,2
+02121,Roadway Repair,1
+02120,Roadway Repair,2
+02119,Roadway Repair,6
+02118,Roadway Repair,13
+02116,Roadway Repair,9
+02115,Roadway Repair,1
+02114,Roadway Repair,7
+02113,Roadway Repair,2
+02111,Roadway Repair,1
+02109,Roadway Repair,1
+02108,Roadway Repair,3
+02215,Right of Entry,1
+02129,Right of Entry,1
+02128,Right of Entry,1
+02119,Right of Entry,1
+02118,Right of Entry,2
+02113,Right of Entry,1
+02215,Requirements for Residence Incorrect,14
+02210,Requirements for Residence Incorrect,1
+02136,Requirements for Residence Incorrect,4
+02135,Requirements for Residence Incorrect,3
+02134,Requirements for Residence Incorrect,12
+02132,Requirements for Residence Incorrect,1
+02131,Requirements for Residence Incorrect,1
+02130,Requirements for Residence Incorrect,7
+02127,Requirements for Residence Incorrect,8
+02126,Requirements for Residence Incorrect,1
+02125,Requirements for Residence Incorrect,6
+02124,Requirements for Residence Incorrect,15
+02122,Requirements for Residence Incorrect,3
+02121,Requirements for Residence Incorrect,1
+02120,Requirements for Residence Incorrect,2
+02119,Requirements for Residence Incorrect,6
+02118,Requirements for Residence Incorrect,10
+02116,Requirements for Residence Incorrect,4
+02115,Requirements for Residence Incorrect,22
+02114,Requirements for Residence Incorrect,6
+02113,Requirements for Residence Incorrect,2
+02108,Requirements for Residence Incorrect,2
+02215,Rental Unit Delivery Conditions,4
+02135,Rental Unit Delivery Conditions,7
+02134,Rental Unit Delivery Conditions,5
+02131,Rental Unit Delivery Conditions,1
+02130,Rental Unit Delivery Conditions,1
+02129,Rental Unit Delivery Conditions,6
+02128,Rental Unit Delivery Conditions,1
+02127,Rental Unit Delivery Conditions,3
+02126,Rental Unit Delivery Conditions,2
+02125,Rental Unit Delivery Conditions,2
+02124,Rental Unit Delivery Conditions,2
+02122,Rental Unit Delivery Conditions,2
+02120,Rental Unit Delivery Conditions,3
+02119,Rental Unit Delivery Conditions,3
+02118,Rental Unit Delivery Conditions,2
+02116,Rental Unit Delivery Conditions,8
+02115,Rental Unit Delivery Conditions,4
+02114,Rental Unit Delivery Conditions,3
+02113,Rental Unit Delivery Conditions,2
+02111,Rental Unit Delivery Conditions,3
+02108,Referenced Codes & Standards,1
+02215,Protection of Adjoining Property,6
+02210,Protection of Adjoining Property,4
+02136,Protection of Adjoining Property,4
+02135,Protection of Adjoining Property,6
+02134,Protection of Adjoining Property,4
+02132,Protection of Adjoining Property,6
+02131,Protection of Adjoining Property,3
+02130,Protection of Adjoining Property,22
+02129,Protection of Adjoining Property,13
+02128,Protection of Adjoining Property,8
+02127,Protection of Adjoining Property,47
+02126,Protection of Adjoining Property,2
+02125,Protection of Adjoining Property,10
+02124,Protection of Adjoining Property,9
+02122,Protection of Adjoining Property,5
+02121,Protection of Adjoining Property,3
+02119,Protection of Adjoining Property,11
+02118,Protection of Adjoining Property,28
+02116,Protection of Adjoining Property,21
+02115,Protection of Adjoining Property,11
+02114,Protection of Adjoining Property,4
+02113,Protection of Adjoining Property,7
+02111,Protection of Adjoining Property,2
+02110,Protection of Adjoining Property,3
+02109,Protection of Adjoining Property,16
+02108,Protection of Adjoining Property,5
+02135,Protection of Adj. Property,1
+02129,Protection of Adj. Property,1
+02127,Protection of Adj. Property,2
+02118,Protection of Adj. Property,1
+02136,Postings shall be durable not less than 20 square inches and placed at the residence visible to the occupants.,1
+02130,Postings shall be durable not less than 20 square inches and placed at the residence visible to the occupants.,1
+02125,Postings shall be durable not less than 20 square inches and placed at the residence visible to the occupants.,1
+02122,Postings shall be durable not less than 20 square inches and placed at the residence visible to the occupants.,1
+02130,Posting signs wo authority,1
+02129,Posting signs wo authority,1
+02128,Posting signs wo authority,1
+02127,Posting signs wo authority,6
+02118,Posting signs wo authority,2
+02116,Posting signs wo authority,2
+02114,Posting signs wo authority,1
+02215,POST OWNER NAME,1
+02136,POST OWNER NAME,1
+02128,POST OWNER NAME,1
+02125,POST OWNER NAME,2
+02116,POST OWNER NAME,1
+02215,Plumbing Issues,7
+02136,Plumbing Issues,3
+02135,Plumbing Issues,9
+02134,Plumbing Issues,2
+02132,Plumbing Issues,5
+02131,Plumbing Issues,3
+02130,Plumbing Issues,3
+02129,Plumbing Issues,9
+02128,Plumbing Issues,3
+02127,Plumbing Issues,4
+02126,Plumbing Issues,2
+02125,Plumbing Issues,4
+02124,Plumbing Issues,3
+02122,Plumbing Issues,2
+02120,Plumbing Issues,2
+02119,Plumbing Issues,3
+02118,Plumbing Issues,12
+02116,Plumbing Issues,9
+02115,Plumbing Issues,3
+02114,Plumbing Issues,6
+02113,Plumbing Issues,2
+02111,Plumbing Issues,3
+02110,Plumbing Issues,1
+02109,Plumbing Issues,1
+02108,Plumbing Issues,1
+02215,Pesticides and Poisonous Materials,18
+02210,Pesticides and Poisonous Materials,14
+02136,Pesticides and Poisonous Materials,5
+02135,Pesticides and Poisonous Materials,52
+02134,Pesticides and Poisonous Materials,44
+02132,Pesticides and Poisonous Materials,9
+02131,Pesticides and Poisonous Materials,13
+02130,Pesticides and Poisonous Materials,41
+02129,Pesticides and Poisonous Materials,20
+02128,Pesticides and Poisonous Materials,33
+02127,Pesticides and Poisonous Materials,68
+02126,Pesticides and Poisonous Materials,8
+02125,Pesticides and Poisonous Materials,45
+02124,Pesticides and Poisonous Materials,32
+02122,Pesticides and Poisonous Materials,41
+02121,Pesticides and Poisonous Materials,6
+02120,Pesticides and Poisonous Materials,6
+02119,Pesticides and Poisonous Materials,16
+02118,Pesticides and Poisonous Materials,121
+02116,Pesticides and Poisonous Materials,64
+02115,Pesticides and Poisonous Materials,46
+02114,Pesticides and Poisonous Materials,22
+02113,Pesticides and Poisonous Materials,5
+02111,Pesticides and Poisonous Materials,10
+02109,Pesticides and Poisonous Materials,1
+02108,Pesticides and Poisonous Materials,7
+02215,Permit Issues,53
+02210,Permit Issues,32
+02136,Permit Issues,17
+02135,Permit Issues,116
+02134,Permit Issues,43
+02132,Permit Issues,14
+02131,Permit Issues,36
+02130,Permit Issues,95
+02129,Permit Issues,111
+02128,Permit Issues,85
+02127,Permit Issues,434
+02126,Permit Issues,12
+02125,Permit Issues,84
+02124,Permit Issues,64
+02122,Permit Issues,63
+02121,Permit Issues,7
+02120,Permit Issues,9
+02119,Permit Issues,59
+02118,Permit Issues,226
+02116,Permit Issues,232
+02115,Permit Issues,78
+02114,Permit Issues,130
+02113,Permit Issues,55
+02111,Permit Issues,18
+02110,Permit Issues,10
+02109,Permit Issues,28
+02108,Permit Issues,52
+02115,Owners shall make the documented inspection results and actions taken available upon request by the board of health. Documentation shall include:,1
+02114,Owners shall make the documented inspection results and actions taken available upon request by the board of health. Documentation shall include:,1
+02108,Owners shall make the documented inspection results and actions taken available upon request by the board of health. Documentation shall include:,1
+02215,Overgrown Weeds On Property,6
+02136,Overgrown Weeds On Property,53
+02135,Overgrown Weeds On Property,104
+02134,Overgrown Weeds On Property,84
+02132,Overgrown Weeds On Property,14
+02131,Overgrown Weeds On Property,37
+02130,Overgrown Weeds On Property,115
+02129,Overgrown Weeds On Property,25
+02128,Overgrown Weeds On Property,25
+02127,Overgrown Weeds On Property,140
+02126,Overgrown Weeds On Property,28
+02125,Overgrown Weeds On Property,113
+02124,Overgrown Weeds On Property,54
+02122,Overgrown Weeds On Property,95
+02121,Overgrown Weeds On Property,60
+02120,Overgrown Weeds On Property,54
+02119,Overgrown Weeds On Property,59
+02118,Overgrown Weeds On Property,77
+02116,Overgrown Weeds On Property,11
+02115,Overgrown Weeds On Property,16
+02114,Overgrown Weeds On Property,4
+02113,Overgrown Weeds On Property,1
+02111,Overgrown Weeds On Property,2
+02108,Overgrown Weeds On Property,2
+02215,Overcrowding & Student Overcrowding,4
+02135,Overcrowding & Student Overcrowding,1
+02131,Overcrowding & Student Overcrowding,1
+02130,Overcrowding & Student Overcrowding,3
+02129,Overcrowding & Student Overcrowding,1
+02124,Overcrowding & Student Overcrowding,1
+02122,Overcrowding & Student Overcrowding,1
+02121,Overcrowding & Student Overcrowding,1
+02118,Overcrowding & Student Overcrowding,4
+02116,Overcrowding & Student Overcrowding,2
+02115,Overcrowding & Student Overcrowding,2
+02113,Overcrowding & Student Overcrowding,1
+02111,Overcrowding & Student Overcrowding,4
+02135,Occupying W/Out A Valid CO/CI,1
+02111,Occupying W/Out A Valid CO/CI,1
+02127,Notice of Violation,1
+02131,No Number On A Building,1
+02129,No Number On A Building,1
+02128,No Number On A Building,1
+02127,No Number On A Building,2
+02125,No Number On A Building,1
+02124,No Number On A Building,1
+02118,No Number On A Building,1
+02115,No Number On A Building,1
+02135,Natural Lighting-Habitable Room other that kitchen - Window that admits light from outdoors equal in area to no less that 8% of entire fl area in that room.,1
+02136,Motor Vehicle Concerns,3
+02127,Motor Vehicle Concerns,1
+02126,Motor Vehicle Concerns,4
+02125,Motor Vehicle Concerns,2
+02124,Motor Vehicle Concerns,2
+02122,Motor Vehicle Concerns,1
+02119,Motor Vehicle Concerns,3
+02118,Motor Vehicle Concerns,1
+02215,Maintenance Concerns,17
+02210,Maintenance Concerns,10
+02136,Maintenance Concerns,15
+02135,Maintenance Concerns,24
+02134,Maintenance Concerns,26
+02132,Maintenance Concerns,12
+02131,Maintenance Concerns,7
+02130,Maintenance Concerns,15
+02129,Maintenance Concerns,33
+02128,Maintenance Concerns,24
+02127,Maintenance Concerns,68
+02126,Maintenance Concerns,4
+02125,Maintenance Concerns,31
+02124,Maintenance Concerns,26
+02122,Maintenance Concerns,10
+02121,Maintenance Concerns,2
+02120,Maintenance Concerns,8
+02119,Maintenance Concerns,24
+02118,Maintenance Concerns,55
+02116,Maintenance Concerns,62
+02115,Maintenance Concerns,43
+02114,Maintenance Concerns,28
+02113,Maintenance Concerns,18
+02111,Maintenance Concerns,15
+02110,Maintenance Concerns,1
+02109,Maintenance Concerns,20
+02108,Maintenance Concerns,15
+02136,"Land: The owner of any parcel of land, vacant or otherwise, shall be responsible for maintaining it in a clean, safe, and sanitary condition: 
+",1
+02130,"Land: The owner of any parcel of land, vacant or otherwise, shall be responsible for maintaining it in a clean, safe, and sanitary condition: 
+",1
+02119,"Land: The owner of any parcel of land, vacant or otherwise, shall be responsible for maintaining it in a clean, safe, and sanitary condition: 
+",1
+02135,Issues with Windows,1
+02130,Issues with Windows,2
+02118,Issues with Windows,2
+02215,"Issues with Locks, Doors, and Exits",4
+02210,"Issues with Locks, Doors, and Exits",1
+02136,"Issues with Locks, Doors, and Exits",2
+02135,"Issues with Locks, Doors, and Exits",6
+02132,"Issues with Locks, Doors, and Exits",1
+02130,"Issues with Locks, Doors, and Exits",4
+02129,"Issues with Locks, Doors, and Exits",9
+02128,"Issues with Locks, Doors, and Exits",7
+02127,"Issues with Locks, Doors, and Exits",36
+02126,"Issues with Locks, Doors, and Exits",1
+02125,"Issues with Locks, Doors, and Exits",3
+02124,"Issues with Locks, Doors, and Exits",1
+02122,"Issues with Locks, Doors, and Exits",3
+02121,"Issues with Locks, Doors, and Exits",1
+02120,"Issues with Locks, Doors, and Exits",1
+02119,"Issues with Locks, Doors, and Exits",4
+02118,"Issues with Locks, Doors, and Exits",14
+02116,"Issues with Locks, Doors, and Exits",12
+02115,"Issues with Locks, Doors, and Exits",8
+02114,"Issues with Locks, Doors, and Exits",8
+02113,"Issues with Locks, Doors, and Exits",2
+02111,"Issues with Locks, Doors, and Exits",2
+02109,"Issues with Locks, Doors, and Exits",5
+02108,"Issues with Locks, Doors, and Exits",5
+02128,Issues with Emergency Exits,1
+02118,Issues with Emergency Exits,1
+02116,Issues with Emergency Exits,2
+02115,Issues with Emergency Exits,1
+02215,Issues with Electrical Work,19
+02210,Issues with Electrical Work,14
+02136,Issues with Electrical Work,8
+02135,Issues with Electrical Work,25
+02134,Issues with Electrical Work,15
+02132,Issues with Electrical Work,5
+02131,Issues with Electrical Work,12
+02130,Issues with Electrical Work,33
+02129,Issues with Electrical Work,24
+02128,Issues with Electrical Work,6
+02127,Issues with Electrical Work,38
+02126,Issues with Electrical Work,6
+02125,Issues with Electrical Work,6
+02124,Issues with Electrical Work,7
+02122,Issues with Electrical Work,6
+02121,Issues with Electrical Work,2
+02120,Issues with Electrical Work,6
+02119,Issues with Electrical Work,6
+02118,Issues with Electrical Work,44
+02116,Issues with Electrical Work,33
+02115,Issues with Electrical Work,29
+02114,Issues with Electrical Work,27
+02113,Issues with Electrical Work,7
+02111,Issues with Electrical Work,19
+02110,Issues with Electrical Work,16
+02109,Issues with Electrical Work,6
+02108,Issues with Electrical Work,10
+02210,Improper Venting System,1
+02136,Improper Venting System,1
+02135,Improper Venting System,1
+02131,Improper Venting System,1
+02130,Improper Venting System,1
+02129,Improper Venting System,1
+02128,Improper Venting System,2
+02127,Improper Venting System,1
+02124,Improper Venting System,2
+02119,Improper Venting System,2
+02118,Improper Venting System,5
+02116,Improper Venting System,2
+02115,Improper Venting System,3
+02114,Improper Venting System,1
+02113,Improper Venting System,1
+02111,Improper Venting System,3
+02108,Improper Venting System,1
+02215,Improper storage trash,1385
+02210,Improper storage trash,20
+02199,Improper storage trash,1
+02136,Improper storage trash,166
+02135,Improper storage trash,2408
+02134,Improper storage trash,1795
+02132,Improper storage trash,223
+02131,Improper storage trash,259
+02130,Improper storage trash,552
+02129,Improper storage trash,1872
+02128,Improper storage trash,777
+02127,Improper storage trash,4202
+02126,Improper storage trash,293
+02125,Improper storage trash,871
+02124,Improper storage trash,588
+02122,Improper storage trash,728
+02121,Improper storage trash,279
+02120,Improper storage trash,677
+02119,Improper storage trash,473
+02118,Improper storage trash,5342
+02116,Improper storage trash,4350
+02115,Improper storage trash,2570
+02114,Improper storage trash,2594
+02113,Improper storage trash,2206
+02111,Improper storage trash,631
+02110,Improper storage trash,76
+02109,Improper storage trash,739
+02108,Improper storage trash,403
+02125,Illegal Vending,1
+02114,Illegal Vending,4
+02111,Illegal Use,1
+02215,Illegal Rooming House,1
+02136,Illegal Rooming House,2
+02135,Illegal Rooming House,10
+02134,Illegal Rooming House,1
+02131,Illegal Rooming House,1
+02130,Illegal Rooming House,1
+02129,Illegal Rooming House,2
+02128,Illegal Rooming House,4
+02127,Illegal Rooming House,3
+02126,Illegal Rooming House,1
+02125,Illegal Rooming House,2
+02124,Illegal Rooming House,1
+02121,Illegal Rooming House,2
+02119,Illegal Rooming House,2
+02118,Illegal Rooming House,3
+02116,Illegal Rooming House,1
+02115,Illegal Rooming House,3
+02136,Illegal parking,7
+02134,Illegal parking,5
+02132,Illegal parking,1
+02131,Illegal parking,8
+02130,Illegal parking,4
+02128,Illegal parking,1
+02127,Illegal parking,7
+02126,Illegal parking,7
+02125,Illegal parking,10
+02124,Illegal parking,8
+02122,Illegal parking,4
+02121,Illegal parking,6
+02120,Illegal parking,1
+02119,Illegal parking,7
+02215,Illegal Occupancy,3
+02136,Illegal Occupancy,1
+02135,Illegal Occupancy,3
+02134,Illegal Occupancy,6
+02130,Illegal Occupancy,2
+02129,Illegal Occupancy,1
+02128,Illegal Occupancy,1
+02127,Illegal Occupancy,5
+02125,Illegal Occupancy,3
+02124,Illegal Occupancy,1
+02122,Illegal Occupancy,1
+02121,Illegal Occupancy,3
+02119,Illegal Occupancy,1
+02118,Illegal Occupancy,3
+02116,Illegal Occupancy,6
+02115,Illegal Occupancy,2
+02114,Illegal Occupancy,3
+02111,Illegal Occupancy,1
+02215,Heating System,28
+02210,Heating System,2
+02136,Heating System,8
+02135,Heating System,107
+02134,Heating System,56
+02132,Heating System,7
+02131,Heating System,2
+02130,Heating System,10
+02129,Heating System,2
+02128,Heating System,5
+02127,Heating System,14
+02126,Heating System,2
+02125,Heating System,21
+02124,Heating System,26
+02122,Heating System,7
+02121,Heating System,3
+02120,Heating System,11
+02119,Heating System,13
+02118,Heating System,68
+02116,Heating System,11
+02115,Heating System,131
+02114,Heating System,15
+02113,Heating System,1
+02111,Heating System,6
+02110,Heating System,2
+02109,Heating System,6
+02108,Heating System,5
+02215,Graffiti,1
+02134,Graffiti,2
+02116,Graffiti,2
+02115,Graffiti,8
+02114,Graffiti,2
+02111,Graffiti,3
+02109,Graffiti,2
+02130,Fire Protection Issues,1
+02125,Fire Protection Issues,1
+02116,Fire Protection Issues,3
+02111,Fire Protection Issues,1
+02110,Fire Protection Issues,1
+02215,Failure to restore basic structural and utility needs,62
+02210,Failure to restore basic structural and utility needs,36
+02136,Failure to restore basic structural and utility needs,58
+02135,Failure to restore basic structural and utility needs,177
+02134,Failure to restore basic structural and utility needs,116
+02132,Failure to restore basic structural and utility needs,41
+02131,Failure to restore basic structural and utility needs,29
+02130,Failure to restore basic structural and utility needs,87
+02129,Failure to restore basic structural and utility needs,54
+02128,Failure to restore basic structural and utility needs,52
+02127,Failure to restore basic structural and utility needs,155
+02126,Failure to restore basic structural and utility needs,30
+02125,Failure to restore basic structural and utility needs,95
+02124,Failure to restore basic structural and utility needs,95
+02122,Failure to restore basic structural and utility needs,54
+02121,Failure to restore basic structural and utility needs,26
+02120,Failure to restore basic structural and utility needs,28
+02119,Failure to restore basic structural and utility needs,81
+02118,Failure to restore basic structural and utility needs,211
+02116,Failure to restore basic structural and utility needs,121
+02115,Failure to restore basic structural and utility needs,162
+02114,Failure to restore basic structural and utility needs,46
+02113,Failure to restore basic structural and utility needs,29
+02111,Failure to restore basic structural and utility needs,57
+02110,Failure to restore basic structural and utility needs,23
+02109,Failure to restore basic structural and utility needs,31
+02108,Failure to restore basic structural and utility needs,20
+02215,Failure To Register,3
+02135,Failure To Register,15
+02134,Failure To Register,6
+02131,Failure To Register,3
+02130,Failure To Register,1
+02129,Failure To Register,1
+02128,Failure To Register,1
+02127,Failure To Register,6
+02126,Failure To Register,1
+02125,Failure To Register,3
+02124,Failure To Register,5
+02122,Failure To Register,3
+02120,Failure To Register,2
+02119,Failure To Register,2
+02118,Failure To Register,3
+02116,Failure To Register,6
+02115,Failure To Register,10
+02114,Failure To Register,1
+02110,Failure To Register,2
+02108,Failure To Register,2
+02120,Failure of Delivery Standards,1
+02135,Fail to post management comp,1
+02134,Fail to post management comp,2
+02215,Extermination and Mold Concerns,159
+02210,Extermination and Mold Concerns,15
+02199,Extermination and Mold Concerns,10
+02136,Extermination and Mold Concerns,45
+02135,Extermination and Mold Concerns,206
+02134,Extermination and Mold Concerns,151
+02132,Extermination and Mold Concerns,42
+02131,Extermination and Mold Concerns,49
+02130,Extermination and Mold Concerns,198
+02129,Extermination and Mold Concerns,132
+02128,Extermination and Mold Concerns,105
+02127,Extermination and Mold Concerns,351
+02126,Extermination and Mold Concerns,17
+02125,Extermination and Mold Concerns,208
+02124,Extermination and Mold Concerns,93
+02122,Extermination and Mold Concerns,130
+02121,Extermination and Mold Concerns,35
+02120,Extermination and Mold Concerns,35
+02119,Extermination and Mold Concerns,80
+02118,Extermination and Mold Concerns,802
+02116,Extermination and Mold Concerns,644
+02115,Extermination and Mold Concerns,288
+02114,Extermination and Mold Concerns,245
+02113,Extermination and Mold Concerns,108
+02111,Extermination and Mold Concerns,65
+02110,Extermination and Mold Concerns,14
+02109,Extermination and Mold Concerns,57
+02108,Extermination and Mold Concerns,82
+02124,"Every owner shall provide: 
+(1) A safe handrail on at least one side of a stairway,
+(2) A wall or guard at least 30in high on the open side of all stairways.",1
+02127,"Every owner of a residence who does not reside therein shall post signage, which contains the owner's name, street address and telephone number, and, if applicable.",1
+02125,"Every owner of a residence who does not reside therein shall post signage, which contains the owner's name, street address and telephone number, and, if applicable.",1
+02124,"Every owner of a residence who does not reside therein shall post signage, which contains the owner's name, street address and telephone number, and, if applicable.",2
+02122,"Every owner of a residence who does not reside therein shall post signage, which contains the owner's name, street address and telephone number, and, if applicable.",1
+02118,Deteriorating Agents,1
+02210,Cross Metering - Sub-Metering,3
+02136,Cross Metering - Sub-Metering,1
+02135,Cross Metering - Sub-Metering,2
+02131,Cross Metering - Sub-Metering,1
+02130,Cross Metering - Sub-Metering,4
+02128,Cross Metering - Sub-Metering,1
+02127,Cross Metering - Sub-Metering,1
+02125,Cross Metering - Sub-Metering,5
+02124,Cross Metering - Sub-Metering,6
+02122,Cross Metering - Sub-Metering,1
+02121,Cross Metering - Sub-Metering,5
+02120,Cross Metering - Sub-Metering,1
+02119,Cross Metering - Sub-Metering,3
+02118,Cross Metering - Sub-Metering,5
+02115,Cross Metering - Sub-Metering,3
+02114,Cross Metering - Sub-Metering,3
+02113,Cross Metering - Sub-Metering,2
+02111,Cross Metering - Sub-Metering,2
+02109,Cross Metering - Sub-Metering,2
+02215,Construction Contractor Complaint,43
+02210,Construction Contractor Complaint,26
+02136,Construction Contractor Complaint,16
+02135,Construction Contractor Complaint,55
+02134,Construction Contractor Complaint,7
+02132,Construction Contractor Complaint,12
+02131,Construction Contractor Complaint,21
+02130,Construction Contractor Complaint,107
+02129,Construction Contractor Complaint,75
+02128,Construction Contractor Complaint,86
+02127,Construction Contractor Complaint,230
+02126,Construction Contractor Complaint,30
+02125,Construction Contractor Complaint,61
+02124,Construction Contractor Complaint,18
+02122,Construction Contractor Complaint,18
+02121,Construction Contractor Complaint,9
+02120,Construction Contractor Complaint,12
+02119,Construction Contractor Complaint,37
+02118,Construction Contractor Complaint,144
+02116,Construction Contractor Complaint,172
+02115,Construction Contractor Complaint,55
+02114,Construction Contractor Complaint,88
+02113,Construction Contractor Complaint,42
+02111,Construction Contractor Complaint,28
+02110,Construction Contractor Complaint,10
+02109,Construction Contractor Complaint,25
+02108,Construction Contractor Complaint,51
+02128,Certificate of Occupancy,2
+02215,Catchbasin,6
+02210,Catchbasin,1
+02136,Catchbasin,5
+02135,Catchbasin,10
+02134,Catchbasin,4
+02132,Catchbasin,11
+02131,Catchbasin,10
+02130,Catchbasin,16
+02129,Catchbasin,11
+02128,Catchbasin,11
+02127,Catchbasin,8
+02125,Catchbasin,13
+02124,Catchbasin,5
+02122,Catchbasin,1
+02121,Catchbasin,4
+02120,Catchbasin,3
+02119,Catchbasin,7
+02118,Catchbasin,22
+02116,Catchbasin,33
+02115,Catchbasin,14
+02114,Catchbasin,3
+02113,Catchbasin,6
+02111,Catchbasin,5
+02110,Catchbasin,1
+02109,Catchbasin,2
+02108,Catchbasin,2
+02215,Building Inspections,34
+02210,Building Inspections,9
+02136,Building Inspections,18
+02135,Building Inspections,44
+02134,Building Inspections,29
+02132,Building Inspections,13
+02131,Building Inspections,16
+02130,Building Inspections,38
+02129,Building Inspections,36
+02128,Building Inspections,15
+02127,Building Inspections,65
+02126,Building Inspections,6
+02125,Building Inspections,22
+02124,Building Inspections,22
+02122,Building Inspections,19
+02121,Building Inspections,7
+02120,Building Inspections,6
+02119,Building Inspections,29
+02118,Building Inspections,63
+02116,Building Inspections,90
+02115,Building Inspections,48
+02114,Building Inspections,55
+02113,Building Inspections,19
+02111,Building Inspections,16
+02110,Building Inspections,18
+02109,Building Inspections,10
+02108,Building Inspections,15
+02126,Acts 1956 as Amended,1
+02118,Acts 1956 as Amended,1
+02132,Access to Repairs,4
+02131,Access to Repairs,6
+02130,Access to Repairs,4
+02129,Access to Repairs,1
+02128,Access to Repairs,2
+02127,Access to Repairs,11
+02125,Access to Repairs,1
+02124,Access to Repairs,2
+02118,Access to Repairs,2
+02116,Access to Repairs,7
+02115,Access to Repairs,1
+02114,Access to Repairs,4
+02111,Access to Repairs,1
+02110,Access to Repairs,1
+02108,Access to Repairs,1
+02215,Abandoned Vehicles,70
+02210,Abandoned Vehicles,26
+02199,Abandoned Vehicles,5
+02136,Abandoned Vehicles,47
+02135,Abandoned Vehicles,230
+02134,Abandoned Vehicles,34
+02132,Abandoned Vehicles,35
+02131,Abandoned Vehicles,188
+02130,Abandoned Vehicles,447
+02129,Abandoned Vehicles,91
+02128,Abandoned Vehicles,107
+02127,Abandoned Vehicles,337
+02126,Abandoned Vehicles,28
+02125,Abandoned Vehicles,182
+02124,Abandoned Vehicles,134
+02122,Abandoned Vehicles,167
+02121,Abandoned Vehicles,31
+02120,Abandoned Vehicles,20
+02119,Abandoned Vehicles,155
+02118,Abandoned Vehicles,267
+02116,Abandoned Vehicles,259
+02115,Abandoned Vehicles,82
+02114,Abandoned Vehicles,101
+02113,Abandoned Vehicles,19
+02111,Abandoned Vehicles,30
+02110,Abandoned Vehicles,5
+02109,Abandoned Vehicles,31
+02108,Abandoned Vehicles,45
+02134,Abandoned Building,1
+02130,Abandoned Building,2
+02129,Abandoned Building,1
+02125,Abandoned Building,5
+02124,Abandoned Building,1
+02122,Abandoned Building,1
+02118,Abandoned Building,1
+02113,Abandoned Building,1
