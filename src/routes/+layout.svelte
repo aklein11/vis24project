@@ -2,9 +2,9 @@
     import { page } from '$app/stores';
 
     let pages = [
-        { url: "./", title: "Home" },
-        { url: "./about", title: "Bar Graph" },
-        { url: "./visualization", title: "Visualization" },
+        // { url: "./", title: "Home" },
+        { url: "./bar_graph", title: "Bar Graph" },
+        { url: "./pie_chart", title: "Pie Chart" },
         // add the rest of your pages here
     ];
 
