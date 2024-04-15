@@ -58,6 +58,12 @@
     let selectedZipcode;
     $: selectedZipcode = selectedZipcodeIndex > -1 ? pieData[selectedZipcodeIndex].label : null;
 
+    let zipcodes, uniqueZipcodes;
+    $: {
+        zipcodes = filteredPieData.map(item => item.ZIPCODE);
+        uniqueZipcodes = [...new Set(zipcodes)];
+        console.log("uniqueZipcodes", uniqueZipcodes);
+    }
 </script>
 
 <h1>Year Converted Property was Built</h1>
@@ -69,7 +75,7 @@
 />
 
 <div class="about">
-    {#each filteredPieData as f}
-        <p>{f.ZIPCODE}</p>
+    {#each uniqueZipcodes as z}
+        <p>{z}</p>
     {/each}
 </div>
