@@ -59,7 +59,7 @@
     {/each}
 </nav>
 
-<label class="color-scheme", position: absolute, top=1rem, right=1rem>
+<label class="color-scheme", style="position: absolute; top: 1rem; right: 1rem;">
     Theme:
     <select bind:value={ colorScheme }>
         <option value="light dark">Automatic</option>
