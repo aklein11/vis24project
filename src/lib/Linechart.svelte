@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-    import * as d3 from 'd3'; // If you're importing D3 as a module
+    import * as d3 from 'd3';
   
     let zipcode = '';
    

@@ -2,7 +2,6 @@
     import data from '$lib/conversion_data.json';
     import pie_data from '$lib/pie_data.json';
     import year_built_data from '$lib/year_built_data_v2.json';
-    // import Project from "$lib/Project.svelte";
     import BarChart from '$lib/BarChart.svelte';
     import * as d3 from 'd3';
     export let hLevel = 2;
@@ -79,3 +78,13 @@
         <p>{z}</p>
     {/each}
 </div>
+
+<style>
+    .about {
+        display: grid;  
+        /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+        flex-direction: column;  /* Arrange items horizontally */
+        justify-content: space-between;  /* Distribute items evenly along the main axis */
+        align-items: center;  /* Align items vertically */
+    }
+</style>

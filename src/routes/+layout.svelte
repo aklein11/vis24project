@@ -3,10 +3,10 @@
 
     let pages = [
         // { url: "./", title: "Home" },
-        { url: "./bar_graph", title: "Bar Graph" },
-        { url: "./pie_chart", title: "Pie Chart" },
-        { url: "./line_chart", title: "Line Chart" },
-        { url: "./bubblechart", title: "Bubble Chart" },
+        // { url: "./bar_graph", title: "Bar Graph" },
+        // { url: "./pie_chart", title: "Pie Chart" },
+        // { url: "./line_chart", title: "Line Chart" },
+        // { url: "./bubblechart", title: "Bubble Chart" },
         // add the rest of your pages here
     ];
 

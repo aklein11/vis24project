@@ -1,7 +1,6 @@
 <script>
     import pie_data from '$lib/pie_data.json';
     import year_built_data from '$lib/year_built_data_v2.json';
-    // import Project from "$lib/Project.svelte";
     import Pie from '$lib/Pie.svelte';
     import * as d3 from 'd3';
     let query = "";
