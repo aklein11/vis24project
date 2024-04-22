@@ -82,7 +82,6 @@
 <h1>Year Converted Property was Built</h1>
 <BarChart dataArray={yearBuiltDataArray} />
 
-
 <input type="search" bind:value={query}
     aria-label="Search projects" placeholder="🔍 Enter Zipcode…" 
 />
@@ -95,9 +94,10 @@
 
 <style>
     .about {
-        display: grid;  
-        /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
         flex-direction: column;  /* Arrange items horizontally */
+        grid-row-gap: 5px; 
         justify-content: space-between;  /* Distribute items evenly along the main axis */
         align-items: center;  /* Align items vertically */
     }

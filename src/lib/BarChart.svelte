@@ -7,24 +7,9 @@
     // export let yScale;
 
 	let margin = { top: 20, right: 30, bottom: 70, left: 60 };
+	// TODO: make the width and height reactive
 	let width = 960 - margin.left - margin.right;
 	let height = 500 - margin.top - margin.bottom;
-
-	// // Process the data to sum up the building counts for each decade
-	// const data = json_data.reduce((acc, cur) => {
-	// 	Object.keys(cur).forEach(year => {
-	// 		if (year !== 'ZIPCODE') {
-	// 			if (!acc[year]) acc[year] = 0;
-	// 			acc[year] += cur[year];
-	// 		}
-	// 	});
-	// 	return acc;
-	// }, {});
-
-	// Convert object to array and sort by year
-	// const dataArray = Object.keys(data)
-	// 	.map(year => ({ year: parseInt(year), count: data[year] }))
-	// 	.sort((a, b) => a.year - b.year);
 
 	const xScale = d3.scaleBand()
 		.domain(dataArray.map(d => d.year))
@@ -37,7 +22,7 @@
 
 	// Axis generators
 	const xAxis = d3.axisBottom(xScale)
-		.tickFormat(d3.format('d')); // Remove comma from years
+		.tickFormat(d3.format('d')) // Remove comma from years
 
 	const yAxis = d3.axisLeft(yScale)
 		.ticks(5); // Adjust tick marks as needed
@@ -63,6 +48,7 @@
 						height={height - yScale(d.count)}
 						fill="orange" />
 		{/each}
+		<!-- TODO: format the following line such that the years are at a 45 degree angle so that we can srink the bar chart and still read them -->
 		<g transform={`translate(0, ${height})`} class="x-axis">
 			<!-- X axis will be drawn here by D3 -->
 			<text x={width / 2} y={40} text-anchor="middle" style="font-size: 16px">Year Built</text>
@@ -97,5 +83,11 @@
 		font-weight: bold;
 		/* stroke: black; */
 	}
-</style>
 
+	.x-axis-text {
+        text-anchor: end;
+        transform: rotate(-45deg);
+        transform-origin: end;
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+</style>

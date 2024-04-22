@@ -113,7 +113,6 @@
 
 </Scrolly>
 
-
 <style>
 
     :global(body) {
@@ -140,8 +139,7 @@
 
 	/* CSS file */
 	.graph-container {
-		width: 400px; /* Set the desired width */
-		height: 300px; /* Set the desired height */
+		width: 100px; /* Set the desired width */
 		border: 1px solid #ccc; /* Optional: Add a border for visualization */
 	}
 
