@@ -1,6 +1,5 @@
 <script>
     import data from '$lib/conversion_data.json';
-    import pie_data from '$lib/pie_data.json';
     import year_built_data from '$lib/year_built_data_v2.json';
     import BarChart from '$lib/BarChart.svelte';
     import * as d3 from 'd3';
@@ -8,8 +7,8 @@
 
     let query = "";
 
-    let filteredPieData;
-    $: filteredPieData = pie_data.filter(d => {
+    let filteredConversionData;
+    $: filteredConversionData = data.filter(d => {
         if (query) {
             let values = Object.values(d).join("\n").toLowerCase();
 	        return values.includes(query.toLowerCase());
@@ -33,7 +32,7 @@
     let pieData, rolledData, aggYearBuiltData, yearBuiltDataArray, barChartYScale;
 
     $: { 
-        rolledData = d3.rollups(filteredPieData, v => d3.sum(v, d => d.Count_of_LU_prior), d => d.LU_prior_group);
+        rolledData = d3.rollups(filteredConversionData, v => d3.sum(v, d => d.Count_of_LU_prior), d => d.LU_prior_group);
         console.log("Rolled ", rolledData)
     	// Process the data to sum up the building counts for each decade
 	    aggYearBuiltData = filteredYearBuiltData.reduce((acc, cur) => {
@@ -58,10 +57,25 @@
     $: selectedZipcode = selectedZipcodeIndex > -1 ? pieData[selectedZipcodeIndex].label : null;
 
     let zipcodes, uniqueZipcodes;
+    
+    function combineZipcodes(zipcodes) {
+        const groupedZipcodes = {};
+        
+        zipcodes.forEach(zip => {
+            const firstFiveDigits = zip.substring(0, 5);
+            if (!groupedZipcodes[firstFiveDigits]) {
+                groupedZipcodes[firstFiveDigits] = [];
+            }
+            groupedZipcodes[firstFiveDigits].push(zip.substring(0, 5));
+        });
+        // console.log("in combineZipcodes", groupedZipcodes);
+        return groupedZipcodes;
+    }
+    
     $: {
-        zipcodes = filteredPieData.map(item => item.ZIPCODE);
-        uniqueZipcodes = [...new Set(zipcodes)];
-        console.log("uniqueZipcodes", uniqueZipcodes);
+        zipcodes = filteredConversionData.map(item => item.ZIPCODE);
+        uniqueZipcodes = new Set(Object.values(combineZipcodes(zipcodes)).flat());
+        // console.log("uniqueZipcodes", uniqueZipcodes);
     }
 </script>
 
