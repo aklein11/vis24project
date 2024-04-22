@@ -1,702 +1,1092 @@
 [
     {
-        "ZIPCODE": "02215",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": null,
+        "LU prior groups": "C",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02215",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": null,
+        "LU prior groups": "R1",
+        "Count of LU prior": 2
     },
     {
-        "ZIPCODE": "02210",
-        "LU_prior_group": "RC",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": null,
+        "LU prior groups": "R2",
+        "Count of LU prior": 6
     },
     {
-        "ZIPCODE": "02136",
-        "LU_prior_group": "R1",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": null,
+        "LU prior groups": "R3",
+        "Count of LU prior": 4
     },
     {
-        "ZIPCODE": "02136",
-        "LU_prior_group": "RC",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02474",
+        "LU prior groups": "R3",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02136",
-        "LU_prior_group": "A",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02461",
+        "LU prior groups": "R3",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02136",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 6
+        "ZIPCODE prior (group)": "02460",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02136",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 20
+        "ZIPCODE prior (group)": "02458",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02136",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 22
+        "ZIPCODE prior (group)": "02421",
+        "LU prior groups": "R3",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02136",
-        "LU_prior_group": "R3",
-        "Count_of_LU_prior": 8
+        "ZIPCODE prior (group)": "02215",
+        "LU prior groups": "CM",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02132",
-        "LU_prior_group": "E",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02215",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02132",
-        "LU_prior_group": "RC",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02210",
+        "LU prior groups": "RC",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02132",
-        "LU_prior_group": "A",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02142",
+        "LU prior groups": "A",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02132",
-        "LU_prior_group": "R4",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02141",
+        "LU prior groups": "RC",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02132",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 6
+        "ZIPCODE prior (group)": "02141",
+        "LU prior groups": "R4",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02132",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 11
+        "ZIPCODE prior (group)": "02141",
+        "LU prior groups": "R2",
+        "Count of LU prior": 6
     },
     {
-        "ZIPCODE": "02132",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 18
+        "ZIPCODE prior (group)": "02141",
+        "LU prior groups": "R3",
+        "Count of LU prior": 3
     },
     {
-        "ZIPCODE": "02132",
-        "LU_prior_group": "R3",
-        "Count_of_LU_prior": 4
+        "ZIPCODE prior (group)": "02140-1841",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02131",
-        "LU_prior_group": "CC",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02140-1610",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02131",
-        "LU_prior_group": "RL",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02140-1124",
+        "LU prior groups": "R3",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02131",
-        "LU_prior_group": "R1",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02140",
+        "LU prior groups": "E",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02131",
-        "LU_prior_group": "RC",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02140",
+        "LU prior groups": "R1",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02131",
-        "LU_prior_group": "A",
-        "Count_of_LU_prior": 5
+        "ZIPCODE prior (group)": "02140",
+        "LU prior groups": "RC",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02131",
-        "LU_prior_group": "R4",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02140",
+        "LU prior groups": "A",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02131",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 11
+        "ZIPCODE prior (group)": "02140",
+        "LU prior groups": "CM",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02131",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 70
+        "ZIPCODE prior (group)": "02140",
+        "LU prior groups": "R2",
+        "Count of LU prior": 5
     },
     {
-        "ZIPCODE": "02131",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 65
+        "ZIPCODE prior (group)": "02140",
+        "LU prior groups": "R3",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02131",
-        "LU_prior_group": "R3",
-        "Count_of_LU_prior": 32
+        "ZIPCODE prior (group)": "02139-4745",
+        "LU prior groups": "R3",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02130",
-        "LU_prior_group": "E",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02139-4430",
+        "LU prior groups": "R3",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02130",
-        "LU_prior_group": "C",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02139-4423",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02130",
-        "LU_prior_group": "CC",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02139-4019",
+        "LU prior groups": "R3",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02130",
-        "LU_prior_group": "RL",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02139-3928",
+        "LU prior groups": "CM",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02130",
-        "LU_prior_group": "R1",
-        "Count_of_LU_prior": 5
+        "ZIPCODE prior (group)": "02139-1116",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02130",
-        "LU_prior_group": "RC",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02139-1113",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02130",
-        "LU_prior_group": "A",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02139-1017",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02130",
-        "LU_prior_group": "R4",
-        "Count_of_LU_prior": 5
+        "ZIPCODE prior (group)": "02139",
+        "LU prior groups": "E",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02130",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 16
+        "ZIPCODE prior (group)": "02139",
+        "LU prior groups": "RL",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02130",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 59
+        "ZIPCODE prior (group)": "02139",
+        "LU prior groups": "R1",
+        "Count of LU prior": 2
     },
     {
-        "ZIPCODE": "02130",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 43
+        "ZIPCODE prior (group)": "02139",
+        "LU prior groups": "R4",
+        "Count of LU prior": 2
     },
     {
-        "ZIPCODE": "02130",
-        "LU_prior_group": "R3",
-        "Count_of_LU_prior": 63
+        "ZIPCODE prior (group)": "02139",
+        "LU prior groups": "CM",
+        "Count of LU prior": 4
     },
     {
-        "ZIPCODE": "02129",
-        "LU_prior_group": "RL",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02139",
+        "LU prior groups": "CD",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02129",
-        "LU_prior_group": "R1",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02139",
+        "LU prior groups": "R2",
+        "Count of LU prior": 12
     },
     {
-        "ZIPCODE": "02129",
-        "LU_prior_group": "A",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02139",
+        "LU prior groups": "R3",
+        "Count of LU prior": 6
     },
     {
-        "ZIPCODE": "02129",
-        "LU_prior_group": "R4",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02138-4646",
+        "LU prior groups": "R3",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02129",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 5
+        "ZIPCODE prior (group)": "02138-4531",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02129",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 11
+        "ZIPCODE prior (group)": "02138",
+        "LU prior groups": "R1",
+        "Count of LU prior": 2
     },
     {
-        "ZIPCODE": "02129",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 19
+        "ZIPCODE prior (group)": "02138",
+        "LU prior groups": "RC",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02129",
-        "LU_prior_group": "R3",
-        "Count_of_LU_prior": 25
+        "ZIPCODE prior (group)": "02138",
+        "LU prior groups": "CM",
+        "Count of LU prior": 4
     },
     {
-        "ZIPCODE": "02128",
-        "LU_prior_group": "CC",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02138",
+        "LU prior groups": "R2",
+        "Count of LU prior": 18
     },
     {
-        "ZIPCODE": "02128",
-        "LU_prior_group": "RL",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02138",
+        "LU prior groups": "R3",
+        "Count of LU prior": 4
     },
     {
-        "ZIPCODE": "02128",
-        "LU_prior_group": "R1",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02136",
+        "LU prior groups": "R1",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02128",
-        "LU_prior_group": "RC",
-        "Count_of_LU_prior": 5
+        "ZIPCODE prior (group)": "02136",
+        "LU prior groups": "RC",
+        "Count of LU prior": 2
     },
     {
-        "ZIPCODE": "02128",
-        "LU_prior_group": "A",
-        "Count_of_LU_prior": 12
+        "ZIPCODE prior (group)": "02136",
+        "LU prior groups": "A",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02128",
-        "LU_prior_group": "R4",
-        "Count_of_LU_prior": 18
+        "ZIPCODE prior (group)": "02136",
+        "LU prior groups": "CM",
+        "Count of LU prior": 6
     },
     {
-        "ZIPCODE": "02128",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02136",
+        "LU prior groups": "CD",
+        "Count of LU prior": 20
     },
     {
-        "ZIPCODE": "02128",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 7
+        "ZIPCODE prior (group)": "02136",
+        "LU prior groups": "R2",
+        "Count of LU prior": 22
     },
     {
-        "ZIPCODE": "02128",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 40
+        "ZIPCODE prior (group)": "02136",
+        "LU prior groups": "R3",
+        "Count of LU prior": 8
     },
     {
-        "ZIPCODE": "02128",
-        "LU_prior_group": "R3",
-        "Count_of_LU_prior": 101
+        "ZIPCODE prior (group)": "02132",
+        "LU prior groups": "E",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02127",
-        "LU_prior_group": "E",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02132",
+        "LU prior groups": "RC",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02127",
-        "LU_prior_group": "C",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02132",
+        "LU prior groups": "A",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02127",
-        "LU_prior_group": "RL",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02132",
+        "LU prior groups": "R4",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02127",
-        "LU_prior_group": "R1",
-        "Count_of_LU_prior": 8
+        "ZIPCODE prior (group)": "02132",
+        "LU prior groups": "CM",
+        "Count of LU prior": 6
     },
     {
-        "ZIPCODE": "02127",
-        "LU_prior_group": "RC",
-        "Count_of_LU_prior": 12
+        "ZIPCODE prior (group)": "02132",
+        "LU prior groups": "CD",
+        "Count of LU prior": 11
     },
     {
-        "ZIPCODE": "02127",
-        "LU_prior_group": "A",
-        "Count_of_LU_prior": 15
+        "ZIPCODE prior (group)": "02132",
+        "LU prior groups": "R2",
+        "Count of LU prior": 18
     },
     {
-        "ZIPCODE": "02127",
-        "LU_prior_group": "R4",
-        "Count_of_LU_prior": 15
+        "ZIPCODE prior (group)": "02132",
+        "LU prior groups": "R3",
+        "Count of LU prior": 4
     },
     {
-        "ZIPCODE": "02127",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 18
+        "ZIPCODE prior (group)": "02131",
+        "LU prior groups": "CC",
+        "Count of LU prior": 3
     },
     {
-        "ZIPCODE": "02127",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 36
+        "ZIPCODE prior (group)": "02131",
+        "LU prior groups": "RL",
+        "Count of LU prior": 3
     },
     {
-        "ZIPCODE": "02127",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 53
+        "ZIPCODE prior (group)": "02131",
+        "LU prior groups": "R1",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02127",
-        "LU_prior_group": "R3",
-        "Count_of_LU_prior": 55
+        "ZIPCODE prior (group)": "02131",
+        "LU prior groups": "RC",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02126",
-        "LU_prior_group": "A",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02131",
+        "LU prior groups": "A",
+        "Count of LU prior": 5
     },
     {
-        "ZIPCODE": "02126",
-        "LU_prior_group": "R4",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02131",
+        "LU prior groups": "R4",
+        "Count of LU prior": 3
     },
     {
-        "ZIPCODE": "02126",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02131",
+        "LU prior groups": "CM",
+        "Count of LU prior": 11
     },
     {
-        "ZIPCODE": "02126",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02131",
+        "LU prior groups": "CD",
+        "Count of LU prior": 70
     },
     {
-        "ZIPCODE": "02126",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 7
+        "ZIPCODE prior (group)": "02131",
+        "LU prior groups": "R2",
+        "Count of LU prior": 65
     },
     {
-        "ZIPCODE": "02126",
-        "LU_prior_group": "R3",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02131",
+        "LU prior groups": "R3",
+        "Count of LU prior": 32
     },
     {
-        "ZIPCODE": "02125",
-        "LU_prior_group": "RL",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02130",
+        "LU prior groups": "E",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02125",
-        "LU_prior_group": "A",
-        "Count_of_LU_prior": 4
+        "ZIPCODE prior (group)": "02130",
+        "LU prior groups": "C",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02125",
-        "LU_prior_group": "R4",
-        "Count_of_LU_prior": 4
+        "ZIPCODE prior (group)": "02130",
+        "LU prior groups": "CC",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02125",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 8
+        "ZIPCODE prior (group)": "02130",
+        "LU prior groups": "RL",
+        "Count of LU prior": 2
     },
     {
-        "ZIPCODE": "02125",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 16
+        "ZIPCODE prior (group)": "02130",
+        "LU prior groups": "R1",
+        "Count of LU prior": 5
     },
     {
-        "ZIPCODE": "02125",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 17
+        "ZIPCODE prior (group)": "02130",
+        "LU prior groups": "RC",
+        "Count of LU prior": 3
     },
     {
-        "ZIPCODE": "02125",
-        "LU_prior_group": "R3",
-        "Count_of_LU_prior": 53
+        "ZIPCODE prior (group)": "02130",
+        "LU prior groups": "A",
+        "Count of LU prior": 3
     },
     {
-        "ZIPCODE": "02124",
-        "LU_prior_group": "CL",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02130",
+        "LU prior groups": "R4",
+        "Count of LU prior": 5
     },
     {
-        "ZIPCODE": "02124",
-        "LU_prior_group": "C",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02130",
+        "LU prior groups": "CM",
+        "Count of LU prior": 16
     },
     {
-        "ZIPCODE": "02124",
-        "LU_prior_group": "CC",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02130",
+        "LU prior groups": "CD",
+        "Count of LU prior": 59
     },
     {
-        "ZIPCODE": "02124",
-        "LU_prior_group": "RC",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02130",
+        "LU prior groups": "R2",
+        "Count of LU prior": 43
     },
     {
-        "ZIPCODE": "02124",
-        "LU_prior_group": "A",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02130",
+        "LU prior groups": "R3",
+        "Count of LU prior": 63
     },
     {
-        "ZIPCODE": "02124",
-        "LU_prior_group": "R4",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02129",
+        "LU prior groups": "RL",
+        "Count of LU prior": 2
     },
     {
-        "ZIPCODE": "02124",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 7
+        "ZIPCODE prior (group)": "02129",
+        "LU prior groups": "R1",
+        "Count of LU prior": 2
     },
     {
-        "ZIPCODE": "02124",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 12
+        "ZIPCODE prior (group)": "02129",
+        "LU prior groups": "A",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02124",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 29
+        "ZIPCODE prior (group)": "02129",
+        "LU prior groups": "R4",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02124",
-        "LU_prior_group": "R3",
-        "Count_of_LU_prior": 28
+        "ZIPCODE prior (group)": "02129",
+        "LU prior groups": "CM",
+        "Count of LU prior": 5
     },
     {
-        "ZIPCODE": "02122",
-        "LU_prior_group": "C",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02129",
+        "LU prior groups": "CD",
+        "Count of LU prior": 11
     },
     {
-        "ZIPCODE": "02122",
-        "LU_prior_group": "RL",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02129",
+        "LU prior groups": "R2",
+        "Count of LU prior": 20
     },
     {
-        "ZIPCODE": "02122",
-        "LU_prior_group": "R1",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02129",
+        "LU prior groups": "R3",
+        "Count of LU prior": 25
     },
     {
-        "ZIPCODE": "02122",
-        "LU_prior_group": "R4",
-        "Count_of_LU_prior": 10
+        "ZIPCODE prior (group)": "02128",
+        "LU prior groups": "CC",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02122",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 6
+        "ZIPCODE prior (group)": "02128",
+        "LU prior groups": "RL",
+        "Count of LU prior": 2
     },
     {
-        "ZIPCODE": "02122",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 17
+        "ZIPCODE prior (group)": "02128",
+        "LU prior groups": "R1",
+        "Count of LU prior": 3
     },
     {
-        "ZIPCODE": "02122",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 22
+        "ZIPCODE prior (group)": "02128",
+        "LU prior groups": "RC",
+        "Count of LU prior": 5
     },
     {
-        "ZIPCODE": "02122",
-        "LU_prior_group": "R3",
-        "Count_of_LU_prior": 36
+        "ZIPCODE prior (group)": "02128",
+        "LU prior groups": "A",
+        "Count of LU prior": 12
     },
     {
-        "ZIPCODE": "02121",
-        "LU_prior_group": "A",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02128",
+        "LU prior groups": "R4",
+        "Count of LU prior": 18
     },
     {
-        "ZIPCODE": "02121",
-        "LU_prior_group": "R4",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02128",
+        "LU prior groups": "CM",
+        "Count of LU prior": 2
     },
     {
-        "ZIPCODE": "02121",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02128",
+        "LU prior groups": "CD",
+        "Count of LU prior": 7
     },
     {
-        "ZIPCODE": "02121",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 5
+        "ZIPCODE prior (group)": "02128",
+        "LU prior groups": "R2",
+        "Count of LU prior": 40
     },
     {
-        "ZIPCODE": "02121",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 6
+        "ZIPCODE prior (group)": "02128",
+        "LU prior groups": "R3",
+        "Count of LU prior": 101
     },
     {
-        "ZIPCODE": "02121",
-        "LU_prior_group": "R3",
-        "Count_of_LU_prior": 16
+        "ZIPCODE prior (group)": "02127",
+        "LU prior groups": "E",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02120",
-        "LU_prior_group": "E",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02127",
+        "LU prior groups": "C",
+        "Count of LU prior": 2
     },
     {
-        "ZIPCODE": "02120",
-        "LU_prior_group": "CC",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02127",
+        "LU prior groups": "RL",
+        "Count of LU prior": 3
     },
     {
-        "ZIPCODE": "02120",
-        "LU_prior_group": "RC",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02127",
+        "LU prior groups": "R1",
+        "Count of LU prior": 8
     },
     {
-        "ZIPCODE": "02120",
-        "LU_prior_group": "A",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02127",
+        "LU prior groups": "RC",
+        "Count of LU prior": 12
     },
     {
-        "ZIPCODE": "02120",
-        "LU_prior_group": "R4",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02127",
+        "LU prior groups": "A",
+        "Count of LU prior": 15
     },
     {
-        "ZIPCODE": "02120",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 13
+        "ZIPCODE prior (group)": "02127",
+        "LU prior groups": "R4",
+        "Count of LU prior": 15
     },
     {
-        "ZIPCODE": "02119",
-        "LU_prior_group": "I",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02127",
+        "LU prior groups": "CM",
+        "Count of LU prior": 18
     },
     {
-        "ZIPCODE": "02119",
-        "LU_prior_group": "RL",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02127",
+        "LU prior groups": "CD",
+        "Count of LU prior": 36
     },
     {
-        "ZIPCODE": "02119",
-        "LU_prior_group": "R1",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02127",
+        "LU prior groups": "R2",
+        "Count of LU prior": 53
     },
     {
-        "ZIPCODE": "02119",
-        "LU_prior_group": "RC",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02127",
+        "LU prior groups": "R3",
+        "Count of LU prior": 55
     },
     {
-        "ZIPCODE": "02119",
-        "LU_prior_group": "A",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02126",
+        "LU prior groups": "A",
+        "Count of LU prior": 3
     },
     {
-        "ZIPCODE": "02119",
-        "LU_prior_group": "R4",
-        "Count_of_LU_prior": 4
+        "ZIPCODE prior (group)": "02126",
+        "LU prior groups": "R4",
+        "Count of LU prior": 2
     },
     {
-        "ZIPCODE": "02119",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 5
+        "ZIPCODE prior (group)": "02126",
+        "LU prior groups": "CM",
+        "Count of LU prior": 3
     },
     {
-        "ZIPCODE": "02119",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 20
+        "ZIPCODE prior (group)": "02126",
+        "LU prior groups": "CD",
+        "Count of LU prior": 2
     },
     {
-        "ZIPCODE": "02119",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 12
+        "ZIPCODE prior (group)": "02126",
+        "LU prior groups": "R2",
+        "Count of LU prior": 7
     },
     {
-        "ZIPCODE": "02119",
-        "LU_prior_group": "R3",
-        "Count_of_LU_prior": 17
+        "ZIPCODE prior (group)": "02126",
+        "LU prior groups": "R3",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02118",
-        "LU_prior_group": "CC",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02125",
+        "LU prior groups": "RL",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02118",
-        "LU_prior_group": "RC",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02125",
+        "LU prior groups": "A",
+        "Count of LU prior": 4
     },
     {
-        "ZIPCODE": "02118",
-        "LU_prior_group": "A",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02125",
+        "LU prior groups": "R4",
+        "Count of LU prior": 4
     },
     {
-        "ZIPCODE": "02118",
-        "LU_prior_group": "R4",
-        "Count_of_LU_prior": 11
+        "ZIPCODE prior (group)": "02125",
+        "LU prior groups": "CM",
+        "Count of LU prior": 8
     },
     {
-        "ZIPCODE": "02118",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 5
+        "ZIPCODE prior (group)": "02125",
+        "LU prior groups": "CD",
+        "Count of LU prior": 16
     },
     {
-        "ZIPCODE": "02118",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 2
+        "ZIPCODE prior (group)": "02125",
+        "LU prior groups": "R2",
+        "Count of LU prior": 17
     },
     {
-        "ZIPCODE": "02118",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 19
+        "ZIPCODE prior (group)": "02125",
+        "LU prior groups": "R3",
+        "Count of LU prior": 53
     },
     {
-        "ZIPCODE": "02118",
-        "LU_prior_group": "R3",
-        "Count_of_LU_prior": 64
+        "ZIPCODE prior (group)": "02124",
+        "LU prior groups": "CL",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02115",
-        "LU_prior_group": "C",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02124",
+        "LU prior groups": "C",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02115",
-        "LU_prior_group": "RL",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02124",
+        "LU prior groups": "CC",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02115",
-        "LU_prior_group": "R1",
-        "Count_of_LU_prior": 1
+        "ZIPCODE prior (group)": "02124",
+        "LU prior groups": "RC",
+        "Count of LU prior": 1
     },
     {
-        "ZIPCODE": "02115",
-        "LU_prior_group": "RC",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02124",
+        "LU prior groups": "A",
+        "Count of LU prior": 3
     },
     {
-        "ZIPCODE": "02115",
-        "LU_prior_group": "A",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02124",
+        "LU prior groups": "R4",
+        "Count of LU prior": 2
     },
     {
-        "ZIPCODE": "02115",
-        "LU_prior_group": "R4",
-        "Count_of_LU_prior": 4
+        "ZIPCODE prior (group)": "02124",
+        "LU prior groups": "CM",
+        "Count of LU prior": 7
     },
     {
-        "ZIPCODE": "02115",
-        "LU_prior_group": "CM",
-        "Count_of_LU_prior": 3
+        "ZIPCODE prior (group)": "02124",
+        "LU prior groups": "CD",
+        "Count of LU prior": 12
     },
     {
-        "ZIPCODE": "02115",
-        "LU_prior_group": "CD",
-        "Count_of_LU_prior": 10
+        "ZIPCODE prior (group)": "02124",
+        "LU prior groups": "R2",
+        "Count of LU prior": 29
     },
     {
-        "ZIPCODE": "02115",
-        "LU_prior_group": "R2",
-        "Count_of_LU_prior": 36
+        "ZIPCODE prior (group)": "02124",
+        "LU prior groups": "R3",
+        "Count of LU prior": 28
     },
     {
-        "ZIPCODE": "02115",
-        "LU_prior_group": "R3",
-        "Count_of_LU_prior": 20
+        "ZIPCODE prior (group)": "02122",
+        "LU prior groups": "C",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02122",
+        "LU prior groups": "RL",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02122",
+        "LU prior groups": "R1",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02122",
+        "LU prior groups": "R4",
+        "Count of LU prior": 10
+    },
+    {
+        "ZIPCODE prior (group)": "02122",
+        "LU prior groups": "CM",
+        "Count of LU prior": 6
+    },
+    {
+        "ZIPCODE prior (group)": "02122",
+        "LU prior groups": "CD",
+        "Count of LU prior": 17
+    },
+    {
+        "ZIPCODE prior (group)": "02122",
+        "LU prior groups": "R2",
+        "Count of LU prior": 22
+    },
+    {
+        "ZIPCODE prior (group)": "02122",
+        "LU prior groups": "R3",
+        "Count of LU prior": 36
+    },
+    {
+        "ZIPCODE prior (group)": "02121",
+        "LU prior groups": "A",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02121",
+        "LU prior groups": "R4",
+        "Count of LU prior": 3
+    },
+    {
+        "ZIPCODE prior (group)": "02121",
+        "LU prior groups": "CM",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02121",
+        "LU prior groups": "CD",
+        "Count of LU prior": 5
+    },
+    {
+        "ZIPCODE prior (group)": "02121",
+        "LU prior groups": "R2",
+        "Count of LU prior": 6
+    },
+    {
+        "ZIPCODE prior (group)": "02121",
+        "LU prior groups": "R3",
+        "Count of LU prior": 16
+    },
+    {
+        "ZIPCODE prior (group)": "02120",
+        "LU prior groups": "E",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02120",
+        "LU prior groups": "CC",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02120",
+        "LU prior groups": "RC",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02120",
+        "LU prior groups": "A",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02120",
+        "LU prior groups": "R4",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02120",
+        "LU prior groups": "CD",
+        "Count of LU prior": 13
+    },
+    {
+        "ZIPCODE prior (group)": "02119",
+        "LU prior groups": "I",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02119",
+        "LU prior groups": "RL",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02119",
+        "LU prior groups": "R1",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02119",
+        "LU prior groups": "RC",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02119",
+        "LU prior groups": "A",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02119",
+        "LU prior groups": "R4",
+        "Count of LU prior": 4
+    },
+    {
+        "ZIPCODE prior (group)": "02119",
+        "LU prior groups": "CM",
+        "Count of LU prior": 5
+    },
+    {
+        "ZIPCODE prior (group)": "02119",
+        "LU prior groups": "CD",
+        "Count of LU prior": 20
+    },
+    {
+        "ZIPCODE prior (group)": "02119",
+        "LU prior groups": "R2",
+        "Count of LU prior": 12
+    },
+    {
+        "ZIPCODE prior (group)": "02119",
+        "LU prior groups": "R3",
+        "Count of LU prior": 17
+    },
+    {
+        "ZIPCODE prior (group)": "02118",
+        "LU prior groups": "CC",
+        "Count of LU prior": 3
+    },
+    {
+        "ZIPCODE prior (group)": "02118",
+        "LU prior groups": "RC",
+        "Count of LU prior": 3
+    },
+    {
+        "ZIPCODE prior (group)": "02118",
+        "LU prior groups": "A",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02118",
+        "LU prior groups": "R4",
+        "Count of LU prior": 11
+    },
+    {
+        "ZIPCODE prior (group)": "02118",
+        "LU prior groups": "CM",
+        "Count of LU prior": 5
+    },
+    {
+        "ZIPCODE prior (group)": "02118",
+        "LU prior groups": "CD",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02118",
+        "LU prior groups": "R2",
+        "Count of LU prior": 19
+    },
+    {
+        "ZIPCODE prior (group)": "02118",
+        "LU prior groups": "R3",
+        "Count of LU prior": 15
+    },
+    {
+        "ZIPCODE prior (group)": "02116",
+        "LU prior groups": "C",
+        "Count of LU prior": 3
+    },
+    {
+        "ZIPCODE prior (group)": "02116",
+        "LU prior groups": "R1",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02116",
+        "LU prior groups": "RC",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02116",
+        "LU prior groups": "A",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02116",
+        "LU prior groups": "R4",
+        "Count of LU prior": 6
+    },
+    {
+        "ZIPCODE prior (group)": "02116",
+        "LU prior groups": "CM",
+        "Count of LU prior": 5
+    },
+    {
+        "ZIPCODE prior (group)": "02116",
+        "LU prior groups": "CD",
+        "Count of LU prior": 7
+    },
+    {
+        "ZIPCODE prior (group)": "02116",
+        "LU prior groups": "R2",
+        "Count of LU prior": 8
+    },
+    {
+        "ZIPCODE prior (group)": "02116",
+        "LU prior groups": "R3",
+        "Count of LU prior": 9
+    },
+    {
+        "ZIPCODE prior (group)": "02115",
+        "LU prior groups": "CC",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02115",
+        "LU prior groups": "RL",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02115",
+        "LU prior groups": "R4",
+        "Count of LU prior": 3
+    },
+    {
+        "ZIPCODE prior (group)": "02115",
+        "LU prior groups": "CM",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02115",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02115",
+        "LU prior groups": "R3",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02114",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02113",
+        "LU prior groups": "CC",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02113",
+        "LU prior groups": "R4",
+        "Count of LU prior": 5
+    },
+    {
+        "ZIPCODE prior (group)": "02113",
+        "LU prior groups": "CM",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02113",
+        "LU prior groups": "CD",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02113",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02113",
+        "LU prior groups": "R3",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02111",
+        "LU prior groups": "RC",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02109",
+        "LU prior groups": "C",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02109",
+        "LU prior groups": "CM",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02109",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02108",
+        "LU prior groups": "C",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02108",
+        "LU prior groups": "CC",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02108",
+        "LU prior groups": "R1",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "02108",
+        "LU prior groups": "A",
+        "Count of LU prior": 3
+    },
+    {
+        "ZIPCODE prior (group)": "02108",
+        "LU prior groups": "R4",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02108",
+        "LU prior groups": "R2",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE prior (group)": "02108",
+        "LU prior groups": "R3",
+        "Count of LU prior": 6
+    },
+    {
+        "ZIPCODE prior (group)": "01945",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "01940",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "01890",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "01880",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "01845",
+        "LU prior groups": "A",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "01824",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "01760",
+        "LU prior groups": "R3",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE prior (group)": "01742",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
     }
 ]
