@@ -1,1092 +1,957 @@
 [
     {
-        "ZIPCODE prior (group)": null,
+        "ZIPCODE post (group)": "02215",
+        "LU prior groups": "CM",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE post (group)": "02215",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE post (group)": "02210",
+        "LU prior groups": "RC",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE post (group)": "02142",
         "LU prior groups": "C",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": null,
+        "ZIPCODE post (group)": "02142",
+        "LU prior groups": "A",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE post (group)": "02141",
         "LU prior groups": "R1",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": null,
-        "LU prior groups": "R2",
-        "Count of LU prior": 6
-    },
-    {
-        "ZIPCODE prior (group)": null,
-        "LU prior groups": "R3",
-        "Count of LU prior": 4
-    },
-    {
-        "ZIPCODE prior (group)": "02474",
-        "LU prior groups": "R3",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02461",
-        "LU prior groups": "R3",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02460",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02458",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02421",
-        "LU prior groups": "R3",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02215",
-        "LU prior groups": "CM",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02215",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02210",
+        "ZIPCODE post (group)": "02141",
         "LU prior groups": "RC",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02142",
-        "LU prior groups": "A",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02141",
-        "LU prior groups": "RC",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02141",
+        "ZIPCODE post (group)": "02141",
         "LU prior groups": "R4",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02141",
+        "ZIPCODE post (group)": "02141",
         "LU prior groups": "R2",
-        "Count of LU prior": 6
+        "Count of LU prior": 8
     },
     {
-        "ZIPCODE prior (group)": "02141",
+        "ZIPCODE post (group)": "02141",
         "LU prior groups": "R3",
-        "Count of LU prior": 3
+        "Count of LU prior": 7
     },
     {
-        "ZIPCODE prior (group)": "02140-1841",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02140-1610",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02140-1124",
-        "LU prior groups": "R3",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02140",
+        "ZIPCODE post (group)": "02140",
         "LU prior groups": "E",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02140",
-        "LU prior groups": "R1",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02140",
+        "ZIPCODE post (group)": "02140",
         "LU prior groups": "RC",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02140",
+        "ZIPCODE post (group)": "02140",
         "LU prior groups": "A",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02140",
+        "ZIPCODE post (group)": "02140",
         "LU prior groups": "CM",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02140",
+        "ZIPCODE post (group)": "02140",
         "LU prior groups": "R2",
+        "Count of LU prior": 13
+    },
+    {
+        "ZIPCODE post (group)": "02140",
+        "LU prior groups": "R3",
+        "Count of LU prior": 4
+    },
+    {
+        "ZIPCODE post (group)": "02139",
+        "LU prior groups": "E",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE post (group)": "02139",
+        "LU prior groups": "R1",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE post (group)": "02139",
+        "LU prior groups": "R4",
+        "Count of LU prior": 2
+    },
+    {
+        "ZIPCODE post (group)": "02139",
+        "LU prior groups": "CM",
         "Count of LU prior": 5
     },
     {
-        "ZIPCODE prior (group)": "02140",
-        "LU prior groups": "R3",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02139-4745",
-        "LU prior groups": "R3",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02139-4430",
-        "LU prior groups": "R3",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02139-4423",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02139-4019",
-        "LU prior groups": "R3",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02139-3928",
-        "LU prior groups": "CM",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02139-1116",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02139-1113",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02139-1017",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02139",
-        "LU prior groups": "E",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02139",
-        "LU prior groups": "RL",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02139",
-        "LU prior groups": "R1",
-        "Count of LU prior": 2
-    },
-    {
-        "ZIPCODE prior (group)": "02139",
-        "LU prior groups": "R4",
-        "Count of LU prior": 2
-    },
-    {
-        "ZIPCODE prior (group)": "02139",
-        "LU prior groups": "CM",
-        "Count of LU prior": 4
-    },
-    {
-        "ZIPCODE prior (group)": "02139",
+        "ZIPCODE post (group)": "02139",
         "LU prior groups": "CD",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02139",
+        "ZIPCODE post (group)": "02139",
         "LU prior groups": "R2",
-        "Count of LU prior": 12
+        "Count of LU prior": 21
     },
     {
-        "ZIPCODE prior (group)": "02139",
+        "ZIPCODE post (group)": "02139",
         "LU prior groups": "R3",
-        "Count of LU prior": 6
+        "Count of LU prior": 10
     },
     {
-        "ZIPCODE prior (group)": "02138-4646",
-        "LU prior groups": "R3",
+        "ZIPCODE post (group)": "02138",
+        "LU prior groups": "RL",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02138-4531",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "02138",
+        "ZIPCODE post (group)": "02138",
         "LU prior groups": "R1",
-        "Count of LU prior": 2
+        "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02138",
+        "ZIPCODE post (group)": "02138",
         "LU prior groups": "RC",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02138",
+        "ZIPCODE post (group)": "02138",
         "LU prior groups": "CM",
         "Count of LU prior": 4
     },
     {
-        "ZIPCODE prior (group)": "02138",
+        "ZIPCODE post (group)": "02138",
         "LU prior groups": "R2",
-        "Count of LU prior": 18
+        "Count of LU prior": 20
     },
     {
-        "ZIPCODE prior (group)": "02138",
+        "ZIPCODE post (group)": "02138",
         "LU prior groups": "R3",
         "Count of LU prior": 4
     },
     {
-        "ZIPCODE prior (group)": "02136",
+        "ZIPCODE post (group)": "02136",
         "LU prior groups": "R1",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02136",
+        "ZIPCODE post (group)": "02136",
         "LU prior groups": "RC",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02136",
+        "ZIPCODE post (group)": "02136",
         "LU prior groups": "A",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02136",
+        "ZIPCODE post (group)": "02136",
         "LU prior groups": "CM",
         "Count of LU prior": 6
     },
     {
-        "ZIPCODE prior (group)": "02136",
+        "ZIPCODE post (group)": "02136",
         "LU prior groups": "CD",
         "Count of LU prior": 20
     },
     {
-        "ZIPCODE prior (group)": "02136",
+        "ZIPCODE post (group)": "02136",
         "LU prior groups": "R2",
         "Count of LU prior": 22
     },
     {
-        "ZIPCODE prior (group)": "02136",
+        "ZIPCODE post (group)": "02136",
         "LU prior groups": "R3",
         "Count of LU prior": 8
     },
     {
-        "ZIPCODE prior (group)": "02132",
+        "ZIPCODE post (group)": "02132",
         "LU prior groups": "E",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02132",
+        "ZIPCODE post (group)": "02132",
         "LU prior groups": "RC",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02132",
+        "ZIPCODE post (group)": "02132",
         "LU prior groups": "A",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02132",
+        "ZIPCODE post (group)": "02132",
         "LU prior groups": "R4",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02132",
+        "ZIPCODE post (group)": "02132",
         "LU prior groups": "CM",
         "Count of LU prior": 6
     },
     {
-        "ZIPCODE prior (group)": "02132",
+        "ZIPCODE post (group)": "02132",
         "LU prior groups": "CD",
         "Count of LU prior": 11
     },
     {
-        "ZIPCODE prior (group)": "02132",
+        "ZIPCODE post (group)": "02132",
         "LU prior groups": "R2",
         "Count of LU prior": 18
     },
     {
-        "ZIPCODE prior (group)": "02132",
+        "ZIPCODE post (group)": "02132",
         "LU prior groups": "R3",
         "Count of LU prior": 4
     },
     {
-        "ZIPCODE prior (group)": "02131",
+        "ZIPCODE post (group)": "02131",
         "LU prior groups": "CC",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02131",
+        "ZIPCODE post (group)": "02131",
         "LU prior groups": "RL",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02131",
+        "ZIPCODE post (group)": "02131",
         "LU prior groups": "R1",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02131",
+        "ZIPCODE post (group)": "02131",
         "LU prior groups": "RC",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02131",
+        "ZIPCODE post (group)": "02131",
         "LU prior groups": "A",
         "Count of LU prior": 5
     },
     {
-        "ZIPCODE prior (group)": "02131",
+        "ZIPCODE post (group)": "02131",
         "LU prior groups": "R4",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02131",
+        "ZIPCODE post (group)": "02131",
         "LU prior groups": "CM",
         "Count of LU prior": 11
     },
     {
-        "ZIPCODE prior (group)": "02131",
+        "ZIPCODE post (group)": "02131",
         "LU prior groups": "CD",
         "Count of LU prior": 70
     },
     {
-        "ZIPCODE prior (group)": "02131",
+        "ZIPCODE post (group)": "02131",
         "LU prior groups": "R2",
         "Count of LU prior": 65
     },
     {
-        "ZIPCODE prior (group)": "02131",
+        "ZIPCODE post (group)": "02131",
         "LU prior groups": "R3",
         "Count of LU prior": 32
     },
     {
-        "ZIPCODE prior (group)": "02130",
+        "ZIPCODE post (group)": "02130",
         "LU prior groups": "E",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02130",
+        "ZIPCODE post (group)": "02130",
         "LU prior groups": "C",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02130",
+        "ZIPCODE post (group)": "02130",
         "LU prior groups": "CC",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02130",
+        "ZIPCODE post (group)": "02130",
         "LU prior groups": "RL",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02130",
+        "ZIPCODE post (group)": "02130",
         "LU prior groups": "R1",
         "Count of LU prior": 5
     },
     {
-        "ZIPCODE prior (group)": "02130",
+        "ZIPCODE post (group)": "02130",
         "LU prior groups": "RC",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02130",
+        "ZIPCODE post (group)": "02130",
         "LU prior groups": "A",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02130",
+        "ZIPCODE post (group)": "02130",
         "LU prior groups": "R4",
         "Count of LU prior": 5
     },
     {
-        "ZIPCODE prior (group)": "02130",
+        "ZIPCODE post (group)": "02130",
         "LU prior groups": "CM",
         "Count of LU prior": 16
     },
     {
-        "ZIPCODE prior (group)": "02130",
+        "ZIPCODE post (group)": "02130",
         "LU prior groups": "CD",
         "Count of LU prior": 59
     },
     {
-        "ZIPCODE prior (group)": "02130",
+        "ZIPCODE post (group)": "02130",
         "LU prior groups": "R2",
         "Count of LU prior": 43
     },
     {
-        "ZIPCODE prior (group)": "02130",
+        "ZIPCODE post (group)": "02130",
         "LU prior groups": "R3",
         "Count of LU prior": 63
     },
     {
-        "ZIPCODE prior (group)": "02129",
+        "ZIPCODE post (group)": "02129",
         "LU prior groups": "RL",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02129",
+        "ZIPCODE post (group)": "02129",
         "LU prior groups": "R1",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02129",
+        "ZIPCODE post (group)": "02129",
         "LU prior groups": "A",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02129",
+        "ZIPCODE post (group)": "02129",
         "LU prior groups": "R4",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02129",
+        "ZIPCODE post (group)": "02129",
         "LU prior groups": "CM",
         "Count of LU prior": 5
     },
     {
-        "ZIPCODE prior (group)": "02129",
+        "ZIPCODE post (group)": "02129",
         "LU prior groups": "CD",
         "Count of LU prior": 11
     },
     {
-        "ZIPCODE prior (group)": "02129",
+        "ZIPCODE post (group)": "02129",
         "LU prior groups": "R2",
         "Count of LU prior": 20
     },
     {
-        "ZIPCODE prior (group)": "02129",
+        "ZIPCODE post (group)": "02129",
         "LU prior groups": "R3",
-        "Count of LU prior": 25
+        "Count of LU prior": 26
     },
     {
-        "ZIPCODE prior (group)": "02128",
+        "ZIPCODE post (group)": "02128",
         "LU prior groups": "CC",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02128",
+        "ZIPCODE post (group)": "02128",
         "LU prior groups": "RL",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02128",
+        "ZIPCODE post (group)": "02128",
         "LU prior groups": "R1",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02128",
+        "ZIPCODE post (group)": "02128",
         "LU prior groups": "RC",
         "Count of LU prior": 5
     },
     {
-        "ZIPCODE prior (group)": "02128",
+        "ZIPCODE post (group)": "02128",
         "LU prior groups": "A",
         "Count of LU prior": 12
     },
     {
-        "ZIPCODE prior (group)": "02128",
+        "ZIPCODE post (group)": "02128",
         "LU prior groups": "R4",
         "Count of LU prior": 18
     },
     {
-        "ZIPCODE prior (group)": "02128",
+        "ZIPCODE post (group)": "02128",
         "LU prior groups": "CM",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02128",
+        "ZIPCODE post (group)": "02128",
         "LU prior groups": "CD",
         "Count of LU prior": 7
     },
     {
-        "ZIPCODE prior (group)": "02128",
+        "ZIPCODE post (group)": "02128",
         "LU prior groups": "R2",
         "Count of LU prior": 40
     },
     {
-        "ZIPCODE prior (group)": "02128",
+        "ZIPCODE post (group)": "02128",
         "LU prior groups": "R3",
         "Count of LU prior": 101
     },
     {
-        "ZIPCODE prior (group)": "02127",
+        "ZIPCODE post (group)": "02127",
         "LU prior groups": "E",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02127",
+        "ZIPCODE post (group)": "02127",
         "LU prior groups": "C",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02127",
+        "ZIPCODE post (group)": "02127",
         "LU prior groups": "RL",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02127",
+        "ZIPCODE post (group)": "02127",
         "LU prior groups": "R1",
         "Count of LU prior": 8
     },
     {
-        "ZIPCODE prior (group)": "02127",
+        "ZIPCODE post (group)": "02127",
         "LU prior groups": "RC",
         "Count of LU prior": 12
     },
     {
-        "ZIPCODE prior (group)": "02127",
+        "ZIPCODE post (group)": "02127",
         "LU prior groups": "A",
         "Count of LU prior": 15
     },
     {
-        "ZIPCODE prior (group)": "02127",
+        "ZIPCODE post (group)": "02127",
         "LU prior groups": "R4",
         "Count of LU prior": 15
     },
     {
-        "ZIPCODE prior (group)": "02127",
+        "ZIPCODE post (group)": "02127",
         "LU prior groups": "CM",
         "Count of LU prior": 18
     },
     {
-        "ZIPCODE prior (group)": "02127",
+        "ZIPCODE post (group)": "02127",
         "LU prior groups": "CD",
         "Count of LU prior": 36
     },
     {
-        "ZIPCODE prior (group)": "02127",
+        "ZIPCODE post (group)": "02127",
         "LU prior groups": "R2",
         "Count of LU prior": 53
     },
     {
-        "ZIPCODE prior (group)": "02127",
+        "ZIPCODE post (group)": "02127",
         "LU prior groups": "R3",
         "Count of LU prior": 55
     },
     {
-        "ZIPCODE prior (group)": "02126",
+        "ZIPCODE post (group)": "02126",
         "LU prior groups": "A",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02126",
+        "ZIPCODE post (group)": "02126",
         "LU prior groups": "R4",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02126",
+        "ZIPCODE post (group)": "02126",
         "LU prior groups": "CM",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02126",
+        "ZIPCODE post (group)": "02126",
         "LU prior groups": "CD",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02126",
+        "ZIPCODE post (group)": "02126",
         "LU prior groups": "R2",
         "Count of LU prior": 7
     },
     {
-        "ZIPCODE prior (group)": "02126",
+        "ZIPCODE post (group)": "02126",
         "LU prior groups": "R3",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02125",
+        "ZIPCODE post (group)": "02125",
         "LU prior groups": "RL",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02125",
+        "ZIPCODE post (group)": "02125",
         "LU prior groups": "A",
         "Count of LU prior": 4
     },
     {
-        "ZIPCODE prior (group)": "02125",
+        "ZIPCODE post (group)": "02125",
         "LU prior groups": "R4",
         "Count of LU prior": 4
     },
     {
-        "ZIPCODE prior (group)": "02125",
+        "ZIPCODE post (group)": "02125",
         "LU prior groups": "CM",
         "Count of LU prior": 8
     },
     {
-        "ZIPCODE prior (group)": "02125",
+        "ZIPCODE post (group)": "02125",
         "LU prior groups": "CD",
         "Count of LU prior": 16
     },
     {
-        "ZIPCODE prior (group)": "02125",
+        "ZIPCODE post (group)": "02125",
         "LU prior groups": "R2",
         "Count of LU prior": 17
     },
     {
-        "ZIPCODE prior (group)": "02125",
+        "ZIPCODE post (group)": "02125",
         "LU prior groups": "R3",
         "Count of LU prior": 53
     },
     {
-        "ZIPCODE prior (group)": "02124",
+        "ZIPCODE post (group)": "02124",
         "LU prior groups": "CL",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02124",
+        "ZIPCODE post (group)": "02124",
         "LU prior groups": "C",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02124",
+        "ZIPCODE post (group)": "02124",
         "LU prior groups": "CC",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02124",
+        "ZIPCODE post (group)": "02124",
         "LU prior groups": "RC",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02124",
+        "ZIPCODE post (group)": "02124",
         "LU prior groups": "A",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02124",
+        "ZIPCODE post (group)": "02124",
         "LU prior groups": "R4",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02124",
+        "ZIPCODE post (group)": "02124",
         "LU prior groups": "CM",
         "Count of LU prior": 7
     },
     {
-        "ZIPCODE prior (group)": "02124",
+        "ZIPCODE post (group)": "02124",
         "LU prior groups": "CD",
         "Count of LU prior": 12
     },
     {
-        "ZIPCODE prior (group)": "02124",
+        "ZIPCODE post (group)": "02124",
         "LU prior groups": "R2",
         "Count of LU prior": 29
     },
     {
-        "ZIPCODE prior (group)": "02124",
+        "ZIPCODE post (group)": "02124",
         "LU prior groups": "R3",
         "Count of LU prior": 28
     },
     {
-        "ZIPCODE prior (group)": "02122",
+        "ZIPCODE post (group)": "02122",
         "LU prior groups": "C",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02122",
+        "ZIPCODE post (group)": "02122",
         "LU prior groups": "RL",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02122",
+        "ZIPCODE post (group)": "02122",
         "LU prior groups": "R1",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02122",
+        "ZIPCODE post (group)": "02122",
         "LU prior groups": "R4",
         "Count of LU prior": 10
     },
     {
-        "ZIPCODE prior (group)": "02122",
+        "ZIPCODE post (group)": "02122",
         "LU prior groups": "CM",
         "Count of LU prior": 6
     },
     {
-        "ZIPCODE prior (group)": "02122",
+        "ZIPCODE post (group)": "02122",
         "LU prior groups": "CD",
         "Count of LU prior": 17
     },
     {
-        "ZIPCODE prior (group)": "02122",
+        "ZIPCODE post (group)": "02122",
         "LU prior groups": "R2",
         "Count of LU prior": 22
     },
     {
-        "ZIPCODE prior (group)": "02122",
+        "ZIPCODE post (group)": "02122",
         "LU prior groups": "R3",
         "Count of LU prior": 36
     },
     {
-        "ZIPCODE prior (group)": "02121",
+        "ZIPCODE post (group)": "02121",
         "LU prior groups": "A",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02121",
+        "ZIPCODE post (group)": "02121",
         "LU prior groups": "R4",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02121",
+        "ZIPCODE post (group)": "02121",
         "LU prior groups": "CM",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02121",
+        "ZIPCODE post (group)": "02121",
         "LU prior groups": "CD",
         "Count of LU prior": 5
     },
     {
-        "ZIPCODE prior (group)": "02121",
+        "ZIPCODE post (group)": "02121",
         "LU prior groups": "R2",
         "Count of LU prior": 6
     },
     {
-        "ZIPCODE prior (group)": "02121",
+        "ZIPCODE post (group)": "02121",
         "LU prior groups": "R3",
         "Count of LU prior": 16
     },
     {
-        "ZIPCODE prior (group)": "02120",
+        "ZIPCODE post (group)": "02120",
         "LU prior groups": "E",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02120",
+        "ZIPCODE post (group)": "02120",
         "LU prior groups": "CC",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02120",
+        "ZIPCODE post (group)": "02120",
         "LU prior groups": "RC",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02120",
+        "ZIPCODE post (group)": "02120",
         "LU prior groups": "A",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02120",
+        "ZIPCODE post (group)": "02120",
         "LU prior groups": "R4",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02120",
+        "ZIPCODE post (group)": "02120",
         "LU prior groups": "CD",
         "Count of LU prior": 13
     },
     {
-        "ZIPCODE prior (group)": "02119",
+        "ZIPCODE post (group)": "02119",
         "LU prior groups": "I",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02119",
+        "ZIPCODE post (group)": "02119",
         "LU prior groups": "RL",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02119",
+        "ZIPCODE post (group)": "02119",
         "LU prior groups": "R1",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02119",
+        "ZIPCODE post (group)": "02119",
         "LU prior groups": "RC",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02119",
+        "ZIPCODE post (group)": "02119",
         "LU prior groups": "A",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02119",
+        "ZIPCODE post (group)": "02119",
         "LU prior groups": "R4",
         "Count of LU prior": 4
     },
     {
-        "ZIPCODE prior (group)": "02119",
+        "ZIPCODE post (group)": "02119",
         "LU prior groups": "CM",
         "Count of LU prior": 5
     },
     {
-        "ZIPCODE prior (group)": "02119",
+        "ZIPCODE post (group)": "02119",
         "LU prior groups": "CD",
         "Count of LU prior": 20
     },
     {
-        "ZIPCODE prior (group)": "02119",
+        "ZIPCODE post (group)": "02119",
         "LU prior groups": "R2",
         "Count of LU prior": 12
     },
     {
-        "ZIPCODE prior (group)": "02119",
+        "ZIPCODE post (group)": "02119",
         "LU prior groups": "R3",
         "Count of LU prior": 17
     },
     {
-        "ZIPCODE prior (group)": "02118",
+        "ZIPCODE post (group)": "02118",
         "LU prior groups": "CC",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02118",
+        "ZIPCODE post (group)": "02118",
         "LU prior groups": "RC",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02118",
+        "ZIPCODE post (group)": "02118",
         "LU prior groups": "A",
-        "Count of LU prior": 2
+        "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02118",
+        "ZIPCODE post (group)": "02118",
         "LU prior groups": "R4",
         "Count of LU prior": 11
     },
     {
-        "ZIPCODE prior (group)": "02118",
+        "ZIPCODE post (group)": "02118",
         "LU prior groups": "CM",
         "Count of LU prior": 5
     },
     {
-        "ZIPCODE prior (group)": "02118",
+        "ZIPCODE post (group)": "02118",
         "LU prior groups": "CD",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02118",
+        "ZIPCODE post (group)": "02118",
         "LU prior groups": "R2",
         "Count of LU prior": 19
     },
     {
-        "ZIPCODE prior (group)": "02118",
+        "ZIPCODE post (group)": "02118",
         "LU prior groups": "R3",
         "Count of LU prior": 15
     },
     {
-        "ZIPCODE prior (group)": "02116",
+        "ZIPCODE post (group)": "02116",
         "LU prior groups": "C",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02116",
+        "ZIPCODE post (group)": "02116",
         "LU prior groups": "R1",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02116",
+        "ZIPCODE post (group)": "02116",
         "LU prior groups": "RC",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02116",
+        "ZIPCODE post (group)": "02116",
         "LU prior groups": "A",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02116",
+        "ZIPCODE post (group)": "02116",
         "LU prior groups": "R4",
         "Count of LU prior": 6
     },
     {
-        "ZIPCODE prior (group)": "02116",
+        "ZIPCODE post (group)": "02116",
         "LU prior groups": "CM",
         "Count of LU prior": 5
     },
     {
-        "ZIPCODE prior (group)": "02116",
+        "ZIPCODE post (group)": "02116",
         "LU prior groups": "CD",
         "Count of LU prior": 7
     },
     {
-        "ZIPCODE prior (group)": "02116",
+        "ZIPCODE post (group)": "02116",
         "LU prior groups": "R2",
-        "Count of LU prior": 8
+        "Count of LU prior": 7
     },
     {
-        "ZIPCODE prior (group)": "02116",
+        "ZIPCODE post (group)": "02116",
         "LU prior groups": "R3",
         "Count of LU prior": 9
     },
     {
-        "ZIPCODE prior (group)": "02115",
+        "ZIPCODE post (group)": "02115",
         "LU prior groups": "CC",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02115",
+        "ZIPCODE post (group)": "02115",
         "LU prior groups": "RL",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02115",
+        "ZIPCODE post (group)": "02115",
         "LU prior groups": "R4",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02115",
+        "ZIPCODE post (group)": "02115",
         "LU prior groups": "CM",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02115",
+        "ZIPCODE post (group)": "02115",
         "LU prior groups": "R2",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02115",
+        "ZIPCODE post (group)": "02115",
         "LU prior groups": "R3",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02114",
+        "ZIPCODE post (group)": "02114",
         "LU prior groups": "R2",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02113",
+        "ZIPCODE post (group)": "02113",
         "LU prior groups": "CC",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02113",
+        "ZIPCODE post (group)": "02113",
         "LU prior groups": "R4",
         "Count of LU prior": 5
     },
     {
-        "ZIPCODE prior (group)": "02113",
+        "ZIPCODE post (group)": "02113",
         "LU prior groups": "CM",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02113",
+        "ZIPCODE post (group)": "02113",
         "LU prior groups": "CD",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02113",
+        "ZIPCODE post (group)": "02113",
         "LU prior groups": "R2",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02113",
+        "ZIPCODE post (group)": "02113",
         "LU prior groups": "R3",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02111",
+        "ZIPCODE post (group)": "02111",
         "LU prior groups": "RC",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02109",
+        "ZIPCODE post (group)": "02110",
+        "LU prior groups": "R2",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE post (group)": "02110",
+        "LU prior groups": "R3",
+        "Count of LU prior": 1
+    },
+    {
+        "ZIPCODE post (group)": "02109",
         "LU prior groups": "C",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02109",
+        "ZIPCODE post (group)": "02109",
         "LU prior groups": "CM",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02109",
+        "ZIPCODE post (group)": "02109",
         "LU prior groups": "R2",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02108",
+        "ZIPCODE post (group)": "02108",
         "LU prior groups": "C",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02108",
+        "ZIPCODE post (group)": "02108",
         "LU prior groups": "CC",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02108",
+        "ZIPCODE post (group)": "02108",
         "LU prior groups": "R1",
         "Count of LU prior": 1
     },
     {
-        "ZIPCODE prior (group)": "02108",
+        "ZIPCODE post (group)": "02108",
         "LU prior groups": "A",
         "Count of LU prior": 3
     },
     {
-        "ZIPCODE prior (group)": "02108",
+        "ZIPCODE post (group)": "02108",
         "LU prior groups": "R4",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02108",
+        "ZIPCODE post (group)": "02108",
         "LU prior groups": "R2",
         "Count of LU prior": 2
     },
     {
-        "ZIPCODE prior (group)": "02108",
+        "ZIPCODE post (group)": "02108",
         "LU prior groups": "R3",
         "Count of LU prior": 6
-    },
-    {
-        "ZIPCODE prior (group)": "01945",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "01940",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "01890",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "01880",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "01845",
-        "LU prior groups": "A",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "01824",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "01760",
-        "LU prior groups": "R3",
-        "Count of LU prior": 1
-    },
-    {
-        "ZIPCODE prior (group)": "01742",
-        "LU prior groups": "R2",
-        "Count of LU prior": 1
     }
 ]
