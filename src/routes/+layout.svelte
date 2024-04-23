@@ -2,11 +2,11 @@
     import { page } from '$app/stores';
 
     let pages = [
-        // { url: "./", title: "Home" },
+        { url: "./", title: "Home" },
         // { url: "./bar_graph", title: "Bar Graph" },
         // { url: "./pie_chart", title: "Pie Chart" },
         // { url: "./line_chart", title: "Line Chart" },
-        // { url: "./bubblechart", title: "Bubble Chart" },
+        { url: "./map", title: "Map" },
         // add the rest of your pages here
     ];
 
