@@ -7,115 +7,21 @@
 	import Linechart from "$lib/Linechart.svelte";
 	import Piechart from "$lib/Piechart.svelte";
 
-	let value;
+	let valueBarGraph, valueBubbleChart, valueLineChart, valuePieChart;
 	const bulletpoints = ["demo a", "demo b", "demo c", "demo d", "demo e", "demo f", "demo g", "demo h", "demo i"];
     let colors = d3.scaleOrdinal(d3.schemeTableau10);
-
 </script>
 
 <svelte:head>
 	<title>Visualisation</title>
 </svelte:head>
 
-<!-- BARGRAPH -->
-<Scrolly bind:progress={ value }>
-
-	{#each bulletpoints as text, i}
-		<div class="step" class:active={value === i}>
-			<p>
-				{text} here is where we put information about the Bargraph content. the bar graph should stay static on one side of the pages 
-				and on the other there will be text or other interactives that can be put in this scrolly block. This is just filler text so that 
-				we can see what the scrolly telling aspect will feel like.
-			</p>
-		</div>
-	{/each}
-
-	<svelte:fragment slot="viz">
-		<div>
-			<Bargraph class="graph-container"/>
-		</div>
-
-		<p>
-			this is the Static text or animation or interactive. we should probably put the bargraph here, as is suggested by the commented out line above.
-		</p>
-
-	</svelte:fragment>
-
-</Scrolly>
-
-<!-- BUBBLE CHART -->
-<Scrolly bind:progress={ value }>
-
-	{#each bulletpoints as text, i}
-		<div class="step" class:active={value === i}>
-			<p>
-				{text} here is where we put information about the Bargraph content. the bar graph should stay static on one side of the pages 
-				and on the other there will be text or other interactives that can be put in this scrolly block. This is just filler text so that 
-				we can see what the scrolly telling aspect will feel like.
-			</p>
-		</div>
-	{/each}
-
-	<svelte:fragment slot="viz">
-		<!-- <Bubblechart/> -->
-		<p>
-			this is the Static text or animation or interactive. we should probably put the bargraph here, as is suggested by the commented out line above.
-		</p>
-
-	</svelte:fragment>
-
-</Scrolly>
-
-<!-- LINE CHART -->
-<Scrolly bind:progress={ value }>
-
-	{#each bulletpoints as text, i}
-		<div class="step" class:active={value === i}>
-			<p>
-				{text} here is where we put information about the Bargraph content. the bar graph should stay static on one side of the pages 
-				and on the other there will be text or other interactives that can be put in this scrolly block. This is just filler text so that 
-				we can see what the scrolly telling aspect will feel like.
-			</p>
-		</div>
-	{/each}
-
-	<svelte:fragment slot="viz">
-		<!-- <Linechart/> -->
-		<p>
-			this is the Static text or animation or interactive. we should probably put the bargraph here, as is suggested by the commented out line above.
-		</p>
-
-	</svelte:fragment>
-
-</Scrolly>
-
-
-<!-- PIECHART -->
-<Scrolly bind:progress={ value }>
-
-	{#each bulletpoints as text, i}
-		<div class="step" class:active={value === i}>
-			<p>
-				{text} here is where we put information about the Bargraph content. the bar graph should stay static on one side of the pages 
-				and on the other there will be text or other interactives that can be put in this scrolly block. This is just filler text so that 
-				we can see what the scrolly telling aspect will feel like.
-			</p>
-		</div>
-	{/each}
-
-	<svelte:fragment slot="viz">
-		<!-- <Piechart/> -->
-		<p>
-			this is the Static text or animation or interactive. we should probably put the bargraph here, as is suggested by the commented out line above.
-		</p>
-
-	</svelte:fragment>
-
-</Scrolly>
-
+<!-- Separate sections with unique class for each type of chart -->
 <style>
-
-    :global(body) {
+    .scrolly-container {
+        margin-bottom: 2rem; /* Add space between each Scrolly component */
+    }
+	:global(body) {
         max-width: min(120ch, 80vw);
     }
 
@@ -147,6 +53,78 @@
 		width: 100%; /* Set the width of the graph to 100% of its container */
 		height: 100%; /* Set the height of the graph to 100% of its container */
 	}
-
-
 </style>
+
+<!-- BARGRAPH -->
+<div class="scrolly-container">
+	<Scrolly bind:progress={ valueBarGraph }>
+		{#each bulletpoints as text, i}
+			<div class="step" class:active={valueBarGraph === i}>
+				<p>{text}</p>
+			</div>
+		{/each}
+
+		<svelte:fragment slot="viz">
+			<Bargraph class="graph-container"/>
+		</svelte:fragment>
+	</Scrolly>
+</div>
+
+<!-- PIECHART -->
+<div class="scrolly-container">
+	<Scrolly bind:progress={ valueBarGraph }>
+		{#each bulletpoints as text, i}
+			<div class="step" class:active={valueBarGraph === i}>
+				<p>{text}</p>
+			</div>
+		{/each}
+
+		<svelte:fragment slot="viz">
+			<Piechart class="graph-container"/>
+		</svelte:fragment>
+	</Scrolly>
+</div>
+
+<!-- LINECHART -->
+<div class="scrolly-container">
+	<Scrolly bind:progress={ valueBarGraph }>
+		{#each bulletpoints as text, i}
+			<div class="step" class:active={valueBarGraph === i}>
+				<p>{text}</p>
+			</div>
+		{/each}
+
+		<svelte:fragment slot="viz">
+			<Linechart class="graph-container"/>
+		</svelte:fragment>
+	</Scrolly>
+</div>
+
+<!-- BUBBLECHART -->
+<div class="scrolly-container">
+	<Scrolly bind:progress={ valueBarGraph }>
+		{#each bulletpoints as text, i}
+			<div class="step" class:active={valueBarGraph === i}>
+				<p>{text}</p>
+			</div>
+		{/each}
+
+		<svelte:fragment slot="viz">
+			<Bubblechart class="graph-container"/>
+		</svelte:fragment>
+	</Scrolly>
+</div>
+
+<!-- Repeat for other charts with unique value bindings -->
+
+<Scrolly bind:progress={ valueBubbleChart }>
+	<!-- Content similar to Bargraph -->
+</Scrolly>
+
+<Scrolly bind:progress={ valueLineChart }>
+	<!-- Content similar to Bargraph -->
+</Scrolly>
+
+<Scrolly bind:progress={ valuePieChart }>
+	<!-- Content similar to Bargraph -->
+</Scrolly>
