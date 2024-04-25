@@ -5,7 +5,7 @@
     import * as d3 from 'd3';
     export let hLevel = 2;
 
-    let query = "";
+    export let query = "";
 
     let filteredConversionData;
     $: filteredConversionData = data.filter(d => {
@@ -68,29 +68,23 @@
             }
             groupedZipcodes[firstFiveDigits].push(zip.substring(0, 5));
         });
-        // console.log("in combineZipcodes", groupedZipcodes);
         return groupedZipcodes;
     }
     
     $: {
         zipcodes = filteredConversionData.map(item => item.ZIPCODE);
         uniqueZipcodes = new Set(Object.values(combineZipcodes(zipcodes)).flat());
-        // console.log("uniqueZipcodes", uniqueZipcodes);
     }
 </script>
-
-<h1>Year Converted Property was Built</h1>
-<BarChart dataArray={yearBuiltDataArray} />
-
-<input type="search" bind:value={query}
-    aria-label="Search projects" placeholder="🔍 Enter Zipcode…" 
-/>
 
 <div class="about">
     {#each uniqueZipcodes as z}
         <p>{z}</p>
     {/each}
 </div>
+
+<h1>Year Converted Property was Built</h1>
+<BarChart dataArray={yearBuiltDataArray} />
 
 <style>
     .about {

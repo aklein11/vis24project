@@ -2,7 +2,7 @@
     import pie_data from '$lib/pie_data.json';
     import Pie from '$lib/Pie.svelte';
     import * as d3 from 'd3';
-    let query = "";
+    export let query = "";
 
     let filteredData;
     $: filteredData = pie_data.filter(d => {
@@ -34,14 +34,3 @@
 </script>
 
 <Pie data={pieData} bind:selectedIndex={selectedZipcodeIndex} />
-
-
-<input type="search" bind:value={query}
-    aria-label="Search projects" placeholder="🔍 Search projects…" 
-/>
-
-<div class="about">
-    {#each filteredData as f}
-        <p>{f["ZIPCODE post (group)"]}</p>
-    {/each}
-</div>

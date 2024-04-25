@@ -2,7 +2,8 @@
     import { onMount } from 'svelte';
     import * as d3 from 'd3';
   
-    let zipcode = '';
+    // let zipcode = '';
+    export let query = "";
    
 
     let svg; // Make the SVG element accessible outside of the drawChart function.
@@ -111,102 +112,9 @@
                 .attr("font-size", "10px")  // Set the font size smaller
                 .text(item.label);
         });
+
+        drawChart(query);
     }
-
-    // async function aggregateAndDrawInitialChart() {
-    //     // Load the entire dataset
-    //     const data = await d3.csv("complaints_year_zipcode.csv");
-
-    //     // Clean up any hidden characters in the headers
-    //     data.columns = data.columns.map(column => column.trim().replace(/[^\x20-\x7E]+/g, ""));
-
-    //     // Aggregate data for all zip codes
-    //     let aggregateYearlyData = {};
-
-    //     data.forEach(d => {
-    //         const year = d['Date (Years)']; // Or parse as needed
-    //         if (!aggregateYearlyData[year]) {
-    //             aggregateYearlyData[year] = { count: 0, discounted: 0 };
-    //         }
-    //         aggregateYearlyData[year].count += +d['Number of Complaints Filed Per Year'];
-    //         aggregateYearlyData[year].discounted += +d['Number of Distinct Condominium Buildings the Complaints are Filed About'];
-    //     });
-
-    //     // Convert the aggregated data into an array suitable for D3.js
-    //     let plotData = Object.keys(aggregateYearlyData).map(year => ({
-    //         year: year,
-    //         count: aggregateYearlyData[year].count,
-    //         discounted: aggregateYearlyData[year].discounted
-    //     }));
-
-    //     // Now draw the chart with the aggregated data
-    //     drawChartInital(plotData);
-    // }
-
-    // async function drawChartInital(plotData) {
-
-    //     // Define the lines using the D3 line generator
-    //     const lineCount = d3.line()
-    //     .x(d => x(d.year) + x.bandwidth() / 2)
-    //     .y(d => y(d.count));
-
-    //     const lineDiscounted = d3.line()
-    //     .x(d => x(d.year) + x.bandwidth() / 2)
-    //     .y(d => y(d.discounted));
-
-    //     // Update X axis
-    //     x.domain(plotData.map(d => d.year));
-    //     svg.select(".x-axis") // Select the existing x-axis
-    //       .transition()
-    //       .duration(750)
-    //       .call(d3.axisBottom(x))
-    //       .selectAll("text")
-    //       .attr("transform", "translate(-10,0)rotate(-45)")
-    //       .style("text-anchor", "end");
-
-    //     // Update Y axis
-    //     y.domain([0, d3.max(plotData, d => Math.max(d.count, d.discounted))]);
-    //     svg.select(".y-axis") // Select the existing y-axis
-    //       .transition()
-    //       .duration(750)
-    //       .call(d3.axisLeft(y));
-
-
-    //     // Select the paths for count and discounted lines
-    //     let pathCount = svg.selectAll(".line-count").data([plotData], d => d.year);
-    //     let pathDiscounted = svg.selectAll(".line-discounted").data([plotData], d => d.year);
-
-    //     // Update the paths with a transition
-    //     pathCount.transition()
-    //         .duration(750)
-    //         .attr("d", lineCount(plotData)); // Pass the new data to the line generator
-
-    //     pathDiscounted.transition()
-    //         .duration(750)
-    //         .attr("d", lineDiscounted(plotData)); // Pass the new data to the line generator
-
-    //     // If the pathCount or pathDiscounted selections are empty, it means we don't have any paths yet. We need to create them:
-    //     if (pathCount.empty()) {
-    //         svg.append("path")
-    //             .data([plotData])
-    //             .attr("class", "line-count")
-    //             .attr("fill", "none")
-    //             .attr("stroke", "steelblue")
-    //             .attr("stroke-width", 1.5)
-    //             .attr("d", lineCount);
-    //     }
-
-    //     if (pathDiscounted.empty()) {
-    //         svg.append("path")
-    //             .data([plotData])
-    //             .attr("class", "line-discounted")
-    //             .attr("fill", "none")
-    //             .attr("stroke", "red")
-    //             .attr("stroke-width", 1.5)
-    //             .attr("d", lineDiscounted);
-    //     }
-
-    // }
 
 
     async function drawChart(zipcode) {
@@ -217,7 +125,12 @@
         data.columns = data.columns.map(column => column.trim().replace(/[^\x20-\x7E]+/g, ""));
 
         // Filter data based on the input zipcode
-        const filteredData = data.filter(d => d['Zip Code'] === zipcode);
+        const filteredData = data.filter(d => {
+            if(zipcode) {
+                return d['Zip Code'] === zipcode
+            }
+            return true;
+            });
 
         // Process data to get yearly counts
         let yearlyData = {};
@@ -300,16 +213,8 @@
 
     }
 
-    // aggregateAndDrawInitialChart();
-
-    // Then call drawChart when needed (e.g., on zipcode input)
-    function updateChart() {
-        // No need to get the zipcode from the DOM, use the Svelte bound variable directly
-        if (zipcode) {
-            drawChart(zipcode);
-        } else {
-            alert("Please enter a zipcode.");
-        }
+    $: if (query) {
+        drawChart(query);
     }
 
     onMount(() => {
@@ -318,6 +223,4 @@
   });
 </script>
 
-<input type="text" bind:value={zipcode} placeholder="Enter Zipcode">
-<button on:click={updateChart}>Update Chart</button>
 <svg id="linechart-svg" width="960" height="500"></svg>

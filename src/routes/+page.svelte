@@ -10,6 +10,7 @@
 	let valueBarGraph, valueBubbleChart, valueLineChart, valuePieChart;
 	const bulletpoints = ["demo a", "demo b", "demo c", "demo d", "demo e", "demo f", "demo g", "demo h", "demo i"];
     let colors = d3.scaleOrdinal(d3.schemeTableau10);
+	let query = "";
 </script>
 
 <svelte:head>
@@ -55,12 +56,15 @@
 	}
 </style>
 
+<input type="search" bind:value={query}
+    aria-label="Search projects" placeholder="🔍 Enter Zipcode…" 
+/>
 
-<Bargraph class="graph-container"/>
 
+<Bargraph class="graph-container" query={ query }/>
 
-<Linechart class="graph-container"/>
+<Piechart class="graph-container" query={ query }/>
 
-<Bubblechart class="graph-container"/>
+<Linechart class="graph-container" query={ query }/>
 
-<Piechart class="graph-container"/>
+<Bubblechart class="graph-container" query={ query }/>

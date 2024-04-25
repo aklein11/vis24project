@@ -2,7 +2,8 @@
     import { onMount } from 'svelte';
     import * as d3 from 'd3';
   
-    let zipcode = '';
+    // let zipcode = '';
+    export let query = "";
   
     let svg;
     let radiusScale; // For bubble sizes
@@ -18,7 +19,12 @@
       data.columns = data.columns.map(column => column.trim().replace(/[^\x20-\x7E]+/g, ""));
   
       // Filter data based on the input zipcode
-      const filteredData = data.filter(d => d["Zip Code"] === zipcode);
+      const filteredData = data.filter(d => {
+        if (zipcode) {
+          return d["Zip Code"] === zipcode;
+        }
+        return true;
+        });
       
       // Create a pack layout
       const pack = d3.pack()
@@ -78,7 +84,7 @@
     //     .text(d => d);
     }
   
-    function updateChart() {
+    function updateChart(zipcode) {
         if (zipcode) {
             // Load data
             d3.csv("complaints_count_zipcode.csv").then(data => {
@@ -86,7 +92,12 @@
             data.columns = data.columns.map(column => column.trim().replace(/[^\x20-\x7E]+/g, ""));
             
             // Filter data based on the input zipcode
-            const filteredData = data.filter(d => d["Zip Code"] === zipcode);
+            const filteredData = data.filter(d => {
+              if (zipcode) {
+                return d["Zip Code"] === zipcode;
+              }
+              return true;
+            });
             
             // Apply the pack layout to the filtered data
             const root = d3.hierarchy({ children: filteredData })
@@ -136,15 +147,17 @@
             alert('Please enter a zipcode.');
         }
     }
+
+    $: if (query) {
+      updateChart(query);
+    }
   
     onMount(() => {
-      drawChart('02108'); // Initially draw bubbles for a default zipcode
+      drawChart(query); // Initially draw bubbles for a default zipcode
     });
 </script>
 
 <h1>Complaints by Zipcode</h1>
-<input type="text" bind:value={zipcode} placeholder="Enter zipcode">
-<button on:click={updateChart}>Update Chart</button>
 <svg id="bubblechart-svg"></svg>
 
 <div class="legend"></div>
