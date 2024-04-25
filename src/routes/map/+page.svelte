@@ -1,12 +1,11 @@
 <script>
     import { onMount } from 'svelte';
-    import { writable } from 'svelte/store';
     import mapboxgl from 'mapbox-gl';
 
     mapboxgl.accessToken = 'pk.eyJ1Ijoic2VqYWxnIiwiYSI6ImNsdmN0Y21yZTBubmgydmxmNDlmbHVuMXAifQ.G5QWdSQskLQRC0Dw0nYLVw';
 
     let map;
-    var currentFeatureId = null;
+    var currentZipcode = null;
 
     onMount(() => {
         map = new mapboxgl.Map({
@@ -42,7 +41,7 @@
             });
         }); 
 
-        console.log(currentFeatureId);
+        console.log(currentZipcode);
         
         map.on('click', 'polygons', (e) => {
             map.getCanvas().style.cursor = 'pointer';
@@ -50,10 +49,10 @@
             let featureId = e.features[0].id;
 
             
-            if (currentFeatureId !== null && currentFeatureId !== featureId) {
+            if (currentZipcode !== null && currentZipcode !== featureId) {
                 map.setFeatureState({
                     source: 'zip-codes',
-                    id: currentFeatureId,
+                    id: currentZipcode,
                 }, 
                 {
                     clicked: false
@@ -68,7 +67,7 @@
                 clicked: true
             });
 
-            currentFeatureId = featureId;
+            currentZipcode = featureId;
         });
     });
 </script>
