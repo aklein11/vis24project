@@ -34,14 +34,13 @@
 <div class="container">
     <svg id="piechart-svg" viewBox="-50 -50 100 100">
         {#each arcs as arc, i}
-            <path d={arc} fill={colors(arc.id ?? i)} 
-                class:selected={selectedIndex === i}
-                on:click={e => toggleWedge(i, e)} 
-                on:keyup={e => toggleWedge(i, e)}  
-                transition:arc
-                tabindex="0" role="button" aria-label="pie wedge"
-                style="--start-angle: { arcData[i]?.startAngle }rad;
-	                    --end-angle: { arcData[i]?.endAngle }rad;"/>
+        <path d={arc} fill={colors(i)} 
+            class:selected={selectedIndex === i}
+            on:click={e => toggleWedge(i, e)} 
+            on:keyup={e => toggleWedge(i, e)}  
+            tabindex="0" role="button" aria-label="pie wedge"
+            style="--start-angle: { arcData[i]?.startAngle }rad;
+                    --end-angle: { arcData[i]?.endAngle }rad;"/>
         {/each}
     </svg>
 
@@ -111,7 +110,6 @@
 	           rotate(calc(-1 * var(--mid-angle)));
 
         transition: 300ms;
-        transition-property: transform, opacity, fill;
         outline: none;
         --angle: calc(var(--end-angle) - var(--start-angle));
 	    --mid-angle: calc(var(--start-angle) + var(--angle) / 2);
