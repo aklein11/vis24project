@@ -6,6 +6,7 @@
 
     let map;
     var currentZipcode = null;
+    export let zipcode = null;
 
     onMount(() => {
         map = new mapboxgl.Map({
@@ -40,8 +41,6 @@
                 },
             });
         }); 
-
-        console.log(currentZipcode);
         
         map.on('click', 'polygons', (e) => {
             map.getCanvas().style.cursor = 'pointer';
@@ -68,7 +67,9 @@
             });
 
             currentZipcode = featureId;
+            zipcode = '0' + currentZipcode.toString();
         });
+
     });
 </script>
 

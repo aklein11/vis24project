@@ -6,11 +6,13 @@
 	import Bubblechart from "$lib/Bubblechart.svelte";
 	import Linechart from "$lib/Linechart.svelte";
 	import Piechart from "$lib/Piechart.svelte";
+    import Map from "$lib/Mapchoice.svelte";
+    import { writable } from 'svelte/store';
 
 	let valueBarGraph, valueBubbleChart, valueLineChart, valuePieChart;
 	const bulletpoints = ["demo a", "demo b", "demo c", "demo d", "demo e", "demo f", "demo g", "demo h", "demo i"];
     let colors = d3.scaleOrdinal(d3.schemeTableau10);
-	let query = "";
+    let zipcode = writable(''); 
 </script>
 
 <svelte:head>
@@ -56,15 +58,12 @@
 	}
 </style>
 
-<input type="search" bind:value={query}
-    aria-label="Search projects" placeholder="🔍 Enter Zipcode…" 
-/>
+<Map class="graph-container" bind:zipcode={ $zipcode }/>
 
+<Bargraph class="graph-container" query={ $zipcode }/>
 
-<Bargraph class="graph-container" query={ query }/>
+<Piechart class="graph-container" query={ $zipcode }/>
 
-<Piechart class="graph-container" query={ query }/>
+<Linechart class="graph-container" query={ $zipcode }/>
 
-<Linechart class="graph-container" query={ query }/>
-
-<Bubblechart class="graph-container" query={ query }/>
+<Bubblechart class="graph-container" query={ $zipcode }/>

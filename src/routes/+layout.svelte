@@ -6,7 +6,7 @@
         // { url: "./bar_graph", title: "Bar Graph" },
         // { url: "./pie_chart", title: "Pie Chart" },
         // { url: "./line_chart", title: "Line Chart" },
-        { url: "./map", title: "Map" },
+        // { url: "./map", title: "Map" },
         // add the rest of your pages here
     ];
 
