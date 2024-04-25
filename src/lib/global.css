@@ -1,0 +1,77 @@
+body {
+	font: 100%/1.5 system-ui, sans-serif;
+	display: flex;
+	flex-flow: column;
+	max-width: 80em;
+	min-height: 100vh;
+	box-sizing: border-box;
+	margin: auto;
+	padding: 1em;
+}
+
+#map {
+	flex: 1;
+}
+
+#map svg {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    fill-opacity: 60%;
+    stroke: white;
+}
+
+#map circle, .legend > div {
+    --color-departures: steelblue;
+    --color-arrivals: darkorange;
+    --color: color-mix(
+        in oklch,
+        var(--color-departures) calc(100% * var(--departure-ratio)),
+        var(--color-arrivals)
+    );
+}
+
+#map circle {
+    pointer-events: auto;
+    fill: var(--color);
+}
+
+.legend {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 20px;
+}
+
+.legend > div {
+    flex-grow: 1;
+    text-align: center;
+    padding: 5px 10px;
+    color: white; /* Ensures text is visible on all backgrounds */
+    background-color: var(--color);
+}
+
+label {
+    margin-left: auto;
+    display: block;
+    width: 80%;
+}
+
+/* Ensuring that all child elements of the label are displayed as block */
+label > * {
+    display: block; /* This makes each child (input, time, em) a block, stacking them vertically */
+    width: 100%; /* Optional: ensures they take up full width of the label */
+    margin-top: 5px; /* Adds a little space between each element */
+}
+
+header {
+    display: flex;
+    gap: 1em;
+    align-items: baseline;
+}
+
+/* label {
+    margin-left: auto;
+    display: block;
+} */
