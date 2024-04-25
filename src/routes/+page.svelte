@@ -55,76 +55,12 @@
 	}
 </style>
 
-<!-- BARGRAPH -->
-<div class="scrolly-container">
-	<Scrolly bind:progress={ valueBarGraph }>
-		{#each bulletpoints as text, i}
-			<div class="step" class:active={valueBarGraph === i}>
-				<p>{text}</p>
-			</div>
-		{/each}
 
-		<svelte:fragment slot="viz">
-			<Bargraph class="graph-container"/>
-		</svelte:fragment>
-	</Scrolly>
-</div>
+<Bargraph class="graph-container"/>
 
-<!-- PIECHART -->
-<div class="scrolly-container">
-	<Scrolly bind:progress={ valueBarGraph }>
-		{#each bulletpoints as text, i}
-			<div class="step" class:active={valueBarGraph === i}>
-				<p>{text}</p>
-			</div>
-		{/each}
 
-		<svelte:fragment slot="viz">
-			<Piechart class="graph-container"/>
-		</svelte:fragment>
-	</Scrolly>
-</div>
+<Linechart class="graph-container"/>
 
-<!-- LINECHART -->
-<div class="scrolly-container">
-	<Scrolly bind:progress={ valueBarGraph }>
-		{#each bulletpoints as text, i}
-			<div class="step" class:active={valueBarGraph === i}>
-				<p>{text}</p>
-			</div>
-		{/each}
+<Bubblechart class="graph-container"/>
 
-		<svelte:fragment slot="viz">
-			<Linechart class="graph-container"/>
-		</svelte:fragment>
-	</Scrolly>
-</div>
-
-<!-- BUBBLECHART -->
-<div class="scrolly-container">
-	<Scrolly bind:progress={ valueBarGraph }>
-		{#each bulletpoints as text, i}
-			<div class="step" class:active={valueBarGraph === i}>
-				<p>{text}</p>
-			</div>
-		{/each}
-
-		<svelte:fragment slot="viz">
-			<Bubblechart class="graph-container"/>
-		</svelte:fragment>
-	</Scrolly>
-</div>
-
-<!-- Repeat for other charts with unique value bindings -->
-
-<Scrolly bind:progress={ valueBubbleChart }>
-	<!-- Content similar to Bargraph -->
-</Scrolly>
-
-<Scrolly bind:progress={ valueLineChart }>
-	<!-- Content similar to Bargraph -->
-</Scrolly>
-
-<Scrolly bind:progress={ valuePieChart }>
-	<!-- Content similar to Bargraph -->
-</Scrolly>
+<Piechart class="graph-container"/>

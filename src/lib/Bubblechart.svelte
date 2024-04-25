@@ -32,7 +32,8 @@
       const packedData = pack(root).descendants();
 
       // Initialize the SVG container
-      svg = d3.select('svg')
+      // svg = d3.select('svg')
+      svg = d3.select('#bubblechart-svg')
         .attr('width', width)
         .attr('height', height)
         .append('g')
@@ -144,7 +145,7 @@
 <h1>Complaints by Zipcode</h1>
 <input type="text" bind:value={zipcode} placeholder="Enter zipcode">
 <button on:click={updateChart}>Update Chart</button>
-<svg></svg>
+<svg id="bubblechart-svg"></svg>
 
 <div class="legend"></div>
 

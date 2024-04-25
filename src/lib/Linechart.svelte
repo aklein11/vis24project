@@ -19,7 +19,7 @@
             height = 500 - margin.top - margin.bottom;
 
         // Append the svg object to the body of the page
-        svg = d3.select("svg")
+        svg = d3.select("#linechart-svg")
             .attr("viewBox", `0 0 ${outerWidth} ${height + margin.top + margin.bottom}`)
             .append("g")
             .attr("transform", `translate(${margin.left},${margin.top})`);
@@ -320,4 +320,4 @@
 
 <input type="text" bind:value={zipcode} placeholder="Enter Zipcode">
 <button on:click={updateChart}>Update Chart</button>
-<svg width="960" height="500"></svg>
+<svg id="linechart-svg" width="960" height="500"></svg>

@@ -38,7 +38,7 @@
 	});
 </script>
 
-<svg width={width + margin.left + margin.right} height={height + margin.top + margin.bottom}>
+<svg id="barchart-svg" width={width + margin.left + margin.right} height={height + margin.top + margin.bottom}>
 	<g transform={`translate(${margin.left},${margin.top})`}>
 		{#each dataArray as d, i (d.year)}
 			<rect class="bar"
