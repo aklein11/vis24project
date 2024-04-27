@@ -32,12 +32,14 @@ declare module '$env/static/private' {
 	export const INIT_CWD: string;
 	export const TERM: string;
 	export const SHELL: string;
+	export const npm_config_metrics_registry: string;
 	export const HOMEBREW_REPOSITORY: string;
 	export const TMPDIR: string;
 	export const npm_config_global_prefix: string;
 	export const CONDA_SHLVL: string;
 	export const TERM_PROGRAM_VERSION: string;
 	export const CONDA_PROMPT_MODIFIER: string;
+	export const GSETTINGS_SCHEMA_DIR_CONDA_BACKUP: string;
 	export const ZDOTDIR: string;
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
 	export const MallocNanoZone: string;
@@ -45,6 +47,7 @@ declare module '$env/static/private' {
 	export const npm_config_noproxy: string;
 	export const npm_config_local_prefix: string;
 	export const USER: string;
+	export const OPENAI_API_KEY: string;
 	export const COMMAND_MODE: string;
 	export const npm_config_globalconfig: string;
 	export const CONDA_EXE: string;
@@ -53,6 +56,7 @@ declare module '$env/static/private' {
 	export const npm_execpath: string;
 	export const _CE_CONDA: string;
 	export const PATH: string;
+	export const GSETTINGS_SCHEMA_DIR: string;
 	export const npm_package_json: string;
 	export const _: string;
 	export const npm_config_userconfig: string;
@@ -66,7 +70,6 @@ declare module '$env/static/private' {
 	export const EDITOR: string;
 	export const npm_package_name: string;
 	export const LANG: string;
-	export const npm_config_npm_version: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const XPC_FLAGS: string;
 	export const npm_config_node_gyp: string;
@@ -130,12 +133,14 @@ declare module '$env/dynamic/private' {
 		INIT_CWD: string;
 		TERM: string;
 		SHELL: string;
+		npm_config_metrics_registry: string;
 		HOMEBREW_REPOSITORY: string;
 		TMPDIR: string;
 		npm_config_global_prefix: string;
 		CONDA_SHLVL: string;
 		TERM_PROGRAM_VERSION: string;
 		CONDA_PROMPT_MODIFIER: string;
+		GSETTINGS_SCHEMA_DIR_CONDA_BACKUP: string;
 		ZDOTDIR: string;
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
 		MallocNanoZone: string;
@@ -143,6 +148,7 @@ declare module '$env/dynamic/private' {
 		npm_config_noproxy: string;
 		npm_config_local_prefix: string;
 		USER: string;
+		OPENAI_API_KEY: string;
 		COMMAND_MODE: string;
 		npm_config_globalconfig: string;
 		CONDA_EXE: string;
@@ -151,6 +157,7 @@ declare module '$env/dynamic/private' {
 		npm_execpath: string;
 		_CE_CONDA: string;
 		PATH: string;
+		GSETTINGS_SCHEMA_DIR: string;
 		npm_package_json: string;
 		_: string;
 		npm_config_userconfig: string;
@@ -164,7 +171,6 @@ declare module '$env/dynamic/private' {
 		EDITOR: string;
 		npm_package_name: string;
 		LANG: string;
-		npm_config_npm_version: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		XPC_FLAGS: string;
 		npm_config_node_gyp: string;
