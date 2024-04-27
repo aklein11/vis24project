@@ -13,6 +13,23 @@
         return true;
     });
 
+    const labelDict = {"CM": "Building broken into condo units",
+                    "R1": "1-Family",
+                    "R2": "2-Family",
+                    "R3": "3-Family",
+                    "R4": "4-6 Units",
+                    "A": "7+ Units",
+                    "RL": "Residential Lot",
+                "CD": "Condo",
+                "CC:": "Commerical Condo",
+            "C": "Commerical",
+        "RC": "Mixed Use",
+        "CL": "Commerical Land",
+        "CP": "Condo Parking",
+        "I": "Industrial",
+        "E": "Exempt",
+        "EA": "Exempt"}
+
     let pieData, rolledData;
 
     $: { 
@@ -22,7 +39,7 @@
         console.log("Rolled ", rolledData)
 
         pieData = rolledData.map(([group, count]) => {
-        return { value: count, label: group };
+        return { value: count, label: labelDict[group] };
     });
     console.log("pied ", pieData);
     }
@@ -33,4 +50,14 @@
 
 </script>
 
+<h1>Building Type Converted into Condominiums</h1>
+
+<blockquote scrolly-container>    
+
+    Families and renters can be displaced when their homes are converted into luxury condos. This effect is especially prevalent when residential buildings and multi-family housing are converted into condos. To estimate the impact of condo conversions on families, we display the most common building types converted into condos.
+    </blockquote>
+        
+
 <Pie data={pieData} bind:selectedIndex={selectedZipcodeIndex} />
+
+<text> Note: Legend adapted from <a href="https://www.cityofboston.gov/images_documents/land_use_codes%5B1%5D_tcm3-8867.pdf"> City of Boston LAND USE CODES </a></text>
