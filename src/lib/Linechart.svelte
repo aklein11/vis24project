@@ -62,9 +62,9 @@
             .attr("x", width / 2)
             .attr("y", -20) // Adjust the chart title position
             .attr("text-anchor", "middle")
-            .style("font-size", "16px")
+            .style("font-size", "20px")
             .style("font-weight", "bold")
-            .text("Complaints Filed about Condominium Buildings in the Boston and Cambridge Area");
+            .text("Complaints Filed about Condominium Buildings in the Boston Area");
 
             // Create a legend to the right of the chart within the margin space
         const legend = svg.append("g")
@@ -222,5 +222,12 @@
     initChart();
   });
 </script>
+
+<h1>Condo Complaints</h1>
+
+<blockquote scrolly-container>
+    The <a href="https://data.boston.gov/dataset/rentsmart"> RentSmart dataset </a> contains data from Boston’s 311 line and Boston’s Inspectional Services Division on residential property complaints from 2019 to the present. 
+    </blockquote>
+
 
 <svg id="linechart-svg" width="960" height="500"></svg>

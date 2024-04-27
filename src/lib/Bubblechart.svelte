@@ -44,6 +44,17 @@
         .attr('height', height)
         .append('g')
         .attr('transform', `translate(${margin.left}, ${margin.top})`);
+
+        svg.append("text")
+            .attr("class", "chart title")
+            .attr("x", width / 2)
+            .attr("y", 8) // Adjust the chart title position
+            .attr("text-anchor", "middle")
+            .style("font-size", "20px")
+            .style("font-weight", "bold")
+            .text("Complaint Types filed for Condominiums, 2019 to Present");
+        console.log("ZIP", zipcode);
+
   
       // Add bubbles
     const circles = svg.selectAll('circle')
@@ -158,9 +169,16 @@
 </script>
 
 <h1>Complaints by Zipcode</h1>
+
+<blockquote scrolly-container>
+  We categorized the complaints into groups to demonstrate the impact of condominium development both on residents and the surrounding neighborhood.
+  </blockquote>
+
+
 <svg id="bubblechart-svg"></svg>
 
 <div class="legend"></div>
+
 
 <style>
   .legend-item {

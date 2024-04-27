@@ -13,6 +13,8 @@
 	const bulletpoints = ["demo a", "demo b", "demo c", "demo d", "demo e", "demo f", "demo g", "demo h", "demo i"];
     let colors = d3.scaleOrdinal(d3.schemeTableau10);
     let zipcode = writable(''); 
+
+    const cambridgeZip = ["02140", "02139", "02142", "02141"];
 </script>
 
 <svelte:head>
@@ -56,14 +58,25 @@
 		width: 100%; /* Set the width of the graph to 100% of its container */
 		height: 100%; /* Set the height of the graph to 100% of its container */
 	}
+
+    .hide-graph {
+        visibility: none;
+    }
+
 </style>
 
 <blockquote scrolly-container>
-<p> <a href="https://www.mapc.org/wp-content/uploads/2021/12/10.-MC2050-Homes-for-Everyone-Brief.pdf">Greater Boston ranks 3rd in the most expensive housing markets in the United States, </a> and <a href="https://homesforprofit.mapc.org/report"> 51% of Boston residents are forced to spend over the recommended income percentage (30%) on rent. </a>
-</p>
-<p> 
-There are many sources of pressure on prices in Boston’s housing market – from zoning restrictions that hinder development of new housing to outside investors who drive up rent. <a href="https://homesforprofit.mapc.org/report"> Affecting renters, residents are often displaced due to price increases when outside investors convert the buildings they live in into condominiums.</a> We refer to this pattern of events as condo conversions.
-
-</p>
+    Through our interactive visualization, we invite you to explore the impact of condo conversions on your community.<br>
+    <newline></newline>
+    Click a greater Boston zip code region on the map to see the impact of condo conversions on the area:
 </blockquote>
 
+<Map class="graph-container" bind:zipcode={ $zipcode }/>
+
+<Bargraph class="graph-container" query={ $zipcode }/>
+
+<Piechart class="graph-container" query={ $zipcode }/> 
+
+<Linechart class="graph-container" query={ $zipcode }/>
+
+<Bubblechart class="graph-container" query={ $zipcode }/>
