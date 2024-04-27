@@ -14,7 +14,7 @@
     let colors = d3.scaleOrdinal(d3.schemeTableau10);
     let zipcode = writable(''); 
 
-    const cambridgeZip = ["02140", "02139", "02142", "02141"];
+    const cambridgeZip = ["02140", "02139", "02142", "02141", "02138"];
 </script>
 
 <svelte:head>
