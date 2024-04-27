@@ -134,4 +134,12 @@
 <div>
     <div id="map"></div>
     <button on:click={resetMap} class="reset-button" > Reset Map</button>
+    
+    {#if currentZipcode === null}
+    {:else}
+    <blockquote scrolly-container>
+        You selected the zip code below! Click Reset Map to choose a new zip code.
+        </blockquote>
+    {/if}
+    
 </div>
