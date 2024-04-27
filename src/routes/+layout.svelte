@@ -2,7 +2,8 @@
     import { page } from '$app/stores';
 
     let pages = [
-        { url: "./", title: "Home" },
+        { url: "./Home", title: "Condo Conversions in Greater Boston" },
+        { url: "./", title: "Visualize Impact for Your Zip Code" },
         // { url: "./bar_graph", title: "Bar Graph" },
         // { url: "./pie_chart", title: "Pie Chart" },
         // { url: "./line_chart", title: "Line Chart" },

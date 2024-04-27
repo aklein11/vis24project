@@ -16,7 +16,7 @@
 </script>
 
 <svelte:head>
-	<title>Visualisation</title>
+    <title>Condo Conversions in Greater Boston </title>
 </svelte:head>
 
 <!-- Separate sections with unique class for each type of chart -->
@@ -58,11 +58,17 @@
 	}
 </style>
 
+<blockquote scrolly-container>
+    Through our interactive visualization, we invite you to explore the impact of condo conversions on your community.<br>
+    <newline></newline>
+    Click a greater Boston zip code region on the map to see the impact of condo conversions on the area:
+</blockquote>
+
 <Map class="graph-container" bind:zipcode={ $zipcode }/>
 
 <Bargraph class="graph-container" query={ $zipcode }/>
 
-<Piechart class="graph-container" query={ $zipcode }/>
+<Piechart class="graph-container" query={ $zipcode }/> 
 
 <Linechart class="graph-container" query={ $zipcode }/>
 

@@ -124,10 +124,14 @@
     #map {
         height: 100vh;
         width: 100%;
+        margin-top: 25px;
+    }
+    .reset-button{
+        margin-bottom: 25px;
     }
 </style>
 
 <div>
-    <button on:click={resetMap} class="reset-button">Reset Map</button>
     <div id="map"></div>
+    <button on:click={resetMap} class="reset-button" > Reset Map</button>
 </div>
