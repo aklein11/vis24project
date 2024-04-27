@@ -6,7 +6,7 @@
     // export let height;
     // export let yScale;
 
-	let margin = { top: 20, right: 30, bottom: 70, left: 60 };
+	let margin = { top: 20, right: 30, bottom: 70, left: 80 };
 	// TODO: make the width and height reactive
 	let width = 960 - margin.left - margin.right;
 	let height = 500 - margin.top - margin.bottom;

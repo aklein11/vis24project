@@ -354,7 +354,7 @@ src/routes/zip_codes/+page.svelte,13,js,0e984bbb,Caroline Cunningham,2024-04-27,
 src/routes/zip_codes/+page.svelte,14,js,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,48
 src/routes/zip_codes/+page.svelte,15,js,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,26
 src/routes/zip_codes/+page.svelte,16,js,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
-src/routes/zip_codes/+page.svelte,17,js,00000000,Not Committed Yet,2024-04-27,18:42:36,-04:00,2024-04-27T18:42:36-04:00,0,66
+src/routes/zip_codes/+page.svelte,17,js,78b142d5,Caroline Cunningham,2024-04-27,18:42:58,-04:00,2024-04-27T18:42:58-04:00,0,66
 src/routes/zip_codes/+page.svelte,18,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,8
 src/routes/zip_codes/+page.svelte,19,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
 src/routes/zip_codes/+page.svelte,20,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,12
@@ -674,7 +674,7 @@ src/lib/Piechart.svelte,53,svelte,90e7d853,Caroline Cunningham,2024-04-27,17:40:
 src/lib/Piechart.svelte,54,svelte,90e7d853,Caroline Cunningham,2024-04-27,17:40:03,-04:00,2024-04-27T17:40:03-04:00,0,0
 src/lib/Piechart.svelte,55,svelte,90e7d853,Caroline Cunningham,2024-04-27,17:40:03,-04:00,2024-04-27T17:40:03-04:00,0,29
 src/lib/Piechart.svelte,56,svelte,90e7d853,Caroline Cunningham,2024-04-27,17:40:03,-04:00,2024-04-27T17:40:03-04:00,0,0
-src/lib/Piechart.svelte,57,svelte,90e7d853,Caroline Cunningham,2024-04-27,17:40:03,-04:00,2024-04-27T17:40:03-04:00,0,324
+src/lib/Piechart.svelte,57,svelte,f36b7170,Caroline Cunningham,2024-04-27,18:44:01,-04:00,2024-04-27T18:44:01-04:00,0,297
 src/lib/Piechart.svelte,58,svelte,90e7d853,Caroline Cunningham,2024-04-27,17:40:03,-04:00,2024-04-27T17:40:03-04:00,0,12
 src/lib/Piechart.svelte,59,svelte,90e7d853,Caroline Cunningham,2024-04-27,17:40:03,-04:00,2024-04-27T17:40:03-04:00,0,0
 src/lib/Piechart.svelte,60,svelte,90e7d853,Caroline Cunningham,2024-04-27,17:40:03,-04:00,2024-04-27T17:40:03-04:00,0,0
@@ -1499,7 +1499,7 @@ src/lib/BarChart.svelte,5,js,afe2fd22,Stephen Wilson,2024-04-06,20:52:56,-04:00,
 src/lib/BarChart.svelte,6,js,afe2fd22,Stephen Wilson,2024-04-06,20:52:56,-04:00,2024-04-06T20:52:56-04:00,0,20
 src/lib/BarChart.svelte,7,js,afe2fd22,Stephen Wilson,2024-04-06,20:52:56,-04:00,2024-04-06T20:52:56-04:00,0,20
 src/lib/BarChart.svelte,8,js,afe2fd22,Stephen Wilson,2024-04-06,20:52:56,-04:00,2024-04-06T20:52:56-04:00,0,0
-src/lib/BarChart.svelte,9,js,afe2fd22,Stephen Wilson,2024-04-06,20:52:56,-04:00,2024-04-06T20:52:56-04:00,1,57
+src/lib/BarChart.svelte,9,js,00000000,Not Committed Yet,2024-04-27,18:45:35,-04:00,2024-04-27T18:45:35-04:00,1,57
 src/lib/BarChart.svelte,10,js,a67d964f,Abigail,2024-04-22,14:49:52,-04:00,2024-04-22T14:49:52-04:00,1,42
 src/lib/BarChart.svelte,11,js,afe2fd22,Stephen Wilson,2024-04-06,20:52:56,-04:00,2024-04-06T20:52:56-04:00,1,44
 src/lib/BarChart.svelte,12,js,afe2fd22,Stephen Wilson,2024-04-06,20:52:56,-04:00,2024-04-06T20:52:56-04:00,1,45
