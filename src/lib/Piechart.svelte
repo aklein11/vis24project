@@ -54,7 +54,7 @@
 
 <blockquote scrolly-container>    
 
-    Families and renters can be displaced when their homes are converted into luxury condos. This effect is especially prevalent when residential buildings and multi-family housing are converted into condos. To estimate the impact of condo conversions on families, we display the most common building types converted into condos.
+    Families and renters can be displaced when their homes are converted into luxury condos. This effect is especially prevalent when multi-family housing is converted into condos. To estimate the impact of condo conversions on families, we display the most common building types converted into condos.
     </blockquote>
         
 
