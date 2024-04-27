@@ -3,7 +3,8 @@
 
     let pages = [
         { url: "./", title: "Condo Conversions in Greater Boston" },
-        { url: "./zip_codes", title: "Visualize Impact for Your Zip Code" },
+        { url: "./zip_codes", title: "Visualize Impact of on Your Zip Code" },
+        { url: "./conclusion", title: "What is Being Done?" },
         // { url: "./bar_graph", title: "Bar Graph" },
         // { url: "./pie_chart", title: "Pie Chart" },
         // { url: "./line_chart", title: "Line Chart" },
