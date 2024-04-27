@@ -64,7 +64,7 @@
             .attr("text-anchor", "middle")
             .style("font-size", "20px")
             .style("font-weight", "bold")
-            .text("Complaints Filed about Condominium Buildings in the Boston Area");
+            .text("Complaints Filed about Condominium Buildings");
 
             // Create a legend to the right of the chart within the margin space
         const legend = svg.append("g")
@@ -82,13 +82,13 @@
             const textLength = item.label.length * 8; // Approximate width of a character is 8 pixels
             legendWidth = Math.max(legendWidth, textLength);
         });
-        legendWidth += 40; // Add some padding to the legend width
+        legendWidth += 10; // Add some padding to the legend width
     
         // Add a bounding box for the legend
         legend.append("rect")
         .attr("class", "legend-box")
-        .attr("x", 0)
-        .attr("y", 0)
+        .attr("x", -300)
+        .attr("y", 250)
         .attr("width", legendWidth)
         .attr("height", legendData.length * 20 + 10)
         .attr("fill", "none")
@@ -100,16 +100,16 @@
                 .attr("transform", `translate(0, ${index * 20 + 10})`);
 
             legendRow.append("rect")
-                .attr("x", 0)
-                .attr("y", 0)
+                .attr("x", -285)
+                .attr("y", 250)
                 .attr("width", 10)
                 .attr("height", 10)
                 .attr("fill", item.color);
 
             legendRow.append("text")
-                .attr("x", 20)
-                .attr("y", 9)
-                .attr("font-size", "10px")  // Set the font size smaller
+                .attr("x", -270)
+                .attr("y", 260)
+                .attr("font-size", "15px")  // Set the font size smaller
                 .text(item.label);
         });
 

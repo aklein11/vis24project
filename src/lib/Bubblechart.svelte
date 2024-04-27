@@ -80,19 +80,19 @@
     console.log(colorScale.domain());
   
     //   // Create legend
-    //   const legend = d3.select('.legend')
-    //     .selectAll('.legend-item')
-    //     .data(colorScale.domain())
-    //     .enter().append('div')
-    //     .classed('legend-item', true);
+      // const legend = d3.select('.legend')
+      //   .selectAll('.legend-item')
+      //   .data(colorScale.domain())
+      //   .enter().append('div')
+      //   .classed('legend-item', true);
   
-    //   legend.append('div')
-    //     .classed('legend-color', true)
-    //     .style('background-color', d => colorScale(d));
+      // legend.append('div')
+      //   .classed('legend-color', true)
+      //   .style('background-color', d => colorScale(d));
   
-    //   legend.append('div')
-    //     .classed('legend-label', true)
-    //     .text(d => d);
+      // legend.append('div')
+      //   .classed('legend-label', true)
+      //   .text(d => d);
     }
   
     function updateChart(zipcode) {
