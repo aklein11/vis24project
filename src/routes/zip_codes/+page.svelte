@@ -75,8 +75,16 @@
 
 <Bargraph class="graph-container" query={ $zipcode }/>
 
+
 <Piechart class="graph-container" query={ $zipcode }/> 
 
-<Linechart class="graph-container" query={ $zipcode }/>
 
+{#if $zipcode !== '' && cambridgeZip.indexOf($zipcode) !== -1}
+<h1> Condo Complaints </h1>
+<blockquote scrolly-container>
+    For Cambridge, we did not have data on condominium complaints.
+</blockquote>
+{:else}
+<Linechart class="graph-container" query={ $zipcode }/>
 <Bubblechart class="graph-container" query={ $zipcode }/>
+{/if}
