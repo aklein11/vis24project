@@ -426,110 +426,128 @@ src/routes/zip_codes/+page.svelte,20,svelte,0e984bbb,Caroline Cunningham,2024-04
 src/routes/zip_codes/+page.svelte,21,css,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
 src/routes/zip_codes/+page.svelte,22,css,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
 src/routes/zip_codes/+page.svelte,23,css,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,19
-src/routes/zip_codes/+page.svelte,24,css,00000000,Not Committed Yet,2024-04-28,15:25:13,-04:00,2024-04-28T15:25:13-04:00,0,30
+src/routes/zip_codes/+page.svelte,24,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,31
 src/routes/zip_codes/+page.svelte,25,css,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,15
 src/routes/zip_codes/+page.svelte,26,css,aa349263,Caroline Cunningham,2024-04-28,15:02:39,-04:00,2024-04-28T15:02:39-04:00,0,16
 src/routes/zip_codes/+page.svelte,27,css,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
-src/routes/zip_codes/+page.svelte,28,css,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,12
-src/routes/zip_codes/+page.svelte,29,css,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,14
-src/routes/zip_codes/+page.svelte,30,css,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,3
-src/routes/zip_codes/+page.svelte,31,css,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,18
-src/routes/zip_codes/+page.svelte,32,css,00000000,Not Committed Yet,2024-04-28,15:25:13,-04:00,2024-04-28T15:25:13-04:00,0,52
-src/routes/zip_codes/+page.svelte,33,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
-src/routes/zip_codes/+page.svelte,34,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
-src/routes/zip_codes/+page.svelte,35,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,7
-src/routes/zip_codes/+page.svelte,36,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,13
-src/routes/zip_codes/+page.svelte,37,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,66
-src/routes/zip_codes/+page.svelte,38,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,56
-src/routes/zip_codes/+page.svelte,39,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,81
-src/routes/zip_codes/+page.svelte,40,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,49
-src/routes/zip_codes/+page.svelte,41,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
-src/routes/zip_codes/+page.svelte,42,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
-src/routes/zip_codes/+page.svelte,43,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,10
-src/routes/zip_codes/+page.svelte,44,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,59
-src/routes/zip_codes/+page.svelte,45,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,44
-src/routes/zip_codes/+page.svelte,46,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,27
+src/routes/zip_codes/+page.svelte,28,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,0
+src/routes/zip_codes/+page.svelte,29,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,15
+src/routes/zip_codes/+page.svelte,30,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,31
+src/routes/zip_codes/+page.svelte,31,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,20
+src/routes/zip_codes/+page.svelte,32,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,0
+src/routes/zip_codes/+page.svelte,33,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,0
+src/routes/zip_codes/+page.svelte,34,css,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,12
+src/routes/zip_codes/+page.svelte,35,css,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,14
+src/routes/zip_codes/+page.svelte,36,css,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,3
+src/routes/zip_codes/+page.svelte,37,css,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,18
+src/routes/zip_codes/+page.svelte,38,css,e606af57,Caroline Cunningham,2024-04-28,15:25:40,-04:00,2024-04-28T15:25:40-04:00,0,52
+src/routes/zip_codes/+page.svelte,39,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
+src/routes/zip_codes/+page.svelte,40,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
+src/routes/zip_codes/+page.svelte,41,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,7
+src/routes/zip_codes/+page.svelte,42,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,13
+src/routes/zip_codes/+page.svelte,43,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,66
+src/routes/zip_codes/+page.svelte,44,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,56
+src/routes/zip_codes/+page.svelte,45,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,81
+src/routes/zip_codes/+page.svelte,46,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,49
 src/routes/zip_codes/+page.svelte,47,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
 src/routes/zip_codes/+page.svelte,48,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
 src/routes/zip_codes/+page.svelte,49,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,10
-src/routes/zip_codes/+page.svelte,50,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,45
-src/routes/zip_codes/+page.svelte,51,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
-src/routes/zip_codes/+page.svelte,52,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
-src/routes/zip_codes/+page.svelte,53,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,1,21
-src/routes/zip_codes/+page.svelte,54,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,2,69
-src/routes/zip_codes/+page.svelte,55,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,2,71
-src/routes/zip_codes/+page.svelte,56,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,1,0
+src/routes/zip_codes/+page.svelte,50,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,59
+src/routes/zip_codes/+page.svelte,51,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,44
+src/routes/zip_codes/+page.svelte,52,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,27
+src/routes/zip_codes/+page.svelte,53,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
+src/routes/zip_codes/+page.svelte,54,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
+src/routes/zip_codes/+page.svelte,55,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,10
+src/routes/zip_codes/+page.svelte,56,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,45
 src/routes/zip_codes/+page.svelte,57,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
-src/routes/zip_codes/+page.svelte,58,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,12
-src/routes/zip_codes/+page.svelte,59,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,16
-src/routes/zip_codes/+page.svelte,60,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
-src/routes/zip_codes/+page.svelte,61,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
-src/routes/zip_codes/+page.svelte,62,css,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,6
-src/routes/zip_codes/+page.svelte,63,css,5b47d43e,Caroline Cunningham,2024-04-28,14:55:34,-04:00,2024-04-28T14:55:34-04:00,0,15
-src/routes/zip_codes/+page.svelte,64,css,aa349263,Caroline Cunningham,2024-04-28,15:02:39,-04:00,2024-04-28T15:02:39-04:00,0,16
-src/routes/zip_codes/+page.svelte,65,css,5b47d43e,Caroline Cunningham,2024-04-28,14:55:34,-04:00,2024-04-28T14:55:34-04:00,0,19
-src/routes/zip_codes/+page.svelte,66,css,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,0
-src/routes/zip_codes/+page.svelte,67,css,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,0
-src/routes/zip_codes/+page.svelte,68,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,7
-src/routes/zip_codes/+page.svelte,69,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
-src/routes/zip_codes/+page.svelte,70,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,11
-src/routes/zip_codes/+page.svelte,71,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,117
-src/routes/zip_codes/+page.svelte,72,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,18
-src/routes/zip_codes/+page.svelte,73,svelte,bd1179ee,Caroline Cunningham,2024-04-27,19:00:37,-04:00,2024-04-27T19:00:37-04:00,0,125
-src/routes/zip_codes/+page.svelte,74,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,12
-src/routes/zip_codes/+page.svelte,75,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
-src/routes/zip_codes/+page.svelte,76,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,29
-src/routes/zip_codes/+page.svelte,77,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
-src/routes/zip_codes/+page.svelte,78,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,31
-src/routes/zip_codes/+page.svelte,79,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
-src/routes/zip_codes/+page.svelte,80,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,8
-src/routes/zip_codes/+page.svelte,81,svelte,5b47d43e,Caroline Cunningham,2024-04-28,14:55:34,-04:00,2024-04-28T14:55:34-04:00,0,83
-src/routes/zip_codes/+page.svelte,82,svelte,5b47d43e,Caroline Cunningham,2024-04-28,14:55:34,-04:00,2024-04-28T14:55:34-04:00,0,3
-src/routes/zip_codes/+page.svelte,83,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,27
-src/routes/zip_codes/+page.svelte,84,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,30
-src/routes/zip_codes/+page.svelte,85,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,29
-src/routes/zip_codes/+page.svelte,86,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,5
-src/routes/zip_codes/+page.svelte,87,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,17
-src/routes/zip_codes/+page.svelte,88,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,9
-src/routes/zip_codes/+page.svelte,89,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
-src/routes/zip_codes/+page.svelte,90,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,8
-src/routes/zip_codes/+page.svelte,91,svelte,5b47d43e,Caroline Cunningham,2024-04-28,14:55:34,-04:00,2024-04-28T14:55:34-04:00,0,87
-src/routes/zip_codes/+page.svelte,92,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,27
-src/routes/zip_codes/+page.svelte,93,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,30
+src/routes/zip_codes/+page.svelte,58,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
+src/routes/zip_codes/+page.svelte,59,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,1,21
+src/routes/zip_codes/+page.svelte,60,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,2,69
+src/routes/zip_codes/+page.svelte,61,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,2,71
+src/routes/zip_codes/+page.svelte,62,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,1,0
+src/routes/zip_codes/+page.svelte,63,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
+src/routes/zip_codes/+page.svelte,64,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,12
+src/routes/zip_codes/+page.svelte,65,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,16
+src/routes/zip_codes/+page.svelte,66,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
+src/routes/zip_codes/+page.svelte,67,css,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
+src/routes/zip_codes/+page.svelte,68,css,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,6
+src/routes/zip_codes/+page.svelte,69,css,5b47d43e,Caroline Cunningham,2024-04-28,14:55:34,-04:00,2024-04-28T14:55:34-04:00,0,15
+src/routes/zip_codes/+page.svelte,70,css,aa349263,Caroline Cunningham,2024-04-28,15:02:39,-04:00,2024-04-28T15:02:39-04:00,0,16
+src/routes/zip_codes/+page.svelte,71,css,5b47d43e,Caroline Cunningham,2024-04-28,14:55:34,-04:00,2024-04-28T14:55:34-04:00,0,19
+src/routes/zip_codes/+page.svelte,72,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,16
+src/routes/zip_codes/+page.svelte,73,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,16
+src/routes/zip_codes/+page.svelte,74,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,0
+src/routes/zip_codes/+page.svelte,75,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,0
+src/routes/zip_codes/+page.svelte,76,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,10
+src/routes/zip_codes/+page.svelte,77,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,15
+src/routes/zip_codes/+page.svelte,78,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,16
+src/routes/zip_codes/+page.svelte,79,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,20
+src/routes/zip_codes/+page.svelte,80,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,19
+src/routes/zip_codes/+page.svelte,81,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,16
+src/routes/zip_codes/+page.svelte,82,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,16
+src/routes/zip_codes/+page.svelte,83,css,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,0
+src/routes/zip_codes/+page.svelte,84,css,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,0
+src/routes/zip_codes/+page.svelte,85,css,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,0
+src/routes/zip_codes/+page.svelte,86,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,7
+src/routes/zip_codes/+page.svelte,87,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
+src/routes/zip_codes/+page.svelte,88,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,11
+src/routes/zip_codes/+page.svelte,89,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,117
+src/routes/zip_codes/+page.svelte,90,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,18
+src/routes/zip_codes/+page.svelte,91,svelte,bd1179ee,Caroline Cunningham,2024-04-27,19:00:37,-04:00,2024-04-27T19:00:37-04:00,0,125
+src/routes/zip_codes/+page.svelte,92,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,12
+src/routes/zip_codes/+page.svelte,93,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
 src/routes/zip_codes/+page.svelte,94,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,29
-src/routes/zip_codes/+page.svelte,95,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,5
-src/routes/zip_codes/+page.svelte,96,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,17
-src/routes/zip_codes/+page.svelte,97,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,9
-src/routes/zip_codes/+page.svelte,98,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,5
-src/routes/zip_codes/+page.svelte,99,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
-src/routes/zip_codes/+page.svelte,100,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
-src/routes/zip_codes/+page.svelte,101,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
-src/routes/zip_codes/+page.svelte,102,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
-src/routes/zip_codes/+page.svelte,103,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
-src/routes/zip_codes/+page.svelte,104,svelte,1f5195e5,Caroline Cunningham,2024-04-27,17:04:02,-04:00,2024-04-27T17:04:02-04:00,0,61
-src/routes/zip_codes/+page.svelte,105,svelte,24927afc,Abigail,2024-04-27,23:34:49,-04:00,2024-04-27T23:34:49-04:00,0,26
-src/routes/zip_codes/+page.svelte,106,svelte,24927afc,Abigail,2024-04-27,23:34:49,-04:00,2024-04-27T23:34:49-04:00,0,11
-src/routes/zip_codes/+page.svelte,107,svelte,24927afc,Abigail,2024-04-27,23:34:49,-04:00,2024-04-27T23:34:49-04:00,0,61
-src/routes/zip_codes/+page.svelte,108,svelte,24927afc,Abigail,2024-04-27,23:34:49,-04:00,2024-04-27T23:34:49-04:00,0,12
-src/routes/zip_codes/+page.svelte,109,svelte,1f5195e5,Caroline Cunningham,2024-04-27,17:04:02,-04:00,2024-04-27T17:04:02-04:00,0,6
-src/routes/zip_codes/+page.svelte,110,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,8
-src/routes/zip_codes/+page.svelte,111,svelte,5b47d43e,Caroline Cunningham,2024-04-28,14:55:34,-04:00,2024-04-28T14:55:34-04:00,0,82
-src/routes/zip_codes/+page.svelte,112,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,27
-src/routes/zip_codes/+page.svelte,113,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,30
-src/routes/zip_codes/+page.svelte,114,svelte,24927afc,Abigail,2024-04-27,23:34:49,-04:00,2024-04-27T23:34:49-04:00,0,30
-src/routes/zip_codes/+page.svelte,115,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,5
-src/routes/zip_codes/+page.svelte,116,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,17
-src/routes/zip_codes/+page.svelte,117,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,9
-src/routes/zip_codes/+page.svelte,118,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,0
-src/routes/zip_codes/+page.svelte,119,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,8
-src/routes/zip_codes/+page.svelte,120,svelte,5b47d43e,Caroline Cunningham,2024-04-28,14:55:34,-04:00,2024-04-28T14:55:34-04:00,0,71
-src/routes/zip_codes/+page.svelte,121,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,27
-src/routes/zip_codes/+page.svelte,122,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,30
-src/routes/zip_codes/+page.svelte,123,svelte,24927afc,Abigail,2024-04-27,23:34:49,-04:00,2024-04-27T23:34:49-04:00,0,32
-src/routes/zip_codes/+page.svelte,124,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,5
-src/routes/zip_codes/+page.svelte,125,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,17
-src/routes/zip_codes/+page.svelte,126,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,9
-src/routes/zip_codes/+page.svelte,127,svelte,1f5195e5,Caroline Cunningham,2024-04-27,17:04:02,-04:00,2024-04-27T17:04:02-04:00,0,4
+src/routes/zip_codes/+page.svelte,95,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
+src/routes/zip_codes/+page.svelte,96,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,31
+src/routes/zip_codes/+page.svelte,97,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
+src/routes/zip_codes/+page.svelte,98,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,8
+src/routes/zip_codes/+page.svelte,99,svelte,5b47d43e,Caroline Cunningham,2024-04-28,14:55:34,-04:00,2024-04-28T14:55:34-04:00,0,83
+src/routes/zip_codes/+page.svelte,100,svelte,5b47d43e,Caroline Cunningham,2024-04-28,14:55:34,-04:00,2024-04-28T14:55:34-04:00,0,3
+src/routes/zip_codes/+page.svelte,101,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,27
+src/routes/zip_codes/+page.svelte,102,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,30
+src/routes/zip_codes/+page.svelte,103,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,29
+src/routes/zip_codes/+page.svelte,104,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,5
+src/routes/zip_codes/+page.svelte,105,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,17
+src/routes/zip_codes/+page.svelte,106,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,9
+src/routes/zip_codes/+page.svelte,107,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
+src/routes/zip_codes/+page.svelte,108,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,8
+src/routes/zip_codes/+page.svelte,109,svelte,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,91
+src/routes/zip_codes/+page.svelte,110,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,27
+src/routes/zip_codes/+page.svelte,111,svelte,00000000,Not Committed Yet,2024-04-28,15:36:36,-04:00,2024-04-28T15:36:36-04:00,0,26
+src/routes/zip_codes/+page.svelte,112,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,29
+src/routes/zip_codes/+page.svelte,113,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,5
+src/routes/zip_codes/+page.svelte,114,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,17
+src/routes/zip_codes/+page.svelte,115,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,9
+src/routes/zip_codes/+page.svelte,116,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,5
+src/routes/zip_codes/+page.svelte,117,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
+src/routes/zip_codes/+page.svelte,118,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
+src/routes/zip_codes/+page.svelte,119,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
+src/routes/zip_codes/+page.svelte,120,svelte,0e71b621,Abigail,2024-04-28,14:43:29,-04:00,2024-04-28T14:43:29-04:00,0,0
+src/routes/zip_codes/+page.svelte,121,svelte,0e984bbb,Caroline Cunningham,2024-04-27,16:38:17,-04:00,2024-04-27T16:38:17-04:00,0,0
+src/routes/zip_codes/+page.svelte,122,svelte,1f5195e5,Caroline Cunningham,2024-04-27,17:04:02,-04:00,2024-04-27T17:04:02-04:00,0,61
+src/routes/zip_codes/+page.svelte,123,svelte,24927afc,Abigail,2024-04-27,23:34:49,-04:00,2024-04-27T23:34:49-04:00,0,26
+src/routes/zip_codes/+page.svelte,124,svelte,24927afc,Abigail,2024-04-27,23:34:49,-04:00,2024-04-27T23:34:49-04:00,0,11
+src/routes/zip_codes/+page.svelte,125,svelte,24927afc,Abigail,2024-04-27,23:34:49,-04:00,2024-04-27T23:34:49-04:00,0,61
+src/routes/zip_codes/+page.svelte,126,svelte,24927afc,Abigail,2024-04-27,23:34:49,-04:00,2024-04-27T23:34:49-04:00,0,12
+src/routes/zip_codes/+page.svelte,127,svelte,1f5195e5,Caroline Cunningham,2024-04-27,17:04:02,-04:00,2024-04-27T17:04:02-04:00,0,6
+src/routes/zip_codes/+page.svelte,128,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,8
+src/routes/zip_codes/+page.svelte,129,svelte,5b47d43e,Caroline Cunningham,2024-04-28,14:55:34,-04:00,2024-04-28T14:55:34-04:00,0,82
+src/routes/zip_codes/+page.svelte,130,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,27
+src/routes/zip_codes/+page.svelte,131,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,30
+src/routes/zip_codes/+page.svelte,132,svelte,24927afc,Abigail,2024-04-27,23:34:49,-04:00,2024-04-27T23:34:49-04:00,0,30
+src/routes/zip_codes/+page.svelte,133,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,5
+src/routes/zip_codes/+page.svelte,134,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,17
+src/routes/zip_codes/+page.svelte,135,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,9
+src/routes/zip_codes/+page.svelte,136,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,0
+src/routes/zip_codes/+page.svelte,137,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,8
+src/routes/zip_codes/+page.svelte,138,svelte,5b47d43e,Caroline Cunningham,2024-04-28,14:55:34,-04:00,2024-04-28T14:55:34-04:00,0,71
+src/routes/zip_codes/+page.svelte,139,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,27
+src/routes/zip_codes/+page.svelte,140,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,30
+src/routes/zip_codes/+page.svelte,141,svelte,24927afc,Abigail,2024-04-27,23:34:49,-04:00,2024-04-27T23:34:49-04:00,0,32
+src/routes/zip_codes/+page.svelte,142,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,5
+src/routes/zip_codes/+page.svelte,143,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,17
+src/routes/zip_codes/+page.svelte,144,svelte,6a01ff88,Abigail,2024-04-27,23:00:54,-04:00,2024-04-27T23:00:54-04:00,0,9
+src/routes/zip_codes/+page.svelte,145,svelte,1f5195e5,Caroline Cunningham,2024-04-27,17:04:02,-04:00,2024-04-27T17:04:02-04:00,0,4
 src/routes/conclusion/+page.svelte,1,svelte,7a6f3831,Caroline Cunningham,2024-04-27,17:15:54,-04:00,2024-04-27T17:15:54-04:00,0,7
 src/routes/conclusion/+page.svelte,2,js,7a6f3831,Caroline Cunningham,2024-04-27,17:15:54,-04:00,2024-04-27T17:15:54-04:00,0,24
 src/routes/conclusion/+page.svelte,3,js,7a6f3831,Caroline Cunningham,2024-04-27,17:15:54,-04:00,2024-04-27T17:15:54-04:00,1,36
@@ -777,9 +795,9 @@ src/lib/Piechart.svelte,54,svelte,90e7d853,Caroline Cunningham,2024-04-27,17:40:
 src/lib/Piechart.svelte,55,svelte,90e7d853,Caroline Cunningham,2024-04-27,17:40:03,-04:00,2024-04-27T17:40:03-04:00,0,29
 src/lib/Piechart.svelte,56,svelte,90e7d853,Caroline Cunningham,2024-04-27,17:40:03,-04:00,2024-04-27T17:40:03-04:00,0,0
 src/lib/Piechart.svelte,57,svelte,f36b7170,Caroline Cunningham,2024-04-27,18:44:01,-04:00,2024-04-27T18:44:01-04:00,0,297
-src/lib/Piechart.svelte,58,svelte,00000000,Not Committed Yet,2024-04-28,15:25:13,-04:00,2024-04-28T15:25:13-04:00,0,163
-src/lib/Piechart.svelte,59,svelte,00000000,Not Committed Yet,2024-04-28,15:25:13,-04:00,2024-04-28T15:25:13-04:00,0,12
-src/lib/Piechart.svelte,60,svelte,00000000,Not Committed Yet,2024-04-28,15:25:13,-04:00,2024-04-28T15:25:13-04:00,0,0
+src/lib/Piechart.svelte,58,svelte,e606af57,Caroline Cunningham,2024-04-28,15:25:40,-04:00,2024-04-28T15:25:40-04:00,0,163
+src/lib/Piechart.svelte,59,svelte,e606af57,Caroline Cunningham,2024-04-28,15:25:40,-04:00,2024-04-28T15:25:40-04:00,0,12
+src/lib/Piechart.svelte,60,svelte,e606af57,Caroline Cunningham,2024-04-28,15:25:40,-04:00,2024-04-28T15:25:40-04:00,0,0
 src/lib/Piechart.svelte,61,svelte,90e7d853,Caroline Cunningham,2024-04-27,17:40:03,-04:00,2024-04-27T17:40:03-04:00,0,0
 src/lib/Piechart.svelte,62,svelte,90e7d853,Caroline Cunningham,2024-04-27,17:40:03,-04:00,2024-04-27T17:40:03-04:00,0,63
 src/lib/Pie.svelte,1,svelte,b9abbb8,Abigail,2024-04-02,17:53:54,-04:00,2024-04-02T17:53:54-04:00,0,7

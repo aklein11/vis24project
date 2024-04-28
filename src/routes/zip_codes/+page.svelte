@@ -21,10 +21,16 @@
    
 
    .scrolly-container {
-        border: 2px solid #rgb(8, 8, 8) 
+        border: 2px solid #rgb(8, 8, 8);
         max-width: 100%;
         margin-top: 50px;
     }
+
+    .pie-container {
+        border: 2px solid #rgb(8, 8, 8);
+        margin-bottom: 500px;
+    }
+
     /* .scrolly {
         max-width: 50%;
     } */
@@ -63,7 +69,19 @@
         font-size: 20px;
         margin-top: 50px;
         font-weight: normal;
+        margin-left: 0px;
+        overflow: scroll;
     }
+
+    .test-pie {
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 500px;
+        font-weight: normal;
+        margin-left: 0px;
+        overflow: scroll;
+    }
+
 
 </style>
 
@@ -88,9 +106,9 @@
     </Scrolly>
     
     <Scrolly>
-        <p class="test">Section 2: What Types of Buildings are Most Likely to be Converted? </p>
+        <p class="test-pie">Section 2: What Types of Buildings are Most Likely to be Converted? </p>
         <svelte:fragment slot="viz">
-            <div class="scrolly-container">
+            <div class="pie-container">
                 <Piechart query={ $zipcode }/> 
             </div>
         </svelte:fragment>
