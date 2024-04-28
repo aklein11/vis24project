@@ -73,11 +73,11 @@
     }
 </script>
 
-<div class="zipcodes">
+<!-- <div class="zipcodes">
     {#each uniqueZipcodes as z}
         <p>{z}</p>
     {/each}
-</div>
+</div> -->
 
 <h1>Year Converted Property was Built</h1>
 
