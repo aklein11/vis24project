@@ -23,6 +23,7 @@
    .scrolly-container {
         border: 10px solid #ff3e3e; 
         max-width: 100%;
+        margin-top: 50px;
     }
     /* .scrolly {
         max-width: 50%;
@@ -60,6 +61,7 @@
 
     .test {
         font-size: 20px;
+        margin-top: 50px;
         font-weight: normal;
     }
 
