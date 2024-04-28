@@ -21,7 +21,7 @@
                     "A": "7+ Units",
                     "RL": "Residential Lot",
                 "CD": "Condo",
-                "CC:": "Commerical Condo",
+                "CC": "Commerical Condo",
             "C": "Commerical",
         "RC": "Mixed Use",
         "CL": "Commerical Land",

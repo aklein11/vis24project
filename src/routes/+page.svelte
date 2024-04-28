@@ -127,6 +127,8 @@ We take you through three examples of condo conversion in Greater Boston.
 <img src="./images/Medford_Map.png" alt="Image of Boston"/>
 
 {/if}
+
+<text> <a href="https://svelte.dev/examples/context-api"> Image Generation Credit </a> </text>
     
 
 
