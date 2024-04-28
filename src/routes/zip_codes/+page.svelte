@@ -24,8 +24,10 @@
 <!-- Separate sections with unique class for each type of chart -->
 <style>
     .scrolly-container {
-        margin-bottom: 2rem; /* Add space between each Scrolly component */
+        width: 50%;
+        float: left; /* or float: right; depending on your preference */
     }
+
 	:global(body) {
         max-width: min(120ch, 80vw);
     }
@@ -63,28 +65,72 @@
         visibility: none;
     }
 
+    .test {
+        font-size: 64px;
+        font-weight: bold;
+    }
+
 </style>
 
-<blockquote scrolly-container>
+<blockquote>
     Through our interactive visualization, we invite you to explore the impact of condo conversions on your community.<br>
     <newline></newline>
     On the map, click a greater Boston zip code to see the locations of condo conversions (starting from 2015) in the region:
 </blockquote>
 
-<Map class="graph-container" bind:zipcode={ $zipcode }/>
+<Scrolly>
+    <p class="test">Here is where the text that accompanies the map visualization would go. The CSS needs to be updated minimally in each of the chart/graph.svelte files. That said, now Caroline can put in the verbal content into the code here so that she does not need to wait for a place to be set aside.</p>
+    <svelte:fragment slot="viz">
+        <div class="scrolly-container">
+            <Map class="graph-container" bind:zipcode={ $zipcode }/>
+        </div>
+    </svelte:fragment>
+</Scrolly>
 
-<Bargraph class="graph-container" query={ $zipcode }/>
+<Scrolly>
+    <p class="test">Here is where the text that accompanies the map visualization would go. The CSS needs to be updated minimally in each of the chart/graph.svelte files. That said, now Caroline can put in the verbal content into the code here so that she does not need to wait for a place to be set aside.</p>
+    <svelte:fragment slot="viz">
+        <div class="scrolly-container">
+            <Bargraph class="graph-container" query={ $zipcode }/>
+        </div>
+    </svelte:fragment>
+</Scrolly>
 
+<Scrolly>
+    <p class="test">Here is where the text that accompanies the map visualization would go. The CSS needs to be updated minimally in each of the chart/graph.svelte files. That said, now Caroline can put in the verbal content into the code here so that she does not need to wait for a place to be set aside.</p>
+    <svelte:fragment slot="viz">
+        <div class="scrolly-container">
+            <Piechart class="graph-container" query={ $zipcode }/> 
+        </div>
+    </svelte:fragment>
+</Scrolly>
 
-<Piechart class="graph-container" query={ $zipcode }/> 
 
 
 {#if $zipcode !== '' && cambridgeZip.indexOf($zipcode) !== -1}
 <h1> Condo Complaints </h1>
-<blockquote scrolly-container>
+<blockquote>
     For Cambridge, we did not have data on condominium complaints.
 </blockquote>
 {:else}
-<Linechart class="graph-container" query={ $zipcode }/>
-<Bubblechart class="graph-container" query={ $zipcode }/>
+
+    <Scrolly>
+        <p class="test">Here is where the text that accompanies the map visualization would go. The CSS needs to be updated minimally in each of the chart/graph.svelte files. That said, now Caroline can put in the verbal content into the code here so that she does not need to wait for a place to be set aside.</p>
+        <svelte:fragment slot="viz">
+            <div class="scrolly-container">
+                <Linechart class="graph-container" query={ $zipcode }/>
+            </div>
+        </svelte:fragment>
+    </Scrolly>
+
+
+    <Scrolly>
+        <p class="test">Here is where the text that accompanies the map visualization would go. The CSS needs to be updated minimally in each of the chart/graph.svelte files. That said, now Caroline can put in the verbal content into the code here so that she does not need to wait for a place to be set aside.</p>
+        <svelte:fragment slot="viz">
+            <div class="scrolly-container">
+                <Bubblechart class="graph-container" query={ $zipcode }/>
+            </div>
+        </svelte:fragment>
+    </Scrolly>
+
 {/if}
