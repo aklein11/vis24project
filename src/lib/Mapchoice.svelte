@@ -138,7 +138,7 @@
     {#if currentZipcode === null}
     {:else}
     <blockquote scrolly-container>
-        You selected the zip code below! Click Reset Map to choose a new zip code.
+        You selected {"0" + currentZipcode}! Click Reset Map to choose a new zip code. 
         </blockquote>
     {/if}
     

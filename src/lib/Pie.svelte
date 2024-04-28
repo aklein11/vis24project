@@ -20,7 +20,7 @@
     $: arcData = sliceGenerator(data);
     $: arcs = arcData.map(d => arcGenerator(d));
 
-    let colors = d3.scaleOrdinal(d3.schemeTableau10);
+    let colors = d3.scaleOrdinal(d3.schemePaired);
 
     function toggleWedge (index, event) {
         if (!event.key || event.key === "Enter") {

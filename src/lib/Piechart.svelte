@@ -21,7 +21,7 @@
                     "A": "7+ Units",
                     "RL": "Residential Lot",
                 "CD": "Condo",
-                "CC:": "Commerical Condo",
+                "CC": "Commerical Condo",
             "C": "Commerical",
         "RC": "Mixed Use",
         "CL": "Commerical Land",
@@ -55,9 +55,8 @@
 <blockquote scrolly-container>    
 
     Families and renters can be displaced when their homes are converted into luxury condos. This effect is especially prevalent when multi-family housing is converted into condos. To estimate the impact of condo conversions on families, we display the most common building types converted into condos.
-    </blockquote>
-        
+    <p> Note: Legend adapted from <a href="https://www.cityofboston.gov/images_documents/land_use_codes%5B1%5D_tcm3-8867.pdf"> City of Boston LAND USE CODES </a>   </p>
+</blockquote>
+    
 
 <Pie data={pieData} bind:selectedIndex={selectedZipcodeIndex} />
-
-<text> Note: Legend adapted from <a href="https://www.cityofboston.gov/images_documents/land_use_codes%5B1%5D_tcm3-8867.pdf"> City of Boston LAND USE CODES </a></text>

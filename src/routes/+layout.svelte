@@ -2,9 +2,9 @@
     import { page } from '$app/stores';
 
     let pages = [
-        { url: "./", title: "Condo Conversions in Greater Boston" },
-        { url: "./zip_codes", title: "Visualize Impact on Your Zip Code" },
-        { url: "./conclusion", title: "What is Being Done?" },
+        { url: "./", title: "Interactive Data Visualization: Sejal Gupta, Abigail Klein, Stephen Wilson, Caroline Cunningham" },
+        // { url: "./zip_codes", title: "Visualize Impact on Your Zip Code" },
+        // { url: "./conclusion", title: "What is Being Done?" },
         // { url: "./bar_graph", title: "Bar Graph" },
         // { url: "./pie_chart", title: "Pie Chart" },
         // { url: "./line_chart", title: "Line Chart" },
