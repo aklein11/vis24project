@@ -21,7 +21,7 @@
    
 
    .scrolly-container {
-        border: 10px solid #ff3e3e; 
+        border: 2px solid #rgb(8, 8, 8) 
         max-width: 100%;
         margin-top: 50px;
     }
@@ -29,7 +29,7 @@
         max-width: 50%;
     } */
     .parent-container {
-    margin: 0 auto; /* Center the container horizontally */
+    margin: auto; /* Center the container horizontally */
     }
 
    .stats {
