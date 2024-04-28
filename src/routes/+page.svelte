@@ -18,7 +18,7 @@
 
     function handleClick() {
         currentPage += 1;
-        currentPage %= 3;
+        currentPage %= 4;
     }
 
 </script>
@@ -75,21 +75,7 @@ There are many sources of pressure on prices in Boston’s housing market – fr
 </p>
 </blockquote>
 
-<h2> Animation Code Below </h2>
-
-{#if currentPage == 0}
- <p> overview </p>
-
-{:else if currentPage  == 1}
-    <p> somerville </p>
-
-{:else if currentPage == 2}
-    <p> bb </p>
-
-{:else}
-    <p> medford </p>
-
-{/if}
+We take you through three examples of condo conversion in Greater Boston.
 
 <button on:click={handleClick}>
     {#if currentPage == 0}
@@ -106,11 +92,41 @@ There are many sources of pressure on prices in Boston’s housing market – fr
     
     {:else}
     
-    Overview
+    Back to Start
     
     {/if}
     
     </button>
+
+{#if currentPage == 0}
+
+<img src="./images/Boston_Map.png" alt="Image of Boston"/>
+
+{:else if currentPage  == 1}
+
+<blockquote>
+    In 2018, <a href="https://www.cambridgeday.com/2018/02/17/renters-at-a-brand-new-somerville-building-surprised-by-news-millbrooks-going-condo/?fbclid=IwAR3Y-EiEl1r1ZK_-NN2MNZzoPoUJDLR5jyG2PFacnB6fe3GGT1VDTIT7J-k"> Berkeley Investments acquired Millbrook Lofts in Somerville </a> to convert into condominiums. Millbrook Lofts Tenants’ Association of the apartment buildings argued that there would be multiple incidental expenses for residents needing to move.
+</blockquote>
+
+<img src="./images/Somerville_Map.png" alt="Image of Boston"/>
+
+
+{:else if currentPage == 2}
+<blockquote>
+    In 2014, <a href="https://www.gibsonsothebysrealty.com/blog/posts/2014/11/19/back-bay-luxury-real-estate-mandarin-oriental-to-convert-25-units-to-luxury-condos/"> Back Bay’s Mandarin Oriental complex converted 25 apartments into luxury condominium units. </a> The converted units were “predicted to take in some of the highest prices the condo sales market [had] seen”.
+</blockquote>
+
+<img src="./images/BackBay_Map.png" alt="Image of Boston"/>
+
+
+{:else}
+<blockquote>
+	The 2016 <a href="https://bankerandtradesman.com/multifamily-home-conversions-slowly-picking-medford/"> Banker & Tradesman article </a> discusses the real estate economics of Medford multifamily housing units with the goal of converting the condominiums to make a profit.
+</blockquote>
+
+<img src="./images/Medford_Map.png" alt="Image of Boston"/>
+
+{/if}
     
 
 
