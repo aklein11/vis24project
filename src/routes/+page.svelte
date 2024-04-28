@@ -13,6 +13,14 @@
 	const bulletpoints = ["demo a", "demo b", "demo c", "demo d", "demo e", "demo f", "demo g", "demo h", "demo i"];
     let colors = d3.scaleOrdinal(d3.schemeTableau10);
     let zipcode = writable(''); 
+
+    let currentPage = 0;
+
+    function handleClick() {
+        currentPage += 1;
+        currentPage %= 3;
+    }
+
 </script>
 
 <svelte:head>
@@ -66,4 +74,43 @@ There are many sources of pressure on prices in Boston’s housing market – fr
 
 </p>
 </blockquote>
+
+<h2> Animation Code Below </h2>
+
+{#if currentPage == 0}
+ <p> overview </p>
+
+{:else if currentPage  == 1}
+    <p> somerville </p>
+
+{:else if currentPage == 2}
+    <p> bb </p>
+
+{:else}
+    <p> medford </p>
+
+{/if}
+
+<button on:click={handleClick}>
+    {#if currentPage == 0}
+    
+    Learn about Somerville
+    
+    {:else if currentPage == 1}
+    
+    Learn about Back Bay
+    
+    {:else if currentPage == 2}
+    
+    Learn about Medford
+    
+    {:else}
+    
+    Overview
+    
+    {/if}
+    
+    </button>
+    
+
 

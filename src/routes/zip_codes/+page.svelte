@@ -68,7 +68,7 @@
 <blockquote>
     Through our interactive visualization, we invite you to explore the impact of condo conversions on your community.<br>
     <newline></newline>
-    On the map, click a greater Boston zip code to see the locations of condo conversions (starting from 2015) in the region:
+    On the map, click a Boston or Cambridge zip code to see the locations of condo conversions (starting from 2015) in the region:
 </blockquote>
 
 <div class="parent-container">
