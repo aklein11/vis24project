@@ -59,8 +59,8 @@
     }
 
     .test {
-        font-size: 64px;
-        font-weight: bold;
+        font-size: 20px;
+        font-weight: normal;
     }
 
 </style>
@@ -76,7 +76,8 @@
     <Map bind:zipcode={ $zipcode }/>
 
     <Scrolly>
-        <p class="test">Here is where the text that accompanies the map visualization would go. The CSS needs to be updated minimally in each of the chart/graph.svelte files. That said, now Caroline can put in the verbal content into the code here so that she does not need to wait for a place to be set aside.</p>
+        <p class="test"> Section 1: How Old are Condos that are Most Likely to be Converted?
+        </p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <Bargraph query={ $zipcode }/>
@@ -85,7 +86,7 @@
     </Scrolly>
     
     <Scrolly>
-        <p class="test">Here is where the text that accompanies the map visualization would go. The CSS needs to be updated minimally in each of the chart/graph.svelte files. That said, now Caroline can put in the verbal content into the code here so that she does not need to wait for a place to be set aside.</p>
+        <p class="test">Section 2: What Types of Buildings are Most Likely to be Converted? </p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <Piechart query={ $zipcode }/> 
@@ -105,7 +106,7 @@
     </blockquote>
 {:else}
     <Scrolly>
-        <p class="test">Here is where the text that accompanies the map visualization would go. The CSS needs to be updated minimally in each of the chart/graph.svelte files. That said, now Caroline can put in the verbal content into the code here so that she does not need to wait for a place to be set aside.</p>
+        <p class="test">Section 3: How do Complaints about Condominiums vary over Time?</p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <Linechart query={ $zipcode }/>
@@ -114,7 +115,7 @@
     </Scrolly>
 
     <Scrolly>
-        <p class="test">Here is where the text that accompanies the map visualization would go. The CSS needs to be updated minimally in each of the chart/graph.svelte files. That said, now Caroline can put in the verbal content into the code here so that she does not need to wait for a place to be set aside.</p>
+        <p class="test">Section 4: What Types of Complaints are Most Common?</p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <Bubblechart query={ $zipcode }/>
