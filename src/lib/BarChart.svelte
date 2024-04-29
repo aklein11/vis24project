@@ -1,41 +1,41 @@
 <script>
 	import * as d3 from 'd3';
 	import { onMount } from 'svelte';
-	// import json_data from '$lib/year_built_data_v2.json';
-    export let dataArray = [];
-    // export let height;
-    // export let yScale;
+	export let dataArray = [];
 
 	let margin = { top: 20, right: 30, bottom: 70, left: 80 };
-	// TODO: make the width and height reactive
 	let width = 960 - margin.left - margin.right;
 	let height = 500 - margin.top - margin.bottom;
 
-	const xScale = d3.scaleBand()
-		.domain(dataArray.map(d => d.year))
+	// Initialize scales outside of onMount to make them reactive
+	let xScale = d3.scaleBand()
 		.range([0, width])
 		.padding(0.1);
-
-    const yScale = d3.scaleLinear()
-		.domain([0, d3.max(dataArray, d => d.count)])
+	let yScale = d3.scaleLinear()
 		.range([height, 0]);
 
-	// Axis generators
-	const xAxis = d3.axisBottom(xScale)
-		.tickFormat(d3.format('d')) // Remove comma from years
+	let xAxis, yAxis;
 
-	const yAxis = d3.axisLeft(yScale)
-		.ticks(5); // Adjust tick marks as needed
+	onMount(() => {
+		xAxis = d3.axisBottom(xScale).tickFormat(d3.format('d'));
+		yAxis = d3.axisLeft(yScale).ticks(5);
+		updateScales(); // Initial update on mount
+	});
 
-	// Function to draw the axes
-	function drawAxis() {
+	// Function to update scales and redraw the axes
+	function updateScales() {
 		d3.select('.x-axis').call(xAxis);
 		d3.select('.y-axis').call(yAxis);
 	}
 
-	onMount(() => {
-		drawAxis();
-	});
+	// Reactive statement for handling changes in dataArray
+	$: if (dataArray.length > 0) {
+		xScale.domain(dataArray.map(d => d.year));
+		yScale.domain([0, d3.max(dataArray, d => d.count)]);
+		if (xAxis && yAxis) { // Check if axes are initialized
+			updateScales();
+		}
+	}
 </script>
 
 <svg id="barchart-svg" width={width + margin.left + margin.right} height={height + margin.top + margin.bottom}>
