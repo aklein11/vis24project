@@ -33,12 +33,10 @@
 <!-- Separate sections with unique class for each type of chart -->
 <style>
    .scrolly-container {
-        border: 2px solid #rgb(8, 8, 8);
         max-width: 100%;
     }
 
     .pie-container {
-        border: 2px solid #rgb(8, 8, 8);
         max-width: 100%;
     }
 

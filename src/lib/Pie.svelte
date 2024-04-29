@@ -64,11 +64,13 @@
     }
 
     .container {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
         flex-wrap: wrap;
         gap: 10px;
         align-items: horizontal;
         gap: 1em;
+        max-width: 500px;
     }
 
     .legend {

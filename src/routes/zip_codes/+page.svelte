@@ -21,13 +21,11 @@
    
 
    .scrolly-container {
-        border: 2px solid #rgb(8, 8, 8);
         max-width: 100%;
         margin-top: 50px;
     }
 
     .pie-container {
-        border: 2px solid #rgb(8, 8, 8);
         margin-bottom: 500px;
     }
 
