@@ -21,7 +21,7 @@
         });
 
         const geoJsonPath = '/boston-cambridge-zip-codes.geojson';
-        const data = await csv('/lat_long_address.csv');
+        const data = await csv("/lat_long_address.csv");
 
         map.on('load', async function () {
             map.addSource('zip-codes', {
