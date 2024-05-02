@@ -2,6 +2,7 @@
     import { onMount } from 'svelte';
     import mapboxgl from 'mapbox-gl';
     import { csv } from 'd3-fetch';
+    import "../../node_modules/mapbox-gl/dist/mapbox-gl.css";
 
     mapboxgl.accessToken = 'pk.eyJ1Ijoic2VqYWxnIiwiYSI6ImNsdmN0Y21yZTBubmgydmxmNDlmbHVuMXAifQ.G5QWdSQskLQRC0Dw0nYLVw';
 
@@ -87,6 +88,18 @@
                     }, { clicked: false });
                 }
 
+                if (currentZipcode === featureId && feature.state.clicked) {
+                    // If the same feature is clicked again, toggle off the click state
+                    map.setFeatureState({
+                        source: 'zip-codes',
+                        id: featureId,
+                    }, { clicked: false });
+                    currentZipcode = null; // Reset currentZipcode since it's unclicked
+                    map.setFilter('points', ['==', 'id', '__none__']); // Set filter to show no points
+                    map.easeTo({ zoom: initialZoom, center: initialCenter }); // Zoom out smoothly
+                    return; // Exit the function, no further action needed
+                }
+
                 map.setFeatureState({
                     source: 'zip-codes',
                     id: featureId,
@@ -100,14 +113,14 @@
                 feature.geometry.coordinates[0].forEach(coord => {
                     bounds.extend(coord);
                 });
+                // TODO: the following line controls the zooming on click and does not always fit the content into the frame
                 map.fitBounds(bounds, { padding: 20 });
             });
         });
     });
 
     function resetMap() {
-        map.setCenter(initialCenter);
-        map.setZoom(initialZoom);
+        map.easeTo({ zoom: initialZoom, center: initialCenter }); // Zoom out smoothly
         if (currentZipcode !== null) {
             map.setFeatureState({
                 source: 'zip-codes',
@@ -194,29 +207,33 @@
         align-items: baseline;
     }
 
-    /* label {
-        margin-left: auto;
-        display: block;
-    } */
     #map {
         height: 100vh;
         width: 100%;
         margin-top: 25px;
     }
+
     .reset-button{
         margin-bottom: 25px;
+    }
+
+    .map-toolbar {
+        display: flex;
+        margin-bottom: 25px;
+        justify-content: space-between;
+        align-items: baseline;
     }
 </style>
 
 <div>
     <div id="map"></div>
-    <button on:click={resetMap} class="reset-button" > Reset Map</button>
-    
-    {#if currentZipcode === null}
-    {:else}
-    <blockquote scrolly-container>
-        You selected {"0" + currentZipcode}! Click Reset Map to choose a new zip code. 
-        </blockquote>
-    {/if}
-    
+    <div class="map-toolbar">
+        <button on:click={resetMap} class="reset-button" > Reset Map </button>
+        
+        {#if currentZipcode === null}
+            No zip code selected
+        {:else}
+            <b>Selected zip code: {"0" + currentZipcode}</b>
+        {/if}
+    </div>
 </div>
