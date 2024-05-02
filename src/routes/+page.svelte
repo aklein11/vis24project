@@ -9,11 +9,7 @@
     import Map from "$lib/Mapchoice.svelte";
     import { writable } from 'svelte/store';
 
-	let valueBarGraph, valueBubbleChart, valueLineChart, valuePieChart;
-	const bulletpoints = ["demo a", "demo b", "demo c", "demo d", "demo e", "demo f", "demo g", "demo h", "demo i"];
-    let colors = d3.scaleOrdinal(d3.schemeTableau10);
     let zipcode = writable(''); 
-
     let currentPage = 0;
 
     function handleClick() {
@@ -22,8 +18,6 @@
     }
 
     const cambridgeZip = ["02140", "02139", "02142", "02141", "02138"];
-
-
 </script>
 
 <svelte:head>
@@ -89,79 +83,59 @@
         margin-left: 0px;
         overflow: scroll;
     }
-
-
-
 </style>
 
 <h1> Condo Conversions in Greater Boston </h1>
 
 <blockquote scrolly-container>
-<p> <a href="https://www.mapc.org/wp-content/uploads/2021/12/10.-MC2050-Homes-for-Everyone-Brief.pdf">Greater Boston ranks 3rd in the most expensive housing markets in the United States, </a> and <a href="https://homesforprofit.mapc.org/report"> 51% of Boston residents are forced to spend over the recommended income percentage (30%) on rent. </a>
-</p>
-<p> 
-There are many sources of pressure on prices in Boston’s housing market – from zoning restrictions that hinder development of new housing to outside investors who drive up rent. <a href="https://homesforprofit.mapc.org/report"> Affecting renters, residents are often displaced due to price increases when outside investors convert the buildings they live in into condominiums.</a> We refer to this pattern of events as condo conversions.
-
-</p>
+    <p> 
+        <a href="https://www.mapc.org/wp-content/uploads/2021/12/10.-MC2050-Homes-for-Everyone-Brief.pdf">Greater Boston ranks 3rd in the most expensive housing markets in the United States, </a> 
+        and <a href="https://homesforprofit.mapc.org/report"> 51% of Boston residents are forced to spend over the recommended income percentage (30%) on rent. </a>
+    </p>
+    <p> 
+        There are many sources of pressure on prices in Boston’s housing market – from zoning restrictions that hinder development of new housing to outside investors who drive up rent. 
+        <a href="https://homesforprofit.mapc.org/report"> Affecting renters, residents are often displaced due to price increases when outside investors convert the buildings they live in into condominiums.</a> 
+        We refer to this pattern of events as condo conversions.
+    </p>
 </blockquote>
 
 We take you through three examples of condo conversion in Greater Boston.
 
 <button on:click={handleClick}>
     {#if currentPage == 0}
-    
-    Learn about Somerville
-    
+        Learn about Somerville
     {:else if currentPage == 1}
-    
-    Learn about Back Bay
-    
+        Learn about Back Bay
     {:else if currentPage == 2}
-    
-    Learn about Medford
-    
+        Learn about Medford
     {:else}
-    
-    Back to Start
-    
+        Back to Start
     {/if}
-    
-    </button>
+</button>
 
 {#if currentPage == 0}
-
-<img src="./images/Boston_Map.png" alt="Image of Boston"/>
+<img src="./images/Boston_Map.png" alt="Image of Boston_Map"/>
 
 {:else if currentPage  == 1}
-
-<blockquote>
-    In 2018, <a href="https://www.cambridgeday.com/2018/02/17/renters-at-a-brand-new-somerville-building-surprised-by-news-millbrooks-going-condo/?fbclid=IwAR3Y-EiEl1r1ZK_-NN2MNZzoPoUJDLR5jyG2PFacnB6fe3GGT1VDTIT7J-k"> Berkeley Investments acquired Millbrook Lofts in Somerville </a> to convert into condominiums. Millbrook Lofts Tenants’ Association of the apartment buildings argued that there would be multiple incidental expenses for residents needing to move.
-</blockquote>
-
-<img src="./images/Somerville_Map.png" alt="Image of Boston"/>
-
-
+    <blockquote>
+        In 2018, <a href="https://www.cambridgeday.com/2018/02/17/renters-at-a-brand-new-somerville-building-surprised-by-news-millbrooks-going-condo/?fbclid=IwAR3Y-EiEl1r1ZK_-NN2MNZzoPoUJDLR5jyG2PFacnB6fe3GGT1VDTIT7J-k"> Berkeley Investments acquired Millbrook Lofts in Somerville </a> to convert into condominiums. Millbrook Lofts Tenants’ Association of the apartment buildings argued that there would be multiple incidental expenses for residents needing to move.
+    </blockquote>
+    <img src="./images/Somerville_Map.png" alt="Image of Somerville_Map"/>
 {:else if currentPage == 2}
-<blockquote>
-    In 2014, <a href="https://www.gibsonsothebysrealty.com/blog/posts/2014/11/19/back-bay-luxury-real-estate-mandarin-oriental-to-convert-25-units-to-luxury-condos/"> Back Bay’s Mandarin Oriental complex converted 25 apartments into luxury condominium units. </a> The converted units were “predicted to take in some of the highest prices the condo sales market [had] seen”.
-</blockquote>
-
-<img src="./images/BackBay_Map.png" alt="Image of Boston"/>
-
-
+    <blockquote>
+        In 2014, <a href="https://www.gibsonsothebysrealty.com/blog/posts/2014/11/19/back-bay-luxury-real-estate-mandarin-oriental-to-convert-25-units-to-luxury-condos/"> Back Bay’s Mandarin Oriental complex converted 25 apartments into luxury condominium units. </a> The converted units were “predicted to take in some of the highest prices the condo sales market [had] seen”.
+    </blockquote>
+    <img src="./images/BackBay_Map.png" alt="Image of BackBay_Map"/>
 {:else}
-<blockquote>
-	The 2016 <a href="https://bankerandtradesman.com/multifamily-home-conversions-slowly-picking-medford/"> Banker & Tradesman article </a> discusses the real estate economics of Medford multifamily housing units with the goal of converting the condominiums to make a profit.
-</blockquote>
-
-<img src="./images/Medford_Map.png" alt="Image of Boston"/>
-
+    <blockquote>
+        The 2016 <a href="https://bankerandtradesman.com/multifamily-home-conversions-slowly-picking-medford/"> Banker & Tradesman article </a> discusses the real estate economics of Medford multifamily housing units with the goal of converting the condominiums to make a profit.
+    </blockquote>
+    <img src="./images/Medford_Map.png" alt="Image of Medford_Map"/>
 {/if}
 
 <text> <a href="https://svelte.dev/examples/context-api"> Image Generation Credit </a> </text>
 
 <h1> Visualize Impact in Your Zipcode </h1>
-
 
 <blockquote>
     Through our interactive visualization, we invite you to explore the impact of condo conversions on your community.<br>
@@ -170,7 +144,6 @@ We take you through three examples of condo conversion in Greater Boston.
 </blockquote>
 
 <div class="parent-container">
-    
     <Map bind:zipcode={ $zipcode }/>
 
     <Scrolly>
@@ -221,22 +194,27 @@ We take you through three examples of condo conversion in Greater Boston.
 <h1> What is Being Done? </h1>
 
 <blockquote scrolly-container>
-    <p>Boston has passed protections on condo conversions of older buildings; specifically, the <a href="https://www.boston.gov/condominium-and-cooperative-conversion-ordinance"> Condominium and Cooperative Conversion Ordinance (c.a. 1999, amended 2021) </a> provides rights to tenants of buildings constructed pre-1983 with 4+ rental units. 
+    <p>Boston has passed protections on condo conversions of older buildings; specifically, the 
+        <a href="https://www.boston.gov/condominium-and-cooperative-conversion-ordinance"> Condominium and Cooperative Conversion Ordinance (c.a. 1999, amended 2021) </a> 
+        provides rights to tenants of buildings constructed pre-1983 with 4+ rental units. 
         <a href="https://www.boston.gov/sites/default/files/file/2022/08/Conversion%20Ordinance%20Summary%2C%20English.pdf"> Specifically, the ordinance specifies a required notification period, a set relocation payment, and the requirement that tenants have the right to purchase their unit, among other protections. </a>
     </p>
 
     <p>
-    Legal ordinances communities in greater Boston have to protect tenants are detailed on Mass Legal Help's website <a href="https://www.masslegalhelp.org/housing-apartments-shelter/rooming-houses-mobile-homes-condos/local-protections-tenants-facing"> here </a>.
+        Legal ordinances communities in greater Boston have to protect tenants are detailed on Mass Legal Help's website 
+        <a href="https://www.masslegalhelp.org/housing-apartments-shelter/rooming-houses-mobile-homes-condos/local-protections-tenants-facing"> here </a>.
     </p>
 
     <p>
-    That being said, protections for tenants facing condo conversions is still lacking. The Metropolitan Area Planning Council (MAPC) writes in their <a href="https://homesforprofit.mapc.org/report"> report </a> on investor activity in Greater Boston from 2000-2022 that Investor purchases account for 21% of transactions, contributing to housing unaffordability and price increases. For more information on proposed policies, including proposed bills to help residents find short-term emergency housing and increase funds for affordable housing, view the Policy Recommendations section of the <a href="https://homesforprofit.mapc.org/report"> MAPC report </a>.
+        That being said, protections for tenants facing condo conversions is still lacking. 
+        The Metropolitan Area Planning Council (MAPC) writes in their <a href="https://homesforprofit.mapc.org/report"> report </a> 
+        on investor activity in Greater Boston from 2000-2022 that Investor purchases account for 21% of transactions, contributing 
+        to housing unaffordability and price increases. For more information on proposed policies, including proposed bills to help 
+        residents find short-term emergency housing and increase funds for affordable housing, view the Policy Recommendations section 
+        of the <a href="https://homesforprofit.mapc.org/report"> MAPC report </a>.
     </p>    
 
     <p>    
-    Thank you to the Metropolitan Area Planning Council for guidance on our project!
+        Thank you to the Metropolitan Area Planning Council for guidance on our project!
     </p>
-    </blockquote>
-
-
-
+</blockquote>
