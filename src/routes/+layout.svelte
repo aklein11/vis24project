@@ -3,7 +3,7 @@
 
     let pages = [
         { url: "./", title: "Interactive Data Visualization: Sejal Gupta, Abigail Klein, Stephen Wilson, Caroline Cunningham" },
-        // { url: "./zip_codes", title: "Visualize Impact on Your Zip Code" },
+        { url: "./bars_interactive", title: "Visualize Complaints over time" },
         // { url: "./conclusion", title: "What is Being Done?" },
         // { url: "./bar_graph", title: "Bar Graph" },
         // { url: "./pie_chart", title: "Pie Chart" },
