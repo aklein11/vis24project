@@ -6,6 +6,7 @@
 	import Bubblechart from "$lib/Bubblechart.svelte";
 	import Linechart from "$lib/Linechart.svelte";
 	import Piechart from "$lib/Piechart.svelte";
+    import Heatmap from "$lib/Heatmap.svelte";
     import Map from "$lib/Mapchoice.svelte";
     import { writable } from 'svelte/store';
 
@@ -134,6 +135,8 @@ We take you through three examples of condo conversion in Greater Boston.
 {/if}
 
 <text> <a href="https://svelte.dev/examples/context-api"> Image Generation Credit </a> </text>
+
+<Heatmap></Heatmap>
 
 <h1> Visualize Impact in Your Zipcode </h1>
 
