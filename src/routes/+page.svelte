@@ -7,6 +7,7 @@
 	import Linechart from "$lib/Linechart.svelte";
 	import Piechart from "$lib/Piechart.svelte";
     import Heatmap from "$lib/Heatmap.svelte";
+    import WordCloud from "$lib/WordCloud.svelte";
     import Map from "$lib/Mapchoice.svelte";
     import { writable } from 'svelte/store';
 
@@ -185,7 +186,16 @@ We take you through three examples of condo conversion in Greater Boston.
     </Scrolly>
 
     <Scrolly>
-        <p class="test">Section 4: What Types of Complaints are Most Common?</p>
+        <p class="test">Section 4: What Types of Complaints are Most Common? - Word cloud</p>
+        <svelte:fragment slot="viz">
+            <div class="scrolly-container">
+                <WordCloud query={ $zipcode }/>
+            </div>
+        </svelte:fragment>
+    </Scrolly>
+
+    <Scrolly>
+        <p class="test">Section 5: What Types of Complaints are Most Common? - Bubble chart</p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <Bubblechart query={ $zipcode }/>
