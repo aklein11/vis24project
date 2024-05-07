@@ -5,9 +5,9 @@
     let data = [];
   
     // Dimensions and margins of the graph
-    const margin = { top: 110, right: 25, bottom: 30, left: 40 };
-    const width = 450 - margin.left - margin.right;
-    const height = 450 - margin.top - margin.bottom;
+    const margin = { top: 110, right: 125, bottom: 225, left: 40 };
+    const width = 850 - margin.left - margin.right;
+    const height = 850 - margin.top - margin.bottom;
   
     onMount(async () => {
       // Load and process the data
@@ -21,11 +21,28 @@
           .attr('width', width + margin.left + margin.right)
           .attr('height', height + margin.top + margin.bottom)
         .append('g')
-          .attr('transform', `translate(${margin.left}, ${margin.top})`);
+          .attr('transform', `translate(${4 * margin.left}, ${margin.top})`);
   
+      const labelDict = {"CM": "Building broken into condo units",
+                "R1": "1-Family",
+                "R2": "2-Family",
+                "R3": "3-Family",
+                "R4": "4-6 Units",
+                "A": "7+ Units",
+                "RL": "Residential Lot",
+                "CD": "Condo",
+                "CC": "Commercial Condo",
+                "C": "Commercial",
+                "RC": "Mixed Use",
+                "CL": "Commercial Land",
+                "CP": "Condo Parking",
+                "I": "Industrial",
+                "E": "Exempt",
+                "EA": "Exempt (A)"};
+      const mappedData = data.map(d => ({ 'Count of LU post': +d['Count of LU post'], 'LU prior groups':  labelDict[d['LU prior groups']], 'LU post groups':  labelDict[d['LU post groups']]}));
       // Labels of row and columns
-      const myGroups = Array.from(new Set(data.map(d => d['LU prior groups'])));
-      const myVars = Array.from(new Set(data.map(d => d['LU post groups'])));
+      const myGroups = Array.from(new Set(mappedData.map(d => d['LU prior groups'])));
+      const myVars = Array.from(new Set(mappedData.map(d => d['LU post groups'])));
   
       // Build X scales and axis
       const x = d3.scaleBand()
@@ -36,6 +53,11 @@
         .style('font-size', 15)
         .attr('transform', `translate(0, ${height})`)
         .call(d3.axisBottom(x).tickSize(0))
+        .selectAll(".tick text")  // select all the text elements for the x-axis ticks
+        .style("text-anchor", "end") // align the text right so it becomes bottom aligned after rotation
+        .attr("dx", "-.8em")
+        .attr("dy", ".15em")
+        .attr("transform", "rotate(-90)")  // rotate the text
         .select('.domain').remove();
         // // X-axis title
         // .append('text')
@@ -66,7 +88,7 @@
       // Build color scale
       const myColor = d3.scaleSequential()
         .interpolator(d3.interpolateInferno)
-        .domain(d3.extent(data, d => +d['Count of LU post']));
+        .domain(d3.extent(mappedData, d => +d['Count of LU post']));
 
     // create a tooltip
     const tooltip = d3.select("#heatmap")
@@ -103,7 +125,7 @@
   
       // Add the squares
       svg.selectAll()
-        .data(data, d => d['LU prior groups'] + ':' + d['LU post groups'])
+        .data(mappedData, d => d['LU prior groups'] + ':' + d['LU post groups'])
         .join('rect')
           .attr('x', d => x(d['LU prior groups']))
           .attr('y', d => y(d['LU post groups']))
