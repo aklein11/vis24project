@@ -11,7 +11,7 @@
   
     onMount(async () => {
       // Load and process the data
-      data = await d3.csv('/heatmap_data.csv');
+      data = await d3.csv('heatmap_data.csv');
       createHeatmap();
     });
   
