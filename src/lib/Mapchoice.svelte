@@ -10,7 +10,7 @@
     var currentZipcode = null;
     export var zipcode = null;
 
-    const initialCenter = [-71.0589, 42.3601];
+    const initialCenter = [-71.0589, 42.3301];
     const initialZoom = 10;
 
     onMount(async () => {
@@ -51,7 +51,16 @@
                 features: data.map((row) => ({
                     type: 'Feature',
                     properties: {
-                        zipcode: row["ZIPCODE post (group)"]
+                        zipcode: row["ZIPCODE post (group)"],
+                        post_building: row["LU post groups"],
+                        prior_building: row["LU prior groups"],	
+                        year_converted: row["Prior Year"],
+                        value_post: row["TOTAL VALUE post"],	
+                        value_prior: row["TOTAL VALUE prior"],
+                        year_built: row["YR BUILT prior (bin) 2"],	
+                        latitude: row["Latitude"],
+                        longitude: row["Longitude"],
+                        address: row["Address"],
                     },
                     geometry: {
                         type: 'Point',
@@ -71,9 +80,9 @@
                 type: 'circle',
                 source: 'locations',
                 paint: {
-                    'circle-radius': 8,
+                    'circle-radius': 5,
                     'circle-color': '#ce160e',
-                    'circle-opacity': 0.8,
+                    'circle-opacity': 1,
                 },
                 filter: ['==', ['get', 'zipcode'], '']
             });
@@ -97,10 +106,18 @@
                     popup.remove();
                 }
 
-                // Create a popup and add it to the map
                 popup = new mapboxgl.Popup()
                     .setLngLat(coordinates)
-                    .setHTML(`Zipcode: ${properties.zipcode} <br> Coordinates: (${coordinates})`) // Customize your tooltip content here
+                    .setHTML(`
+                        <strong>Address:</strong> ${properties.address} <br>
+                        <strong>Zipcode:</strong> ${properties.zipcode} <br>
+                        <strong>Year Built:</strong> ${parseInt(properties.year_built)} <br>
+                        <strong>Post Building Type:</strong> ${properties.post_building} <br>
+                        <strong>Prior Building Type:</strong> ${properties.prior_building} <br>
+                        <strong>Year Converted:</strong> ${parseInt(properties.year_converted)} <br>
+                        <strong>Value Prior-Conversion:</strong> $${properties.value_prior.toLocaleString()} <br>
+                        <strong>Value Post-Conversion:</strong> $${properties.value_post.toLocaleString()} <br>
+                    `) // Customize your tooltip content here
                     .addTo(map);
             });
 
@@ -189,7 +206,7 @@
         position: absolute;
         z-index: 1;
         width: 100%;
-        height: 100%;
+        height: 10%;
         pointer-events: none;
         fill-opacity: 60%;
         stroke: white;
@@ -244,7 +261,7 @@
     }
 
     #map {
-        height: 100vh;
+        height: 50vh;
         width: 100%;
         margin-top: 25px;
     }
