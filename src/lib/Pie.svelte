@@ -5,22 +5,32 @@
     export let data = [];
 
     let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
-    
-    // let pieData = [
-    //     { value: 1, label: "apples" },
-    //     { value: 2, label: "oranges" },
-    //     { value: 3, label: "mangos" },
-    //     { value: 4, label: "pears" },
-    //     { value: 5, label: "limes" },
-    //     { value: 5, label: "cherries" }
-    // ];
 
     let arcData, arcs;
     let sliceGenerator = d3.pie().value(d => d.value);
     $: arcData = sliceGenerator(data);
     $: arcs = arcData.map(d => arcGenerator(d));
 
-    let colors = d3.scaleOrdinal(d3.schemePaired);
+    function chooseColor(index) {
+        const colorDict = {"Building broken into condo units": "#558B2F",
+                            "1-Family" : "#1565C0",
+                            "2-Family": "#1976D2",
+                            "3-Family": "#2196F3",
+                            "4-6 Units": "#64B5F6",
+                            "7+ Units": "#FF8F00",
+                            "Residential Lot": "#BBDEFB",
+                            "Condo" : "#1B5E20",
+                            "Commercial Condo": "#9E9D24",
+                            "Commercial" : "#FFEB3B",
+                            "Mixed Use": "#FF5722",
+                            "Commercial Land": "#FFF176",
+                            "Condo Parking": "#AED581",
+                            "Industrial": "#FFF59D",
+                            "Exempt": "#90A4AE",
+                            "Exempt": "#90A4AE"}
+        
+        return colorDict[data[index].label];
+    }
 
     function toggleWedge (index, event) {
         if (!event.key || event.key === "Enter") {
@@ -33,8 +43,8 @@
 
 <div class="container">
     <svg id="piechart-svg" viewBox="-50 -50 100 100">
-        {#each arcs as arc, i}
-        <path d={arc} fill={colors(i)} 
+        {#each data as d, i}
+        <path d={arcs[i]} fill={chooseColor(i)} 
             class:selected={selectedIndex === i}
             on:click={e => toggleWedge(i, e)} 
             on:keyup={e => toggleWedge(i, e)}  
@@ -46,10 +56,9 @@
 
     <ul class="legend">
         {#each data as d, index}
-            <li class="legend-item" style="--color: { colors(index) }">
+            <li class="legend-item" class:selected={selectedIndex === index} style="--color: { chooseColor(index) }">
                 <span class="swatch"></span>
                 {d.label} <em>({d.value})</em>
-                <!-- class:selected={selectedIndex === index} -->
             </li>
         {/each}
     </ul>
