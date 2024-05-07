@@ -141,23 +141,38 @@ We take you through three examples of condo conversion in Greater Boston.
 <h1> Heat Map </h1>
 <Heatmap />
 
-<h1> Complaints Over Time </h1>
+<h1> Impact of the Condo Conversions </h1>
+<blockquote>
+    
+    <a href="https://data.boston.gov/dataset/rentsmart/resource/dc615ff7-2ff3-416a-922b-f0f334f085d0?filters=property_type%3ACondominium%20Main" >RentSmart</a> has released a dataset about tenant / contractor complaints from Boston's 311 and the City's Inspectional Services Division buildings from the years of 2019 to 2023. 
+    
+    Taking all the complaints about condominiums, the following chart shows the gradual change in the sheer number of complaints and the top categories.
+    
+</blockquote>
+
 <RaceBarChart />
+
+<blockquote> 
+    As we can see, the main complaints are Improper Storage Trash, Extermination and Mold Concerns, Abandoned Vehicles, Permit Issues, and Failure to restore basic structural and utility needs.
+</blockquote>
 
 <h1> Visualize Impact in Your Zipcode </h1>
 
 <blockquote>
     Through our interactive visualization, we invite you to explore the impact of condo conversions on your community.<br>
     <newline></newline>
-    On the map, click a Boston or Cambridge zip code to see the locations of condo conversions (starting from 2015) in the region. Once you click a zipcode, the locations of the condo conversions in the area will be highlighted with red dots:
+    On the map, click a Boston or Cambridge zip code to see the locations of condo conversions (starting from 2015) in the region. 
+    
+    Once you click a zipcode, the locations of the condo conversions in the area will be highlighted with red dots.
+
+    You can hover over the dots to learn more about the condo conversions and look at the associated charts to learn more about the overall zipcode.
 </blockquote>
 
 <div class="parent-container">
     <Map bind:zipcode={ $zipcode }/>
 
     <Scrolly>
-        <p class="test"> Section 1: How Old are Condos that are Most Likely to be Converted?
-        </p>
+        <p class="test"> Age of Buildings that are Most Likely to be Converted to Condos in <strong>{zipcode}</strong></p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <Bargraph query={ $zipcode }/>
@@ -166,7 +181,7 @@ We take you through three examples of condo conversion in Greater Boston.
     </Scrolly>
     
     <Scrolly>
-        <p class="test-pie">Section 2: What Types of Buildings are Most Likely to be Converted? </p>
+        <p class="test-pie">Types of Buildings the are Most Likely to be Converted in <strong>{zipcode}</strong>?? </p>
         <svelte:fragment slot="viz">
             <div class="pie-container">
                 <Piechart query={ $zipcode }/> 
@@ -176,13 +191,13 @@ We take you through three examples of condo conversion in Greater Boston.
 </div>
 
 {#if $zipcode !== '' && cambridgeZip.indexOf($zipcode) !== -1}
-    <h1> Condo Complaints </h1>
+    <h1>Complaints about Condominiums over Time in <strong>{zipcode}</strong> </h1>
     <blockquote>
         For Cambridge, we did not have data on condominium complaints.
     </blockquote>
 {:else}
     <Scrolly>
-        <p class="test">Section 3: How do Complaints about Condominiums vary over Time?</p>
+        <p class="test">Complaints about Condominiums over Time in <strong>{zipcode}</strong></p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <Linechart query={ $zipcode }/>
@@ -191,7 +206,7 @@ We take you through three examples of condo conversion in Greater Boston.
     </Scrolly>
 
     <Scrolly>
-        <p class="test">Section 4: What Types of Complaints are Most Common? - Word cloud</p>
+        <p class="test">Section 4: Types of Complaints in <strong>{zipcode}</strong></p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <WordCloud query={ $zipcode }/>
@@ -200,7 +215,7 @@ We take you through three examples of condo conversion in Greater Boston.
     </Scrolly>
 
     <Scrolly>
-        <p class="test">Section 5: What Types of Complaints are Most Common? - Bubble chart</p>
+        <p class="test">Section 5: Most Common Complaints in <strong>{zipcode}</strong></p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <Bubblechart query={ $zipcode }/>
