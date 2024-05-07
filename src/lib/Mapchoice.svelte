@@ -70,9 +70,9 @@
                 type: 'circle',
                 source: 'locations',
                 paint: {
-                    'circle-radius': 6,
-                    'circle-color': '#000000',
-                    'circle-opacity': 0.4,
+                    'circle-radius': 8,
+                    'circle-color': '#ce160e',
+                    'circle-opacity': 0.8,
                 },
                 filter: ['==', ['get', 'zipcode'], '']
             });

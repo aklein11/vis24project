@@ -3,6 +3,7 @@
 	import Scrolly from "svelte-scrolly";
     import { onMount } from "svelte";
     import Bargraph from "$lib/Bargraph.svelte";
+    import RaceBarChart from "$lib/RaceBarChart.svelte";
 	import Bubblechart from "$lib/Bubblechart.svelte";
 	import Linechart from "$lib/Linechart.svelte";
 	import Piechart from "$lib/Piechart.svelte";
@@ -137,14 +138,18 @@ We take you through three examples of condo conversion in Greater Boston.
 
 <text> <a href="https://svelte.dev/examples/context-api"> Image Generation Credit </a> </text>
 
-<Heatmap></Heatmap>
+<h1> Heat Map </h1>
+<Heatmap />
+
+<h1> Complaints Over Time </h1>
+<RaceBarChart />
 
 <h1> Visualize Impact in Your Zipcode </h1>
 
 <blockquote>
     Through our interactive visualization, we invite you to explore the impact of condo conversions on your community.<br>
     <newline></newline>
-    On the map, click a Boston or Cambridge zip code to see the locations of condo conversions (starting from 2015) in the region:
+    On the map, click a Boston or Cambridge zip code to see the locations of condo conversions (starting from 2015) in the region. Once you click a zipcode, the locations of the condo conversions in the area will be highlighted with red dots:
 </blockquote>
 
 <div class="parent-container">

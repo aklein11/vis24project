@@ -3,7 +3,6 @@
 
     let pages = [
         { url: "./", title: "Interactive Data Visualization: Sejal Gupta, Abigail Klein, Stephen Wilson, Caroline Cunningham" },
-        { url: "./bars_interactive", title: "Visualize Complaints over time" },
         // { url: "./conclusion", title: "What is Being Done?" },
         // { url: "./bar_graph", title: "Bar Graph" },
         // { url: "./pie_chart", title: "Pie Chart" },

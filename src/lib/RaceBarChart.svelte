@@ -54,8 +54,8 @@
     .domain(categories.map(d => d[0]));
 
   // Update the axes
-  svg.select('.x.axis').transition().duration(500).call(xAxis);
-  svg.select('.y.axis').transition().duration(500).call(yAxis);
+  svg.select('.x.axis').transition().duration(250).call(xAxis);
+  svg.select('.y.axis').transition().duration(250).call(yAxis);
 
   // Select bars in SVG and bind current date data to the bars
   const bars = svg.selectAll('.bar')
@@ -89,7 +89,7 @@
     .attr('text-anchor', 'middle')
     .text('Current Date Data: ' + currentDateData.Date);
 
-  if (index < data.length) setTimeout(updateBars, 500); // Schedule next update
+  if (index < data.length) setTimeout(updateBars, 250); // Schedule next update
 };
 
     updateBars();
