@@ -88,7 +88,11 @@
     }
 </style>
 
-<h1> Condo Conversions in Greater Boston </h1>
+<h1> Greater Boston Infested with Condomoniums</h1>
+
+<h2> What are Condo Conversions </h2>
+
+<h2> Examples of Condo Conversions in the Greater Boston Area </h2>
 
 <blockquote scrolly-container>
     <p> 
@@ -138,26 +142,47 @@ We take you through three examples of condo conversion in Greater Boston.
 
 <text> <a href="https://svelte.dev/examples/context-api"> Image Generation Credit </a> </text>
 
-<h1> Heat Map </h1>
+<h2> Heat Map </h2>
 <Heatmap />
 
-<h1> Complaints Over Time </h1>
+<h2> Impact of the Condo Conversions </h2>
+<blockquote>
+    
+    <a href="https://data.boston.gov/dataset/rentsmart/resource/dc615ff7-2ff3-416a-922b-f0f334f085d0?filters=property_type%3ACondominium%20Main" >RentSmart</a> has released a dataset about tenant / contractor complaints from Boston's 311 and the City's Inspectional Services Division buildings from the years of 2019 to 2023. 
+    
+    Taking all the complaints about condominiums, the following chart shows the gradual change in the sheer number of complaints and the top categories.
+    
+</blockquote>
+
 <RaceBarChart />
 
-<h1> Visualize Impact in Your Zipcode </h1>
+<blockquote> 
+    As we can see, the main complaints are Improper Storage Trash, Extermination and Mold Concerns, Abandoned Vehicles, Permit Issues, and Failure to restore basic structural and utility needs.
+</blockquote>
+
+<h2> Visualize Impact in Your Zipcode </h2>
 
 <blockquote>
     Through our interactive visualization, we invite you to explore the impact of condo conversions on your community.<br>
     <newline></newline>
-    On the map, click a Boston or Cambridge zip code to see the locations of condo conversions (starting from 2015) in the region. Once you click a zipcode, the locations of the condo conversions in the area will be highlighted with red dots:
+    On the map, <strong>click a Boston or Cambridge zip code</strong> to see the locations of condo conversions (starting from 2015) in the region. 
+    
+    Once you click a zipcode, the locations of the condo conversions in the area will be highlighted with red dots.
+
+    You can <strong>hover over the dots to learn more about the condo conversions</strong> and look at the <strong>associated charts</strong> to learn more about the overall zipcode.
 </blockquote>
 
 <div class="parent-container">
     <Map bind:zipcode={ $zipcode }/>
 
     <Scrolly>
-        <p class="test"> Section 1: How Old are Condos that are Most Likely to be Converted?
-        </p>
+        <p class="test">Age of Buildings that are Most Likely to be Converted to Condos in <strong>
+            {#if $zipcode !== ''}
+                {$zipcode}
+            {:else}
+                Boston and Cambridge
+            {/if}
+        </strong></p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <Bargraph query={ $zipcode }/>
@@ -166,7 +191,13 @@ We take you through three examples of condo conversion in Greater Boston.
     </Scrolly>
     
     <Scrolly>
-        <p class="test-pie">Section 2: What Types of Buildings are Most Likely to be Converted? </p>
+        <p class="test">Types of Buildings the are Most Likely to be Converted in <strong>
+            {#if $zipcode !== ''}
+                {$zipcode}
+            {:else}
+                Boston and Cambridge
+            {/if}
+        </strong></p>
         <svelte:fragment slot="viz">
             <div class="pie-container">
                 <Piechart query={ $zipcode }/> 
@@ -176,13 +207,19 @@ We take you through three examples of condo conversion in Greater Boston.
 </div>
 
 {#if $zipcode !== '' && cambridgeZip.indexOf($zipcode) !== -1}
-    <h1> Condo Complaints </h1>
+    <p>Complaints about Condominiums over Time in <strong>{zipcode}</strong> </p>
     <blockquote>
         For Cambridge, we did not have data on condominium complaints.
     </blockquote>
 {:else}
     <Scrolly>
-        <p class="test">Section 3: How do Complaints about Condominiums vary over Time?</p>
+        <p class="test">Complaints about Condominiums over Time in <strong>
+            {#if $zipcode !== ''}
+                {$zipcode}
+            {:else}
+                Boston and Cambridge
+            {/if}
+        </strong></p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <Linechart query={ $zipcode }/>
@@ -191,7 +228,13 @@ We take you through three examples of condo conversion in Greater Boston.
     </Scrolly>
 
     <Scrolly>
-        <p class="test">Section 4: What Types of Complaints are Most Common? - Word cloud</p>
+        <p class="test">Types of Complaints in <strong>
+            {#if $zipcode !== ''}
+                {$zipcode}
+            {:else}
+                Boston
+            {/if}
+        </strong></p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <WordCloud query={ $zipcode }/>
@@ -200,7 +243,13 @@ We take you through three examples of condo conversion in Greater Boston.
     </Scrolly>
 
     <Scrolly>
-        <p class="test">Section 5: What Types of Complaints are Most Common? - Bubble chart</p>
+        <p class="test">Most Common Complaints in <strong>
+            {#if $zipcode !== ''}
+                {$zipcode}
+            {:else}
+                Boston
+            {/if}
+        </strong></p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <Bubblechart query={ $zipcode }/>
@@ -209,7 +258,7 @@ We take you through three examples of condo conversion in Greater Boston.
     </Scrolly>
 {/if}
 
-<h1> What is Being Done? </h1>
+<h2> What is Being Done? </h2>
 
 <blockquote scrolly-container>
     <p>Boston has passed protections on condo conversions of older buildings; specifically, the 
