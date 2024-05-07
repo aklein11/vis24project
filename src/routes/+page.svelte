@@ -88,7 +88,11 @@
     }
 </style>
 
-<h1> Condo Conversions in Greater Boston </h1>
+<h1> Greater Boston Infested with Condomoniums</h1>
+
+<h2> What are Condo Conversions </h2>
+
+<h2> Examples of Condo Conversions in the Greater Boston Area </h2>
 
 <blockquote scrolly-container>
     <p> 
@@ -138,10 +142,10 @@ We take you through three examples of condo conversion in Greater Boston.
 
 <text> <a href="https://svelte.dev/examples/context-api"> Image Generation Credit </a> </text>
 
-<h1> Heat Map </h1>
+<h2> Heat Map </h2>
 <Heatmap />
 
-<h1> Impact of the Condo Conversions </h1>
+<h2> Impact of the Condo Conversions </h2>
 <blockquote>
     
     <a href="https://data.boston.gov/dataset/rentsmart/resource/dc615ff7-2ff3-416a-922b-f0f334f085d0?filters=property_type%3ACondominium%20Main" >RentSmart</a> has released a dataset about tenant / contractor complaints from Boston's 311 and the City's Inspectional Services Division buildings from the years of 2019 to 2023. 
@@ -156,7 +160,7 @@ We take you through three examples of condo conversion in Greater Boston.
     As we can see, the main complaints are Improper Storage Trash, Extermination and Mold Concerns, Abandoned Vehicles, Permit Issues, and Failure to restore basic structural and utility needs.
 </blockquote>
 
-<h1> Visualize Impact in Your Zipcode </h1>
+<h2> Visualize Impact in Your Zipcode </h2>
 
 <blockquote>
     Through our interactive visualization, we invite you to explore the impact of condo conversions on your community.<br>
@@ -203,7 +207,7 @@ We take you through three examples of condo conversion in Greater Boston.
 </div>
 
 {#if $zipcode !== '' && cambridgeZip.indexOf($zipcode) !== -1}
-    <h1>Complaints about Condominiums over Time in <strong>{zipcode}</strong> </h1>
+    <p>Complaints about Condominiums over Time in <strong>{zipcode}</strong> </p>
     <blockquote>
         For Cambridge, we did not have data on condominium complaints.
     </blockquote>
@@ -254,7 +258,7 @@ We take you through three examples of condo conversion in Greater Boston.
     </Scrolly>
 {/if}
 
-<h1> What is Being Done? </h1>
+<h2> What is Being Done? </h2>
 
 <blockquote scrolly-container>
     <p>Boston has passed protections on condo conversions of older buildings; specifically, the 
