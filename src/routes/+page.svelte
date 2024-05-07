@@ -161,18 +161,24 @@ We take you through three examples of condo conversion in Greater Boston.
 <blockquote>
     Through our interactive visualization, we invite you to explore the impact of condo conversions on your community.<br>
     <newline></newline>
-    On the map, click a Boston or Cambridge zip code to see the locations of condo conversions (starting from 2015) in the region. 
+    On the map, <strong>click a Boston or Cambridge zip code</strong> to see the locations of condo conversions (starting from 2015) in the region. 
     
     Once you click a zipcode, the locations of the condo conversions in the area will be highlighted with red dots.
 
-    You can hover over the dots to learn more about the condo conversions and look at the associated charts to learn more about the overall zipcode.
+    You can <strong>hover over the dots to learn more about the condo conversions</strong> and look at the <strong>associated charts</strong> to learn more about the overall zipcode.
 </blockquote>
 
 <div class="parent-container">
     <Map bind:zipcode={ $zipcode }/>
 
     <Scrolly>
-        <p class="test"> Age of Buildings that are Most Likely to be Converted to Condos in <strong>{zipcode}</strong></p>
+        <p class="test">Age of Buildings that are Most Likely to be Converted to Condos in <strong>
+            {#if $zipcode !== ''}
+                {$zipcode}
+            {:else}
+                Boston and Cambridge
+            {/if}
+        </strong></p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <Bargraph query={ $zipcode }/>
@@ -181,7 +187,13 @@ We take you through three examples of condo conversion in Greater Boston.
     </Scrolly>
     
     <Scrolly>
-        <p class="test-pie">Types of Buildings the are Most Likely to be Converted in <strong>{zipcode}</strong>?? </p>
+        <p class="test">Types of Buildings the are Most Likely to be Converted in <strong>
+            {#if $zipcode !== ''}
+                {$zipcode}
+            {:else}
+                Boston and Cambridge
+            {/if}
+        </strong></p>
         <svelte:fragment slot="viz">
             <div class="pie-container">
                 <Piechart query={ $zipcode }/> 
@@ -197,7 +209,13 @@ We take you through three examples of condo conversion in Greater Boston.
     </blockquote>
 {:else}
     <Scrolly>
-        <p class="test">Complaints about Condominiums over Time in <strong>{zipcode}</strong></p>
+        <p class="test">Complaints about Condominiums over Time in <strong>
+            {#if $zipcode !== ''}
+                {$zipcode}
+            {:else}
+                Boston and Cambridge
+            {/if}
+        </strong></p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <Linechart query={ $zipcode }/>
@@ -206,7 +224,13 @@ We take you through three examples of condo conversion in Greater Boston.
     </Scrolly>
 
     <Scrolly>
-        <p class="test">Section 4: Types of Complaints in <strong>{zipcode}</strong></p>
+        <p class="test">Types of Complaints in <strong>
+            {#if $zipcode !== ''}
+                {$zipcode}
+            {:else}
+                Boston
+            {/if}
+        </strong></p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <WordCloud query={ $zipcode }/>
@@ -215,7 +239,13 @@ We take you through three examples of condo conversion in Greater Boston.
     </Scrolly>
 
     <Scrolly>
-        <p class="test">Section 5: Most Common Complaints in <strong>{zipcode}</strong></p>
+        <p class="test">Most Common Complaints in <strong>
+            {#if $zipcode !== ''}
+                {$zipcode}
+            {:else}
+                Boston
+            {/if}
+        </strong></p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
                 <Bubblechart query={ $zipcode }/>

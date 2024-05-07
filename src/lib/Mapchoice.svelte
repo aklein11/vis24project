@@ -234,8 +234,8 @@
             No zip code selected
         {:else}
             <b>Selected zip code: {"0" + currentZipcode}</b>
+            <b>Click on the map to explore a different zipcode</b>
 
         {/if}
     </div>
-    <p>You can choose a different zipcode to explore as well.</p>
 </div>
