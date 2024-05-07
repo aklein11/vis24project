@@ -10,8 +10,8 @@
     var currentZipcode = null;
     export var zipcode = null;
 
-    const initialCenter = [-71.0589, 42.3601];
-    const initialZoom = 11;
+    const initialCenter = [-71.0589, 42.3301];
+    const initialZoom = 10;
 
     onMount(async () => {
         map = new mapboxgl.Map({
@@ -51,7 +51,16 @@
                 features: data.map((row) => ({
                     type: 'Feature',
                     properties: {
-                        zipcode: row["ZIPCODE post (group)"]
+                        zipcode: row["ZIPCODE post (group)"],
+                        post_building: row["LU post groups"],
+                        prior_building: row["LU prior groups"],	
+                        year_converted: row["Prior Year"],
+                        value_post: row["TOTAL VALUE post"],	
+                        value_prior: row["TOTAL VALUE prior"],
+                        year_built: row["YR BUILT prior (bin) 2"],	
+                        latitude: row["Latitude"],
+                        longitude: row["Longitude"],
+                        address: row["Address"],
                     },
                     geometry: {
                         type: 'Point',
@@ -65,16 +74,60 @@
                 data: geojsonData
             });
 
+            // Add the circle layer with event handlers for tooltips
             map.addLayer({
                 id: 'points',
                 type: 'circle',
                 source: 'locations',
                 paint: {
-                    'circle-radius': 8,
+                    'circle-radius': 5,
                     'circle-color': '#ce160e',
-                    'circle-opacity': 0.8,
+                    'circle-opacity': 1,
                 },
                 filter: ['==', ['get', 'zipcode'], '']
+            });
+
+            let popup = null;
+
+            map.on('mouseenter', 'points', (e) => {
+                // Change the cursor style as a UI indicator.
+                map.getCanvas().style.cursor = 'pointer';
+
+                const coordinates = e.features[0].geometry.coordinates.slice();
+                const properties = e.features[0].properties; // Access feature properties
+
+                // Adjust longitude to ensure the popup is placed correctly on the map
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+                // Ensure only one popup is active at a time
+                if (popup) {
+                    popup.remove();
+                }
+
+                popup = new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML(`
+                        <strong>Address:</strong> ${properties.address} <br>
+                        <strong>Zipcode:</strong> ${properties.zipcode} <br>
+                        <strong>Year Built:</strong> ${parseInt(properties.year_built)} <br>
+                        <strong>Post Building Type:</strong> ${properties.post_building} <br>
+                        <strong>Prior Building Type:</strong> ${properties.prior_building} <br>
+                        <strong>Year Converted:</strong> ${parseInt(properties.year_converted)} <br>
+                        <strong>Value Prior-Conversion:</strong> $${properties.value_prior.toLocaleString()} <br>
+                        <strong>Value Post-Conversion:</strong> $${properties.value_post.toLocaleString()} <br>
+                    `) // Customize your tooltip content here
+                    .addTo(map);
+            });
+
+            map.on('mouseleave', 'points', () => {
+                map.getCanvas().style.cursor = '';
+                // Remove the popup if it exists
+                if (popup) {
+                    popup.remove();
+                    popup = null; // Nullify the popup reference
+                }
             });
 
             map.on('click', 'polygons', (e) => {
@@ -153,7 +206,7 @@
         position: absolute;
         z-index: 1;
         width: 100%;
-        height: 100%;
+        height: 10%;
         pointer-events: none;
         fill-opacity: 60%;
         stroke: white;
@@ -208,7 +261,7 @@
     }
 
     #map {
-        height: 100vh;
+        height: 50vh;
         width: 100%;
         margin-top: 25px;
     }

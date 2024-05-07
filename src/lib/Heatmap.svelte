@@ -5,25 +5,19 @@
     let data = [];
   
     // Dimensions and margins of the graph
-    const margin = { top: 110, right: 125, bottom: 225, left: 40 };
+    const margin = { top: 110, right: 80, bottom: 225, left: 150 };
     const width = 850 - margin.left - margin.right;
     const height = 850 - margin.top - margin.bottom;
   
     onMount(async () => {
       // Load and process the data
-      data = await d3.csv('/heatmap_data.csv');
+      data = await d3.csv('heatmap_data.csv');
       createHeatmap();
     });
   
     function createHeatmap() {
-      const svg = d3.select('#heatmap')
-        .append('svg')
-          .attr('width', width + margin.left + margin.right)
-          .attr('height', height + margin.top + margin.bottom)
-        .append('g')
-          .attr('transform', `translate(${4 * margin.left}, ${margin.top})`);
   
-      const labelDict = {"CM": "Building broken into condo units",
+      const labelDict = {"CM": "Condo Units in Building",
                 "R1": "1-Family",
                 "R2": "2-Family",
                 "R3": "3-Family",
@@ -41,54 +35,116 @@
                 "EA": "Exempt (A)"};
       const mappedData = data.map(d => ({ 'Count of LU post': +d['Count of LU post'], 'LU prior groups':  labelDict[d['LU prior groups']], 'LU post groups':  labelDict[d['LU post groups']]}));
       // Labels of row and columns
-      const myGroups = Array.from(new Set(mappedData.map(d => d['LU prior groups'])));
+      let categorySums = d3.rollup(mappedData, 
+          v => d3.sum(v, d => d['Count of LU post']), // Sum the counts for each category
+          d => d['LU prior groups'] // Group by the category field that corresponds to the X-axis
+      );
+
+      // Convert the Map to a sorted array
+      categorySums = Array.from(categorySums, ([key, value]) => ({ key, value }))
+          .sort((a, b) => b.value - a.value); // Sort categories by descending order of their sums
+
+      // Extract the sorted category names for the X-axis domain
+      const myGroups = categorySums.map(d => d.key);
       const myVars = Array.from(new Set(mappedData.map(d => d['LU post groups'])));
-  
+
+      let completeData = [];
+
+      myGroups.forEach(group => {
+          myVars.forEach(variable => {
+              completeData.push({
+                  'LU prior groups': group,
+                  'LU post groups': variable,
+                  'Count of LU post': 0 // Default value for missing data
+              });
+          });
+      });
+
+      mappedData.forEach(data => {
+        // Find the corresponding entry in completeData and update it
+        let match = completeData.find(d => 
+            d['LU prior groups'] === data['LU prior groups'] && 
+            d['LU post groups'] === data['LU post groups']
+        );
+
+        if (match) {
+            match['Count of LU post'] = +data['Count of LU post']; // Update the count
+        }
+    });
+
+
+      // Define SVG and its inner grouping element
+      const svg = d3.select('#heatmap')
+          .append('svg')
+          .attr('width', width + margin.left + margin.right)
+          .attr('height', height + margin.top + margin.bottom)
+          .append('g')
+          .attr('transform', `translate(${margin.left}, ${margin.top})`);
+
       // Build X scales and axis
       const x = d3.scaleBand()
-        .range([0, width])
-        .domain(myGroups)
-        .padding(0.05);
-      svg.append('g')
-        .style('font-size', 15)
-        .attr('transform', `translate(0, ${height})`)
-        .call(d3.axisBottom(x).tickSize(0))
-        .selectAll(".tick text")  // select all the text elements for the x-axis ticks
-        .style("text-anchor", "end") // align the text right so it becomes bottom aligned after rotation
-        .attr("dx", "-.8em")
-        .attr("dy", ".15em")
-        .attr("transform", "rotate(-90)")  // rotate the text
-        .select('.domain').remove();
-        // // X-axis title
-        // .append('text')
-        // .attr('text-anchor', 'middle')
-        // .attr('x', width / 2)
-        // .attr('y', 40) // Adjust the position as needed
-        // .text('Property type before conversion')
-        // .style('font-size', '14px');
+          .range([0, width])
+          .domain(myGroups)
+          .padding(0.05);
+
+      // Append the X-axis
+      const xAxis = svg.append('g')
+          .attr('transform', `translate(0, ${height})`)
+          .call(d3.axisBottom(x).tickSize(1))
+          .selectAll(".tick text")
+          .style("text-anchor", "end")
+          .attr("dx", "-.8em")
+          .attr("dy", ".15em")
+          .attr("transform", "rotate(-90)");
+
+      // Remove the domain line
+      xAxis.select('.domain').remove();
+
+      // Append X-axis title separately
+      svg.append('text')
+          .attr('text-anchor', 'middle')
+          .attr('x', width / 2)
+          .attr('y', height + margin.bottom - 60)
+          .text('Property type before conversion')
+          .style('font-size', '14px');
   
       // Build Y scales and axis
       const y = d3.scaleBand()
-        .range([height, 0])
-        .domain(myVars)
-        .padding(0.05);
+          .range([height, 0])
+          .domain(myVars)
+          .padding(0.05);
+
+      // Append the Y-axis
       svg.append('g')
-        .style('font-size', 15)
-        .call(d3.axisLeft(y).tickSize(0))
-        .select('.domain').remove();
-        // // Y-axis title
-        // .append('text')
-        // .attr('text-anchor', 'middle')
-        // .attr('transform', 'rotate(-90)')
-        // .attr('y', -50) // Adjust the position leftward as needed
-        // .attr('x', -height / 2)
-        // .text('Property type after conversion')
-        // .style('font-size', '14px');
-  
+          .call(d3.axisLeft(y).tickSize(0))
+          .select('.domain').remove();
+
+      // Append Y-axis title separately
+      svg.append('text')
+          .attr('text-anchor', 'middle')
+          .attr('transform', 'rotate(-90)')
+          .attr('y', -margin.left + 20)
+          .attr('x', -(height / 2))
+          .text('Property type after conversion')
+          .style('font-size', '14px');
+
+      // Titles and subtitles for the heatmap
+      svg.append('text')
+          .attr('x', 0)
+          .attr('y', -50)
+          .attr('text-anchor', 'left')
+          .style('font-size', '22px')
+          .text('Conversion of Property Types: Before and After');
+
       // Build color scale
-      const myColor = d3.scaleSequential()
-        .interpolator(d3.interpolateInferno)
-        .domain(d3.extent(mappedData, d => +d['Count of LU post']));
+      // const myColor = d3.scaleSequential()
+      //   .interpolator(d3.interpolateInferno)
+      //   .domain(d3.extent(mappedData, d => +d['Count of LU post']).reverse());
+
+      // Build color scale using d3.interpolateBlues
+      const myColor = d3.scaleSequential(t => d3.interpolateBlues(t * 0.7 + 0.15))
+      .domain(d3.extent(mappedData, d => +d['Count of LU post']));
+
 
     // create a tooltip
     const tooltip = d3.select("#heatmap")
@@ -109,11 +165,14 @@
         .style("stroke", "black")
         .style("opacity", 1)
     };
-    const mousemove = function(event,d) {
+    const mousemove = function(event, d) {
+        const xPosition = x(d['LU prior groups']) + x.bandwidth(); // Position at the right of the rectangle
+        const yPosition = y(d['LU post groups']); // Position at the top of the rectangle
+
         tooltip
-        .html("The exact value of<br>this cell is: " + d['Count of LU post'])
-        .style("left", (event.x)/2 + "px")
-        .style("top", (event.y)/2 + "px")
+          .html("The exact value of<br>this cell is: " + d['Count of LU post'])
+          .style("left", (event.pageX + 10) + "px") // Use pageX for more stable positioning relative to the page, add offset for clarity
+          .style("top", (event.pageY - tooltip.node().offsetHeight - 10) + "px"); // Use pageY and adjust for tooltip height
     };
     const mouseleave = function(event,d) {
         tooltip
@@ -123,56 +182,79 @@
         .style("opacity", 0.8)
     };
   
-      // Add the squares
-      svg.selectAll()
-        .data(mappedData, d => d['LU prior groups'] + ':' + d['LU post groups'])
-        .join('rect')
-          .attr('x', d => x(d['LU prior groups']))
-          .attr('y', d => y(d['LU post groups']))
-          .attr('rx', 4)
-          .attr('ry', 4)
-          .attr('width', x.bandwidth())
-          .attr('height', y.bandwidth())
-          .style('fill', d => myColor(+d['Count of LU post']))
-          .style('stroke-width', 4)
-          .style('stroke', 'none')
-          .style('opacity', 0.8)
-        .on("mouseover", mouseover)
-        .on("mousemove", mousemove)
-        .on("mouseleave", mouseleave);
-  
-      // Add title and subtitle
-      svg.append('text')
+    // Add the squares
+    // Use completeData to draw the heatmap
+svg.selectAll('rect')
+    .data(completeData, d => d['LU prior groups'] + ':' + d['LU post groups'])
+    .join('rect')
+      .attr('x', d => x(d['LU prior groups']))
+      .attr('y', d => y(d['LU post groups']))
+      .attr('width', x.bandwidth())
+      .attr('height', y.bandwidth())
+      .style('fill', d => d['Count of LU post'] === 0 ? 'white' : myColor(d['Count of LU post']))
+      .style('stroke-width', 4)
+      .style('opacity', 0.8)
+      .on("mouseover", mouseover)
+      .on("mousemove", mousemove)
+      .on("mouseleave", mouseleave);
+
+      // Assuming myColor is defined as your color scale
+      const numSwatches = 10;  // Number of swatches in the legend
+      const colorRange = myColor.domain();  // Get the domain of your color scale
+
+      // Create legend data from the color scale domain
+      const legendData = Array.from({length: numSwatches}, (_, i) => {
+          const range = colorRange[1] - colorRange[0];
+          const increment = range / numSwatches;
+          return colorRange[0] + i * increment;
+      });
+
+      const svgWidth = width + margin.left + margin.right;  // Make sure to include margins if they aren't included in 'width'
+
+const legendWidth = 190;  // Set this to the actual width of your legend
+const paddingRight = 30;  // Increase padding if the legend still appears too centered
+
+// Update the transform attribute for the legend group
+const legend = svg.append('g')
+    .attr('transform', `translate(${svgWidth - legendWidth - paddingRight}, 50)`);
+
+// Add legend elements (rectangles and text)
+legend.selectAll('rect')
+    .data(legendData)
+    .enter().append('rect')
         .attr('x', 0)
-        .attr('y', -50)
-        .attr('text-anchor', 'left')
-        .style('font-size', '22px')
-        .text('Number of Property Conversions');
-  
-      svg.append('text')
-        .attr('x', 0)
-        .attr('y', -20)
-        .attr('text-anchor', 'left')
-        .style('font-size', '14px')
-        .style('fill', 'grey')
-        .text('Shows the property type that was converted on the X-axis')
-        .append('tspan')
-        .attr('x', 0)
-        .attr('dy', '1.2em')
-        .text('and the property it was converted to on the Y-axis.');
+        .attr('y', (d, i) => i * 20)
+        .attr('width', 20)
+        .attr('height', 20)
+        .style('fill', d => myColor(d));
+
+legend.selectAll('text')
+    .data(legendData)
+    .enter().append('text')
+        .attr('x', 30)
+        .attr('y', (d, i) => i * 20 + 15)
+        .text(d => Math.round(d));
+
+// Optionally, add a title to your legend
+legend.append('text')
+    .attr('x', 0)
+    .attr('y', -10)
+    .text('Count')
+    .attr('font-weight', 'bold')
+    .style('font-size', '12px');
     }
   </script>
   
   <div id="heatmap"></div>
   
   <style>
-    .tooltip {
+    /* .tooltip {
       opacity: 0;
       background-color: white;
       border: solid;
       border-width: 2px;
       border-radius: 5px;
       padding: 5px;
-    }
+    } */
   </style>
   

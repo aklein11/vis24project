@@ -142,7 +142,13 @@ We take you through three examples of condo conversion in Greater Boston.
 
 <text> <a href="https://svelte.dev/examples/context-api"> Image Generation Credit </a> </text>
 
-<h2> Heat Map </h2>
+<h2> Factors that Influence Condo Conversions </h2>
+<blockquote>
+    We were really interested in determining the factors that impacted the likelihood of a condo conversion within the Greater Boston Area. Aside from the age of the buildings, our analysis primarily focused on the building type before and after conversions. In the heatmap below, you can see the number of property conversions where the initial property type is on the X Axis and the final property type is on the Y Axis. As you can see, most properties are converted to condos, specifically residential homes.
+    
+    Click around to see the number of properties converted in the Boston and Cambridge area.
+</blockquote>
+
 <Heatmap />
 
 <h2> Impact of the Condo Conversions </h2>
