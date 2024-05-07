@@ -11,7 +11,7 @@
     export var zipcode = null;
 
     const initialCenter = [-71.0589, 42.3601];
-    const initialZoom = 11;
+    const initialZoom = 10;
 
     onMount(async () => {
         map = new mapboxgl.Map({
@@ -65,6 +65,7 @@
                 data: geojsonData
             });
 
+            // Add the circle layer with event handlers for tooltips
             map.addLayer({
                 id: 'points',
                 type: 'circle',
@@ -75,6 +76,41 @@
                     'circle-opacity': 0.8,
                 },
                 filter: ['==', ['get', 'zipcode'], '']
+            });
+
+            let popup = null;
+
+            map.on('mouseenter', 'points', (e) => {
+                // Change the cursor style as a UI indicator.
+                map.getCanvas().style.cursor = 'pointer';
+
+                const coordinates = e.features[0].geometry.coordinates.slice();
+                const properties = e.features[0].properties; // Access feature properties
+
+                // Adjust longitude to ensure the popup is placed correctly on the map
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+                // Ensure only one popup is active at a time
+                if (popup) {
+                    popup.remove();
+                }
+
+                // Create a popup and add it to the map
+                popup = new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML(`Zipcode: ${properties.zipcode} <br> Coordinates: (${coordinates})`) // Customize your tooltip content here
+                    .addTo(map);
+            });
+
+            map.on('mouseleave', 'points', () => {
+                map.getCanvas().style.cursor = '';
+                // Remove the popup if it exists
+                if (popup) {
+                    popup.remove();
+                    popup = null; // Nullify the popup reference
+                }
             });
 
             map.on('click', 'polygons', (e) => {
