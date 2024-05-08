@@ -113,27 +113,17 @@
 
 <h2> Examples of Condo Conversions in the Greater Boston Area </h2>
 
-<<<<<<< HEAD
 <blockquote scrolly-container>
-    <p> 
-        <a href="https://www.mapc.org/wp-content/uploads/2021/12/10.-MC2050-Homes-for-Everyone-Brief.pdf">Greater Boston ranks 3rd in the most expensive housing markets in the United States, </a> 
-        and <a href="https://homesforprofit.mapc.org/report"> 51% of Boston residents are forced to spend over the recommended income percentage (30%) on rent. </a>
-    </p>
-    <p> 
-        There are many sources of pressure on prices in Boston’s housing market – from zoning restrictions that hinder development of new housing to outside investors who drive up rent. 
-        <a href="https://homesforprofit.mapc.org/report"> Affecting renters, residents are often displaced due to price increases when outside investors convert the buildings they live in into condominiums.</a> 
-        We refer to this pattern of events as condo conversions.
-    </p>
-</blockquote>
-=======
     <p class="test"> <a href="https://www.mapc.org/wp-content/uploads/2021/12/10.-MC2050-Homes-for-Everyone-Brief.pdf">Greater Boston ranks 3rd in the most expensive housing markets in the United States, </a> and <a href="https://homesforprofit.mapc.org/report"> 51% of Boston residents are forced to spend over the recommended income percentage (30%) on rent. </a>
-    There are many sources of pressure on prices in Boston’s housing market – from zoning restrictions that hinder development of new housing to outside investors who drive up rent. <a href="https://homesforprofit.mapc.org/report"> Affecting renters, residents are often displaced due to price increases when outside investors convert the buildings they live in into condominiums.</a> 
-    </p>
-    <p class="test">
-        We refer to buildings being converted into condomniums as "condo conversions". Price increases from condo conversions contribute to housing unaffordability and the further inaccessability of impacted neighborhoods.
-    </p>
+        There are many sources of pressure on prices in Boston’s housing market – from zoning restrictions that hinder development of new housing to outside investors who drive up rent. <a href="https://homesforprofit.mapc.org/report"> Affecting renters, residents are often displaced due to price increases when outside investors convert the buildings they live in into condominiums.</a> 
+        </p>
+        <p class="test">
+            We refer to buildings being converted into condomniums as "condo conversions". Price increases from condo conversions contribute to housing unaffordability and the further inaccessability of impacted neighborhoods.
+        </p>
+    
+    </blockquote>
 
-<h1> Recent History of Condo Conversion </h1>
+    <h1> Recent History of Condo Conversion </h1>
 
 <p class="bold"> 2014: Back Bay Luxury Condo Conversions </p>
 
@@ -206,7 +196,6 @@ Increasingly pricey new developments exasperbate Boston's housing crisis, making
         The number of condo conversions remained relatively constant between 2015 to 2018, except for in 2017 when no buildings were converted.
         </p>
     </svelte:fragment>
->>>>>>> d4a112c (narrative bar graph)
 
 </Scrolly>
 

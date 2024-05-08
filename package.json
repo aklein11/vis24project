@@ -23,6 +23,7 @@
 		"d3": "^7.9.0",
 		"d3-cloud": "^1.2.7",
 		"mapbox-gl": "^3.3.0",
+		"svelte-d3-cloud": "^0.0.2",
 		"svelte-scrolly": "^0.0.4"
 	}
 }
