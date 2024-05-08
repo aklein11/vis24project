@@ -47,16 +47,16 @@
     let selectedZipcodeIndex = -1;
     let selectedZipcode;
     $: selectedZipcode = selectedZipcodeIndex > -1 ? pieData[selectedZipcodeIndex].label : null;
-
 </script>
 
-<h3>Building Type Converted into Condominiums</h3>
+
+<link rel="stylesheet" href="../static/style.css"> 
+
+<h3 class="graph-title">Building Type Converted into Condominiums</h3>
+<Pie data={pieData} bind:selectedIndex={selectedZipcodeIndex} />
 
 <blockquote scrolly-container>    
 
     Families and renters can be displaced when their homes are converted into luxury condos. This effect is especially prevalent when multi-family housing is converted into condos. To estimate the impact of condo conversions on families, we display the most common building types converted into condos.
     <p> Note: Legend adapted from <a href="https://www.cityofboston.gov/images_documents/land_use_codes%5B1%5D_tcm3-8867.pdf"> City of Boston LAND USE CODES </a>   </p>
 </blockquote>
-    
-
-<Pie data={pieData} bind:selectedIndex={selectedZipcodeIndex} />

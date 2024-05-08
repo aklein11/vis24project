@@ -4,7 +4,7 @@
     export let selectedIndex = -1;
     export let data = [];
 
-    let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
+    let arcGenerator = d3.arc().innerRadius(0).outerRadius(45);
 
     let arcData, arcs;
     let sliceGenerator = d3.pie().value(d => d.value);
@@ -67,9 +67,10 @@
 
 <style>
     #piechart-svg {
-	max-width: 20em;
-	margin-block: 2em;
-	overflow: visible; /* Do not clip shapes outside the viewBox */
+        max-width: 12em;
+        margin: 0 auto;
+        overflow: visible; /* Do not clip shapes outside the viewBox */
+        display: flex;
     }
 
     .container {
@@ -79,7 +80,7 @@
         gap: 10px;
         align-items: horizontal;
         gap: 1em;
-        max-width: 500px;
+        width: 100%;
     }
 
     .legend {
@@ -88,15 +89,8 @@
         margin: 1em;
         flex: 1;
         grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
-        outline: grey solid 3px;
+        outline: grey solid 2px;
         margin: auto;
-        max-width: 150px;
-    }
-
-    .ledgend li {
-        display: flex;
-        align-items: center;
-        gap: 1em;
     }
 
     .swatch {

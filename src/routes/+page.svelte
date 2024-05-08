@@ -42,11 +42,32 @@
         max-width: 100%;
     }
 
-    /* .scrolly {
-        max-width: 50%;
-    } */
     .parent-container {
-    margin: auto; /* Center the container horizontally */
+        margin: auto; /* Center the container horizontally */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map-container {
+        width: 100%;
+        /* You may add margins or paddings as needed */
+    }
+
+    .sub-charts-container {
+        display: flex;
+        width: 100%;
+    }
+
+    .bargraph-container {
+        flex: 2;
+        max-width: calc(50% - 10px);
+        margin-right: 10px; /* Adjust as needed */
+    }
+
+    .piechart-container {
+        flex: 1;
+        max-width: calc(50% - 10px);
+        margin-left: 10px;
     }
 
    .stats {
@@ -235,8 +256,6 @@
 <h2> Visualize Impact in Your Zipcode </h2>
 
 <blockquote>
-    Through our interactive visualization, we invite you to explore the impact of condo conversions on your community.<br>
-    <newline></newline>
     On the map, <strong>click a Boston or Cambridge zip code</strong> to see the locations of condo conversions (starting from 2015) in the region. 
     
     Once you click a zipcode, the locations of the condo conversions in the area will be highlighted with red dots.
@@ -245,38 +264,35 @@
 </blockquote>
 
 <div class="parent-container">
-    
-    <Map bind:zipcode={ $zipcode }/>
 
-    <Scrolly>
-        <p>Age of Buildings that are Most Likely to be Converted to Condos in <strong>
-            {#if $zipcode !== ''}
-                {$zipcode}
-            {:else}
-                Boston and Cambridge
-            {/if}
-        </strong></p>
-        <svelte:fragment slot="viz">
-            <div class="scrolly-container">
-                <Bargraph query={ $zipcode }/>
-            </div>
-        </svelte:fragment>
-    </Scrolly>
-    
-    <Scrolly>
-        <p>Types of Buildings the are Most Likely to be Converted in <strong>
-            {#if $zipcode !== ''}
-                {$zipcode}
-            {:else}
-                Boston and Cambridge
-            {/if}
-        </strong></p>
-        <svelte:fragment slot="viz">
-            <div class="scrolly-container">
-                <Piechart query={ $zipcode }/> 
-            </div>
-        </svelte:fragment>
-    </Scrolly>
+    <div class="map-container">
+        <Map bind:zipcode={ $zipcode }/>
+    </div>
+
+    {$zipcode}
+    <div class="sub-charts-container">
+        <div class="bargraph-container">
+            <Bargraph query={ $zipcode }/>
+            <p>Age of Buildings that are Most Likely to be Converted to Condos in <strong>
+                {#if $zipcode !== ''}
+                    {$zipcode}
+                {:else}
+                    Boston and Cambridge
+                {/if}
+            </strong></p>
+        </div>
+        <div class="piechart-container">
+            <Piechart query={ $zipcode }/> 
+            <p>Types of Buildings the are Most Likely to be Converted in <strong>
+                {#if $zipcode !== ''}
+                    {$zipcode}
+                {:else}
+                    Boston and Cambridge
+                {/if}
+            </strong></p>
+        </div>
+    </div>
+
 </div>
 
 {#if $zipcode !== '' && cambridgeZip.indexOf($zipcode) !== -1}

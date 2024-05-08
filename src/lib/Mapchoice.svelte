@@ -148,6 +148,7 @@
                         id: featureId,
                     }, { clicked: false });
                     currentZipcode = null; // Reset currentZipcode since it's unclicked
+                    zipcode = "";
                     map.setFilter('points', ['==', 'id', '__none__']); // Set filter to show no points
                     map.easeTo({ zoom: initialZoom, center: initialCenter }); // Zoom out smoothly
                     return; // Exit the function, no further action needed
@@ -267,12 +268,12 @@
     }
 
     .reset-button{
-        margin-bottom: 25px;
+        margin-bottom: 5px;
     }
 
     .map-toolbar {
         display: flex;
-        margin-bottom: 25px;
+        margin-bottom: 5px;
         justify-content: space-between;
         align-items: baseline;
     }
