@@ -34,6 +34,20 @@
 
 <!-- Separate sections with unique class for each type of chart -->
 <style>
+    .page-title {
+        text-align: center;
+    }
+
+    .page-title h1 {
+        margin-block-start: 5px;
+        margin-block-end: 5px;
+    }
+
+    .page-title h3 {
+        margin-block-start: 5px;
+        margin-block-end: 5px;
+    }
+
    .scrolly-container {
         max-width: 100%;
     }
@@ -80,7 +94,11 @@
     }
 </style>
 
-<h1> Greater Boston Infested with Condomoniums</h1>
+<div class="page-title">
+    <h3>Interactive Data Visualization Final Project</h3>
+    <h1> Greater Boston Infested with Condomoniums</h1>
+    <h3>Caroline Cunningham, Sejal Gupta, Abigail Klein, Stephen Wilson</h3>    
+</div>
 
 <h2> What are Condo Conversions </h2>
 

@@ -183,7 +183,7 @@
         }
         map.setFilter('points', ['==', ['get', 'zipcode'], '']);
         currentZipcode = null;
-        zipcode = null;
+        zipcode = "";
     }
 </script>
 
@@ -217,8 +217,6 @@
             No zip code selected
         {:else}
             <b>Selected zip code: {"0" + currentZipcode}</b>
-            <b>Click on the map to explore a different zipcode</b>
-
         {/if}
     </div>
 </div>
