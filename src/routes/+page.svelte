@@ -13,6 +13,9 @@
     import Somerville from "$lib/AnimationMap.svelte";
     import { writable } from 'svelte/store';
     import Mapchoice from "../lib/Mapchoice.svelte";
+    import Plot2023 from "$lib/Plot2023.svelte";
+    import Plot2018 from "$lib/Plot2018.svelte";
+    import Plot2016 from "$lib/Plot2016.svelte";
 
     let zipcode = writable(''); 
     let currentPage = 0;
@@ -81,12 +84,26 @@
         overflow: scroll;
     }
 
+    .bold {
+        font-size: 20px;
+        margin-top: 50px;
+        font-weight: bold;
+        margin-left: 0px;
+        overflow: scroll;
+    }
+
+
     .test-pie {
         font-size: 20px;
         margin-top: 50px;
         font-weight: normal;
         margin-left: 0px;
         overflow: scroll;
+    }
+
+    a{
+        font-weight:bold;
+        text-decoration: none;
     }
 </style>
 
@@ -96,6 +113,7 @@
 
 <h2> Examples of Condo Conversions in the Greater Boston Area </h2>
 
+<<<<<<< HEAD
 <blockquote scrolly-container>
     <p> 
         <a href="https://www.mapc.org/wp-content/uploads/2021/12/10.-MC2050-Homes-for-Everyone-Brief.pdf">Greater Boston ranks 3rd in the most expensive housing markets in the United States, </a> 
@@ -107,101 +125,107 @@
         We refer to this pattern of events as condo conversions.
     </p>
 </blockquote>
-
-
-<Scrolly>
-    <p class="bold"> Case 2: Back Bay. </p>
-    <p class="test">
-        In 2014, <a href="https://www.gibsonsothebysrealty.com/blog/posts/2014/11/19/back-bay-luxury-real-estate-mandarin-oriental-to-convert-25-units-to-luxury-condos/"> Back Bay’s Mandarin Oriental complex converted 25 apartments into luxury condominium units. </a>
+=======
+    <p class="test"> <a href="https://www.mapc.org/wp-content/uploads/2021/12/10.-MC2050-Homes-for-Everyone-Brief.pdf">Greater Boston ranks 3rd in the most expensive housing markets in the United States, </a> and <a href="https://homesforprofit.mapc.org/report"> 51% of Boston residents are forced to spend over the recommended income percentage (30%) on rent. </a>
+    There are many sources of pressure on prices in Boston’s housing market – from zoning restrictions that hinder development of new housing to outside investors who drive up rent. <a href="https://homesforprofit.mapc.org/report"> Affecting renters, residents are often displaced due to price increases when outside investors convert the buildings they live in into condominiums.</a> 
     </p>
     <p class="test">
+        We refer to buildings being converted into condomniums as "condo conversions". Price increases from condo conversions contribute to housing unaffordability and the further inaccessability of impacted neighborhoods.
+    </p>
+
+<h1> Recent History of Condo Conversion </h1>
+
+<p class="bold"> 2014: Back Bay Luxury Condo Conversions </p>
+
+<Scrolly>
+
+    <p class="test">
+    <a href="https://www.gibsonsothebysrealty.com/blog/posts/2014/11/19/back-bay-luxury-real-estate-mandarin-oriental-to-convert-25-units-to-luxury-condos/"> Back Bay’s Mandarin Oriental complex converted 25 apartments into luxury condominium units. </a>
+</p>
+<p class="test">
     The converted units were “predicted to take in some of the highest prices the condo sales market [had] seen”.
-   </p>
-   <p class="test">
-    Increasingly pricey new developments exasperbate Boston's housing crisis, making it increasingly hard for non-wealthy residents to call the city home.
-    <br> 
-    <br> 
-    <br> 
-    <br> 
-    <br> 
-    <br> 
-    <br> 
-    <br> 
-    <br> 
-    <br>     
-   </p>
-    <svelte:fragment slot="viz">
-        <div class="scrolly-container">
-            <Bargraph query={ $zipcode }/>
-        </div>
-    </svelte:fragment>
-</Scrolly>
+Increasingly pricey new developments exasperbate Boston's housing crisis, making it increasingly hard for non-wealthy residents to call the city home.
+</p>
 
+<svelte:fragment slot="viz">
+    <div class="scrolly-container">
+        <img src="./images/mandarin_oriental.jpeg" alt="Mandarin Oriental - Boston"/>
+    </div>
+    <a href="https://www.luxuryboston.com/The-Mandarin-Oriental">Image Credit</a>
+</svelte:fragment>
+
+
+</Scrolly>   
+
+<p class="bold"> 2016: Prospective Developers discuss Economics of Medford Condo Conversions </p>
 
 <Scrolly>
-    <p class="bold"> Case 3: Medford. </p>
-    <p class="test"> The 2016 <a href="https://bankerandtradesman.com/multifamily-home-conversions-slowly-picking-medford/"> Banker & Tradesman article </a> discusses the real estate economics of condo conversions on multifamily housing units in Medford.
-    </p>
-    <p class="test">
-    Prospective developers' goal would be to convert multifamily units into condos for profit.
-    </p> 
-
-    <p class="test">
-    Conversions of multifamily homes reduces affordable housing supply for families, making it more challenging for families to find a home in Greater Boston.
-    </p> 
-    
-    <br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
 
     <svelte:fragment slot="viz">
+    <div class="scrolly-container">
+        <Plot2016 query={ '2016' }/>
+    </div>
+    <p class="test">
+        Our data on Condo Conversions starts at 2015. Shown above is the number of condo conversions in 2015 and 2016 within Cambridge and Boston.
+    </p>
+</svelte:fragment>
+
+<p class="test"> The 2016 <a href="https://bankerandtradesman.com/multifamily-home-conversions-slowly-picking-medford/"> Banker & Tradesman article </a> discusses the real estate economics of condo conversions on multifamily housing units in Medford.</p>
+
+<p class="test"> The goal of prospective developers is to convert multifamily units into condos for profit. </p>
+<p class="test"> Condo conversions on multifamily homes reduces affordable housing supply for families, making it more challenging for families to find a home in Greater Boston. </p>
+
+</Scrolly>   
+
+<p class="bold">2018: Condo Conversion in Somerville impacts Current Tenants   </p>
+
+<Scrolly>
+        
+    <p class="test">
+    In 2018, <a href="https://www.cambridgeday.com/2018/02/17/renters-at-a-brand-new-somerville-building-surprised-by-news-millbrooks-going-condo/?fbclid=IwAR3Y-EiEl1r1ZK_-NN2MNZzoPoUJDLR5jyG2PFacnB6fe3GGT1VDTIT7J-k"> Berkeley Investments acquired Millbrook Lofts in Somerville </a> to convert into condominiums.
+    </p>   
+    <p class="test">  In an outcry, the Millbrook Lofts Tenants’ Association argued that there would be multiple incidental expenses for residents needing to move. </p>
+    <p class="test">    Given Boston's tight real estate market, renters living in buildings set to be converted may difficulties finding a new place to rent. 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        
+    </p>                     
+    <svelte:fragment slot="viz">
         <div class="scrolly-container">
+            <Plot2018 query={ '2018' }/>
         </div>
+        <p class="test">
+        The number of condo conversions remained relatively constant between 2015 to 2018, except for in 2017 when no buildings were converted.
+        </p>
     </svelte:fragment>
+>>>>>>> d4a112c (narrative bar graph)
+
 </Scrolly>
 
-<!-- We take you through three examples of condo conversion in Greater Boston.
+<p class="bold">2023: Condo Conversions in Boston and Cambridge.  </p>
 
-<button on:click={handleClick}>
-    {#if currentPage == 0}
-        Learn about Somerville
-    {:else if currentPage == 1}
-        Learn about Back Bay
-    {:else if currentPage == 2}
-        Learn about Medford
-    {:else}
-        Back to Start
-    {/if}
-</button>
+<Scrolly>
+            <p class="test">
+        Our dataset reports that there have been 2530 total condo conversions in Boston and Cambridge in the 2015-2023 timeframe.
+    </p>           
+    <svelte:fragment slot="viz">
+        <div class="scrolly-container">
+            <Plot2023 query={ '2023' }/>
+        </div>
+        <p class="test">
+            The prevalence of condo conversions in Boston over the last decade is plotted above, with a noticable spike in conversions in 2022.
+        </p>        
+    </svelte:fragment>
 
-{#if currentPage == 0}
-<img src="./images/Boston_Map.png" alt="Image of Boston_Map"/>
-
-{:else if currentPage  == 1}
-    <blockquote>
-        In 2018, <a href="https://www.cambridgeday.com/2018/02/17/renters-at-a-brand-new-somerville-building-surprised-by-news-millbrooks-going-condo/?fbclid=IwAR3Y-EiEl1r1ZK_-NN2MNZzoPoUJDLR5jyG2PFacnB6fe3GGT1VDTIT7J-k"> Berkeley Investments acquired Millbrook Lofts in Somerville </a> to convert into condominiums. Millbrook Lofts Tenants’ Association of the apartment buildings argued that there would be multiple incidental expenses for residents needing to move.
-    </blockquote>
-    <img src="./images/Somerville_Map.png" alt="Image of Somerville_Map"/>
-{:else if currentPage == 2}
-    <blockquote>
-        In 2014, <a href="https://www.gibsonsothebysrealty.com/blog/posts/2014/11/19/back-bay-luxury-real-estate-mandarin-oriental-to-convert-25-units-to-luxury-condos/"> Back Bay’s Mandarin Oriental complex converted 25 apartments into luxury condominium units. </a> The converted units were “predicted to take in some of the highest prices the condo sales market [had] seen”.
-    </blockquote>
-    <img src="./images/BackBay_Map.png" alt="Image of BackBay_Map"/>
-{:else}
-    <blockquote>
-        The 2016 <a href="https://bankerandtradesman.com/multifamily-home-conversions-slowly-picking-medford/"> Banker & Tradesman article </a> discusses the real estate economics of Medford multifamily housing units with the goal of converting the condominiums to make a profit.
-    </blockquote>
-    <img src="./images/Medford_Map.png" alt="Image of Medford_Map"/>
-{/if}
- -->
-<text> <a href="https://svelte.dev/examples/context-api"> Image Generation Credit </a> </text>
+</Scrolly>
 
 <h1> Visualize Impact of Condo Conversions in Your Zipcode </h1>
 
@@ -285,7 +309,7 @@
         </strong></p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
-                <Linechart query={ $zipcode }/>
+                <!-- <Linechart query={ $zipcode }/> -->
             </div>
         </svelte:fragment>
     </Scrolly>

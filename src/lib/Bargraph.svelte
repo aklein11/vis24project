@@ -28,11 +28,11 @@
 	let width = 960 - margin.left - margin.right;
 	// let height = 500 - margin.top - margin.bottom;
     let barChartHeight;
-    let pieData, rolledData, aggYearBuiltData, yearBuiltDataArray, barChartYScale;
+    let aggYearBuiltData, yearBuiltDataArray, barChartYScale;
 
     $: { 
-        rolledData = d3.rollups(filteredConversionData, v => d3.sum(v, d => d.Count_of_LU_prior), d => d.LU_prior_group);
-        console.log("Rolled ", rolledData)
+        // rolledData = d3.rollups(filteredConversionData, v => d3.sum(v, d => d.Count_of_LU_prior), d => d.LU_prior_group);
+        // console.log("Rolled ", rolledData)
     	// Process the data to sum up the building counts for each decade
 	    aggYearBuiltData = filteredYearBuiltData.reduce((acc, cur) => {
             Object.keys(cur).forEach(year => {
@@ -52,7 +52,7 @@
 
     let selectedZipcodeIndex = -1;
     let selectedZipcode, zipcodes, uniqueZipcodes;
-    $: selectedZipcode = selectedZipcodeIndex > -1 ? pieData[selectedZipcodeIndex].label : null;
+    // $: selectedZipcode = selectedZipcodeIndex > -1 ? pieData[selectedZipcodeIndex].label : null;
     
     function combineZipcodes(zipcodes) {
         const groupedZipcodes = {};
