@@ -76,15 +76,9 @@
 </svg>
 
 <style>
+
 	.bar {
 		stroke: white; 
-	}
-	
-	.axis path,
-	.axis line {
-		fill: none;
-		stroke: black;
-		shape-rendering: crispEdges;
 	}
 
 	.x-axis-label text {
@@ -99,10 +93,4 @@
 		/* stroke: black; */
 	}
 
-	.x-axis-text {
-        text-anchor: end;
-        transform: rotate(-45deg);
-        transform-origin: end;
-        white-space: nowrap; /* Prevent text wrapping */
-    }
 </style>

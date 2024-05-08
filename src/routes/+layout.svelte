@@ -1,4 +1,5 @@
 <script>
+
     import { page } from '$app/stores';
 
     let pages = [
@@ -8,7 +9,6 @@
         // { url: "./pie_chart", title: "Pie Chart" },
         // { url: "./line_chart", title: "Line Chart" },
         // { url: "./map", title: "Map" },
-        // add the rest of your pages here
     ];
 
     let localStorage = globalThis.localStorage ?? {};
@@ -17,9 +17,11 @@
 
 	$: localStorage.colorScheme = colorScheme;
 	$: root?.style.setProperty('color-scheme', colorScheme);
+
 </script>
 
 <style>
+
     nav {
         --border-color: oklch(50% 10% 200 / 40%);
         
@@ -50,6 +52,7 @@
         top: 1rem;
         right: 1rem;
     }
+
 </style>
 
 <nav>

@@ -38,10 +38,6 @@
         max-width: 100%;
     }
 
-    .pie-container {
-        max-width: 100%;
-    }
-
     .parent-container {
         margin: auto; /* Center the container horizontally */
         display: flex;
@@ -70,51 +66,7 @@
         margin-left: 10px;
     }
 
-   .stats {
-        display: grid;  
-        /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-        flex-direction: column;  /* Arrange items horizontally */
-        justify-content: space-between;  /* Distribute items evenly along the main axis */
-        align-items: center;  /* Align items vertically */
-    }
-
-    .stats dt {
-        margin-right: 10px;  /* Add some margin between dt and dd */
-        grid-row: 1;  /* Place dt in the first row */
-        /* display: inline-block; */
-    }
-
-    .stats dd {
-        grid-row: 2;  /* Place dd in the second row */
-    }
-
-	.graph-container svg {
-		width: 100%; /* Set the width of the graph to 100% of its container */
-		height: 100%; /* Set the height of the graph to 100% of its container */
-	}
-
-    .hide-graph {
-        visibility: none;
-    }
-
     .test {
-        font-size: 20px;
-        margin-top: 50px;
-        font-weight: normal;
-        margin-left: 0px;
-        overflow: scroll;
-    }
-
-    .bold {
-        font-size: 20px;
-        margin-top: 50px;
-        font-weight: bold;
-        margin-left: 0px;
-        overflow: scroll;
-    }
-
-
-    .test-pie {
         font-size: 20px;
         margin-top: 50px;
         font-weight: normal;

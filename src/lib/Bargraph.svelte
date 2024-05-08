@@ -3,7 +3,6 @@
     import year_built_data from '$lib/year_built_data_v2.json';
     import BarChart from '$lib/BarChart.svelte';
     import * as d3 from 'd3';
-    export let hLevel = 2;
     export let query = "";
 
     let filteredConversionData;
@@ -24,11 +23,7 @@
         return true;
     });
 
-    let margin = { top: 20, right: 30, bottom: 70, left: 60 };
-	let width = 960 - margin.left - margin.right;
-	// let height = 500 - margin.top - margin.bottom;
-    let barChartHeight;
-    let aggYearBuiltData, yearBuiltDataArray, barChartYScale;
+    let aggYearBuiltData, yearBuiltDataArray;
 
     $: { 
         // rolledData = d3.rollups(filteredConversionData, v => d3.sum(v, d => d.Count_of_LU_prior), d => d.LU_prior_group);
@@ -50,9 +45,7 @@
         console.log("Year Built Data Array ", yearBuiltDataArray);
     }
 
-    let selectedZipcodeIndex = -1;
-    let selectedZipcode, zipcodes, uniqueZipcodes;
-    // $: selectedZipcode = selectedZipcodeIndex > -1 ? pieData[selectedZipcodeIndex].label : null;
+    let zipcodes, uniqueZipcodes;
     
     function combineZipcodes(zipcodes) {
         const groupedZipcodes = {};
@@ -73,11 +66,7 @@
     }
 </script>
 
-<!-- <div class="zipcodes">
-    {#each uniqueZipcodes as z}
-        <p>{z}</p>
-    {/each}
-</div> -->
+
 <link rel="stylesheet" href="../static/style.css"> 
 
 <h3 class="graph-title">Year Converted Property was Built</h3>
@@ -89,15 +78,3 @@
     how likely the condo conversion upgraded the property.
 </blockquote>
 
-
-<style>
-    .zipcodes {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        flex-direction: column;  /* Arrange items horizontally */
-        grid-row-gap: 5px; 
-        justify-content: space-between;  /* Distribute items evenly along the main axis */
-        align-items: center;  /* Align items vertically */
-        max-width: 100%;
-    }
-</style>
