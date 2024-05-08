@@ -121,21 +121,15 @@
             We refer to buildings being converted into condomniums as "condo conversions". Price increases from condo conversions contribute to housing unaffordability and the further inaccessability of impacted neighborhoods.
         </p>
     
-    </blockquote>
+</blockquote>
 
-    <h1> Recent History of Condo Conversion </h1>
+<h2> Recent History of Condo Conversion </h2>
 
-<p class="bold"> 2014: Back Bay Luxury Condo Conversions </p>
+<h3> 2014: Back Bay Luxury Condo Conversions </h3>
 
 <Scrolly>
-
-    <p class="test">
-    <a href="https://www.gibsonsothebysrealty.com/blog/posts/2014/11/19/back-bay-luxury-real-estate-mandarin-oriental-to-convert-25-units-to-luxury-condos/"> Back Bay’s Mandarin Oriental complex converted 25 apartments into luxury condominium units. </a>
-</p>
-<p class="test">
-    The converted units were “predicted to take in some of the highest prices the condo sales market [had] seen”.
-Increasingly pricey new developments exasperbate Boston's housing crisis, making it increasingly hard for non-wealthy residents to call the city home.
-</p>
+<p><a href="https://www.gibsonsothebysrealty.com/blog/posts/2014/11/19/back-bay-luxury-real-estate-mandarin-oriental-to-convert-25-units-to-luxury-condos/"> Back Bay’s Mandarin Oriental complex converted 25 apartments into luxury condominium units. </a></p>
+<p>The converted units were “predicted to take in some of the highest prices the condo sales market [had] seen”. Increasingly pricey new developments exasperbate Boston's housing crisis, making it increasingly hard for non-wealthy residents to call the city home.</p>
 
 <svelte:fragment slot="viz">
     <div class="scrolly-container">
@@ -147,7 +141,7 @@ Increasingly pricey new developments exasperbate Boston's housing crisis, making
 
 </Scrolly>   
 
-<p class="bold"> 2016: Prospective Developers discuss Economics of Medford Condo Conversions </p>
+<h3> 2016: Prospective Developers discuss Economics of Medford Condo Conversions </h3>
 
 <Scrolly>
 
@@ -155,27 +149,25 @@ Increasingly pricey new developments exasperbate Boston's housing crisis, making
     <div class="scrolly-container">
         <Plot2016 query={ '2016' }/>
     </div>
-    <p class="test">
+    <p>
         Our data on Condo Conversions starts at 2015. Shown above is the number of condo conversions in 2015 and 2016 within Cambridge and Boston.
     </p>
 </svelte:fragment>
 
-<p class="test"> The 2016 <a href="https://bankerandtradesman.com/multifamily-home-conversions-slowly-picking-medford/"> Banker & Tradesman article </a> discusses the real estate economics of condo conversions on multifamily housing units in Medford.</p>
-
-<p class="test"> The goal of prospective developers is to convert multifamily units into condos for profit. </p>
-<p class="test"> Condo conversions on multifamily homes reduces affordable housing supply for families, making it more challenging for families to find a home in Greater Boston. </p>
+<p> The 2016 <a href="https://bankerandtradesman.com/multifamily-home-conversions-slowly-picking-medford/"> Banker & Tradesman article </a> discusses the real estate economics of condo conversions on multifamily housing units in Medford.</p>
+<p> The goal of prospective developers is to convert multifamily units into condos for profit. </p>
+<p> Condo conversions on multifamily homes reduces affordable housing supply for families, making it more challenging for families to find a home in Greater Boston. </p>
 
 </Scrolly>   
 
-<p class="bold">2018: Condo Conversion in Somerville impacts Current Tenants   </p>
+<h3>2018: Condo Conversion in Somerville impacts Current Tenants</h3>
 
 <Scrolly>
         
-    <p class="test">
-    In 2018, <a href="https://www.cambridgeday.com/2018/02/17/renters-at-a-brand-new-somerville-building-surprised-by-news-millbrooks-going-condo/?fbclid=IwAR3Y-EiEl1r1ZK_-NN2MNZzoPoUJDLR5jyG2PFacnB6fe3GGT1VDTIT7J-k"> Berkeley Investments acquired Millbrook Lofts in Somerville </a> to convert into condominiums.
+    <p>In 2018, <a href="https://www.cambridgeday.com/2018/02/17/renters-at-a-brand-new-somerville-building-surprised-by-news-millbrooks-going-condo/?fbclid=IwAR3Y-EiEl1r1ZK_-NN2MNZzoPoUJDLR5jyG2PFacnB6fe3GGT1VDTIT7J-k"> Berkeley Investments acquired Millbrook Lofts in Somerville </a> to convert into condominiums.
     </p>   
-    <p class="test">  In an outcry, the Millbrook Lofts Tenants’ Association argued that there would be multiple incidental expenses for residents needing to move. </p>
-    <p class="test">    Given Boston's tight real estate market, renters living in buildings set to be converted may difficulties finding a new place to rent. 
+    <p>  In an outcry, the Millbrook Lofts Tenants’ Association argued that there would be multiple incidental expenses for residents needing to move. </p>
+    <p>    Given Boston's tight real estate market, renters living in buildings set to be converted may difficulties finding a new place to rent. 
         <br> 
         <br> 
         <br> 
@@ -192,24 +184,24 @@ Increasingly pricey new developments exasperbate Boston's housing crisis, making
         <div class="scrolly-container">
             <Plot2018 query={ '2018' }/>
         </div>
-        <p class="test">
+        <p>
         The number of condo conversions remained relatively constant between 2015 to 2018, except for in 2017 when no buildings were converted.
         </p>
     </svelte:fragment>
 
 </Scrolly>
 
-<p class="bold">2023: Condo Conversions in Boston and Cambridge.  </p>
+<h3>2023: Condo Conversions in Boston and Cambridge.</h3>
 
 <Scrolly>
-            <p class="test">
+    <p>
         Our dataset reports that there have been 2530 total condo conversions in Boston and Cambridge in the 2015-2023 timeframe.
     </p>           
     <svelte:fragment slot="viz">
         <div class="scrolly-container">
             <Plot2023 query={ '2023' }/>
         </div>
-        <p class="test">
+        <p>
             The prevalence of condo conversions in Boston over the last decade is plotted above, with a noticable spike in conversions in 2022.
         </p>        
     </svelte:fragment>
@@ -257,7 +249,7 @@ Increasingly pricey new developments exasperbate Boston's housing crisis, making
     <Map bind:zipcode={ $zipcode }/>
 
     <Scrolly>
-        <p class="test">Age of Buildings that are Most Likely to be Converted to Condos in <strong>
+        <p>Age of Buildings that are Most Likely to be Converted to Condos in <strong>
             {#if $zipcode !== ''}
                 {$zipcode}
             {:else}
@@ -272,7 +264,7 @@ Increasingly pricey new developments exasperbate Boston's housing crisis, making
     </Scrolly>
     
     <Scrolly>
-        <p class="test">Types of Buildings the are Most Likely to be Converted in <strong>
+        <p>Types of Buildings the are Most Likely to be Converted in <strong>
             {#if $zipcode !== ''}
                 {$zipcode}
             {:else}
@@ -280,7 +272,7 @@ Increasingly pricey new developments exasperbate Boston's housing crisis, making
             {/if}
         </strong></p>
         <svelte:fragment slot="viz">
-            <div class="pie-container">
+            <div class="scrolly-container">
                 <Piechart query={ $zipcode }/> 
             </div>
         </svelte:fragment>
@@ -294,7 +286,7 @@ Increasingly pricey new developments exasperbate Boston's housing crisis, making
     </blockquote>
 {:else}
     <Scrolly>
-        <p class="test">Complaints about Condominiums over Time in <strong>
+        <p>Complaints about Condominiums over Time in <strong>
             {#if $zipcode !== ''}
                 {$zipcode}
             {:else}
@@ -303,13 +295,13 @@ Increasingly pricey new developments exasperbate Boston's housing crisis, making
         </strong></p>
         <svelte:fragment slot="viz">
             <div class="scrolly-container">
-                <!-- <Linechart query={ $zipcode }/> -->
+                <Linechart query={ $zipcode }/>
             </div>
         </svelte:fragment>
     </Scrolly>
 
     <Scrolly>
-        <p class="test">Types of Complaints in <strong>
+        <p>Types of Complaints in <strong>
             {#if $zipcode !== ''}
                 {$zipcode}
             {:else}
@@ -324,7 +316,7 @@ Increasingly pricey new developments exasperbate Boston's housing crisis, making
     </Scrolly>
 
     <Scrolly>
-        <p class="test">Most Common Complaints in <strong>
+        <p>Most Common Complaints in <strong>
             {#if $zipcode !== ''}
                 {$zipcode}
             {:else}

@@ -75,7 +75,7 @@
     }
 </script>
 
-<h1>Condo Conversions in Boston and Cambridge, 2015-2018</h1>
+<h3>Condo Conversions in Boston and Cambridge, 2015-2018</h3>
 <BarChart2016 dataArray2016={yearBuiltDataArray2018} />
 
 <style>

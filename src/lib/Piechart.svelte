@@ -50,7 +50,7 @@
 
 </script>
 
-<h1>Building Type Converted into Condominiums</h1>
+<h3>Building Type Converted into Condominiums</h3>
 
 <blockquote scrolly-container>    
 
