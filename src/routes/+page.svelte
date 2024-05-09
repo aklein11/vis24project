@@ -270,7 +270,7 @@
 
 <div class="parent-container">
     {#if $zipcode !== '' && cambridgeZip.indexOf($zipcode) !== -1}
-        <p>Complaints about Condominiums over Time in <strong>{zipcode}</strong> </p>
+        <p>Complaints about Condominiums over Time in <strong>{$zipcode}</strong> </p>
         <blockquote>
             For Cambridge, we did not have data on condominium complaints.
         </blockquote>
