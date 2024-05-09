@@ -8,7 +8,7 @@
   
     let svg;
     let radiusScale; // For bubble sizes
-    let width = 960, height = 500;
+    let width = 500, height = 500;
     const margin = { top: 20, right: 20, bottom: 30, left: 40 };
     const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
@@ -252,7 +252,7 @@
     });
 </script>
 
-<h1>Complaints by Zipcode</h1>
+<h3>Complaints by Zipcode</h3>
 
 <blockquote scrolly-container>
   We categorized the complaints into groups to demonstrate the impact of condominium development both on residents and the surrounding neighborhood.

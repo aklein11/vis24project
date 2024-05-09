@@ -1,21 +1,38 @@
 <script>
     import { onMount } from 'svelte';
     import * as d3 from 'd3';
-  
-    // let zipcode = '';
+    import { writable } from 'svelte/store';
+
     export let query = "";
-   
-
-    let svg; // Make the SVG element accessible outside of the drawChart function.
-    let x, y; // Declare scales globally to update them later.
-
+    
+    let svg;
+    let x, y;
     let margin = { top: 10, right: 20, bottom: 50, left: 60 };
-    let containerWidth = 700;
-    let width = 700 - margin.left - margin.right;
-    $: width = containerWidth - margin.left - margin.right;
-    let height = 400 - margin.top - margin.bottom;
+
+    // Reactive container width based on actual SVG element width
+    let containerWidth = writable(500); // Default width
+    let width, height = 400 - margin.top - margin.bottom;
+
+    // Update width reactively
+    $: width = $containerWidth - margin.left - margin.right;
+
+    onMount(() => {
+        // Set containerWidth based on the actual width of the element
+        containerWidth.set(document.getElementById('linechart-svg').clientWidth);
+
+        // Re-render chart on window resize to make it responsive
+        window.addEventListener('resize', () => {
+            containerWidth.set(document.getElementById('linechart-svg').clientWidth);
+        });
+
+        initChart();
+    });
 
     function initChart() {
+        svg = d3.select("#linechart-svg")
+            .attr("viewBox", `0 0 ${$containerWidth} ${height + margin.top + margin.bottom}`)
+            .append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
         // Append the svg object to the body of the page
         svg = d3.select("#linechart-svg")
             .attr("viewBox", `0 0 ${containerWidth} ${height + margin.top + margin.bottom}`)
@@ -60,7 +77,7 @@
     
         const legendData = [
             {color: "steelblue", label: "# of Complaints Filed Per Year"},
-            {color: "red", label: "# of Distinct Buildings the Complaints are Filed About"}
+            {color: "red", label: "# of Distinct Buildings"}
         ];
     
         // Determine the width of the legend box based on text length
@@ -210,7 +227,7 @@
   });
 </script>
 
-<h1>Condo Complaints</h1>
+<h3>Condo Complaints</h3>
 
 <blockquote scrolly-container>
     The <a href="https://data.boston.gov/dataset/rentsmart"> RentSmart dataset </a> contains data from Boston’s 311 line and Boston’s Inspectional Services Division on residential property complaints from 2019 to the present. 

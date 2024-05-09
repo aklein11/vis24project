@@ -56,6 +56,7 @@
         margin: auto; /* Center the container horizontally */
         display: flex;
         flex-direction: column;
+        max-width: 100%;
     }
 
     .map-container {
@@ -297,20 +298,16 @@
 
         
 
-        <Scrolly>
-            <p>Types of Complaints in <strong>
-                {#if $zipcode !== ''}
-                    {$zipcode}
-                {:else}
-                    Boston
-                {/if}
+        
+        <p>Types of Complaints in <strong>
+            {#if $zipcode !== ''}
+                {$zipcode}
+            {:else}
+                Boston
+            {/if}
             </strong></p>
-            <svelte:fragment slot="viz">
-                <div class="scrolly-container">
-                    <WordCloud query={ $zipcode }/>
-                </div>
-            </svelte:fragment>
-        </Scrolly>
+            
+            <WordCloud query={ $zipcode }/>
     {/if}
 </div>
 
