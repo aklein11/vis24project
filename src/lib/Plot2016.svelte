@@ -1,6 +1,6 @@
 <script>
     import data from '$lib/conversion_data.json';
-    import year_built_data from '$lib/converted_year.json';
+    import year_built_data from '$lib/multiRes_count.json';
     import BarChart2016 from '$lib/BarGraph2016.svelte';
     import * as d3 from 'd3';
     export let hLevel = 2;
@@ -47,8 +47,7 @@
         }, {});
         console.log("Agg Year Built", aggYearBuiltData2018);
         yearBuiltDataArray2018 = Object.keys(aggYearBuiltData2018)
-		.map(year => ({ year: parseInt(year), count: aggYearBuiltData2018[year] }))
-		.sort((a, b) => a.year - b.year);
+		.map(year => ({ year: year, count: aggYearBuiltData2018[year] }));
         console.log("Year Built Data Array ", yearBuiltDataArray2018);
     }
 
