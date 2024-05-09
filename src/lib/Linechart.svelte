@@ -9,19 +9,16 @@
     let svg; // Make the SVG element accessible outside of the drawChart function.
     let x, y; // Declare scales globally to update them later.
 
+    let margin = { top: 10, right: 20, bottom: 50, left: 60 };
+    let containerWidth = 700;
+    let width = 700 - margin.left - margin.right;
+    $: width = containerWidth - margin.left - margin.right;
+    let height = 400 - margin.top - margin.bottom;
 
     function initChart() {
-
-        const outerWidth = 1000;
-
-        // Increase the right margin to provide enough space for the legend
-        const margin = {top: 50, right: 250, bottom: 80, left: 70},
-            width = 960 - margin.left - margin.right,
-            height = 500 - margin.top - margin.bottom;
-
         // Append the svg object to the body of the page
         svg = d3.select("#linechart-svg")
-            .attr("viewBox", `0 0 ${outerWidth} ${height + margin.top + margin.bottom}`)
+            .attr("viewBox", `0 0 ${containerWidth} ${height + margin.top + margin.bottom}`)
             .append("g")
             .attr("transform", `translate(${margin.left},${margin.top})`);
 
