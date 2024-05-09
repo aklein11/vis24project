@@ -61,6 +61,7 @@
     .map-container {
         width: 100%;
         /* You may add margins or paddings as needed */
+        /* NEW COMMIT */
     }
 
     .sub-charts-container {
