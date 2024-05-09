@@ -148,6 +148,7 @@
                         id: featureId,
                     }, { clicked: false });
                     currentZipcode = null; // Reset currentZipcode since it's unclicked
+                    zipcode = "";
                     map.setFilter('points', ['==', 'id', '__none__']); // Set filter to show no points
                     map.easeTo({ zoom: initialZoom, center: initialCenter }); // Zoom out smoothly
                     return; // Exit the function, no further action needed
@@ -182,83 +183,11 @@
         }
         map.setFilter('points', ['==', ['get', 'zipcode'], '']);
         currentZipcode = null;
-        zipcode = null;
+        zipcode = "";
     }
 </script>
 
 <style>
-    body {
-        font: 100%/1.5 system-ui, sans-serif;
-        display: flex;
-        flex-flow: column;
-        max-width: 80em;
-        min-height: 100vh;
-        box-sizing: border-box;
-        margin: auto;
-        padding: 1em;
-    }
-
-    #map {
-        flex: 1;
-    }
-
-    #map svg {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        height: 10%;
-        pointer-events: none;
-        fill-opacity: 60%;
-        stroke: white;
-    }
-
-    #map circle, .legend > div {
-        --color-departures: steelblue;
-        --color-arrivals: darkorange;
-        --color: color-mix(
-            in oklch,
-            var(--color-departures) calc(100% * var(--departure-ratio)),
-            var(--color-arrivals)
-        );
-    }
-
-    #map circle {
-        pointer-events: auto;
-        fill: var(--color);
-    }
-
-    .legend {
-        display: flex;
-        justify-content: space-between;
-        margin-block: 20px;
-    }
-
-    .legend > div {
-        flex-grow: 1;
-        text-align: center;
-        padding: 5px 10px;
-        color: white; /* Ensures text is visible on all backgrounds */
-        background-color: var(--color);
-    }
-
-    label {
-        margin-left: auto;
-        display: block;
-        width: 80%;
-    }
-
-    /* Ensuring that all child elements of the label are displayed as block */
-    label > * {
-        display: block; /* This makes each child (input, time, em) a block, stacking them vertically */
-        width: 100%; /* Optional: ensures they take up full width of the label */
-        margin-top: 5px; /* Adds a little space between each element */
-    }
-
-    header {
-        display: flex;
-        gap: 1em;
-        align-items: baseline;
-    }
 
     #map {
         height: 50vh;
@@ -267,15 +196,16 @@
     }
 
     .reset-button{
-        margin-bottom: 25px;
+        margin-bottom: 5px;
     }
 
     .map-toolbar {
         display: flex;
-        margin-bottom: 25px;
+        margin-bottom: 5px;
         justify-content: space-between;
         align-items: baseline;
     }
+
 </style>
 
 <div>
@@ -287,8 +217,6 @@
             No zip code selected
         {:else}
             <b>Selected zip code: {"0" + currentZipcode}</b>
-            <b>Click on the map to explore a different zipcode</b>
-
         {/if}
     </div>
 </div>

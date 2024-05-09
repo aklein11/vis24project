@@ -36,6 +36,8 @@
 			updateScales();
 		}
 	}
+    console.log("ARR IN", dataArray2016);
+    console.log("INT", xScale(1995));
 </script>
 
 <svg id="barchart-svg" width={width + margin.left + margin.right} height={height + margin.top + margin.bottom}>
@@ -51,7 +53,7 @@
 		<!-- TODO: format the following line such that the years are at a 45 degree angle so that we can srink the bar chart and still read them -->
 		<g transform={`translate(0, ${height})`} class="x-axis2016">
 			<!-- X axis will be drawn here by D3 -->
-			<text x={width / 2} y={40} text-anchor="middle" style="font-size: 16px">Year Built</text>
+			<text x={width / 2} y={40} text-anchor="middle" style="font-size: 16px">Building Type Converted</text>
 		</g>
 		<g class="y-axis2016">
 			<!-- Y axis will be drawn here by D3 -->

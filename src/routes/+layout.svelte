@@ -1,25 +1,27 @@
 <script>
+
     import { page } from '$app/stores';
 
     let pages = [
-        { url: "./", title: "Interactive Data Visualization: Sejal Gupta, Abigail Klein, Stephen Wilson, Caroline Cunningham" },
+        // { url: "./", title: "Interactive Data Visualization: Sejal Gupta, Abigail Klein, Stephen Wilson, Caroline Cunningham" },
         // { url: "./conclusion", title: "What is Being Done?" },
         // { url: "./bar_graph", title: "Bar Graph" },
         // { url: "./pie_chart", title: "Pie Chart" },
         // { url: "./line_chart", title: "Line Chart" },
         // { url: "./map", title: "Map" },
-        // add the rest of your pages here
     ];
 
     let localStorage = globalThis.localStorage ?? {};
-    let colorScheme = localStorage.colorScheme ?? "light dark";
+    // let colorScheme = localStorage.colorScheme ?? "light dark";
 	let root = globalThis?.document?.documentElement;
 
-	$: localStorage.colorScheme = colorScheme;
-	$: root?.style.setProperty('color-scheme', colorScheme);
+	// $: localStorage.colorScheme = colorScheme;
+	// $: root?.style.setProperty('color-scheme', colorScheme);
+
 </script>
 
 <style>
+
     nav {
         --border-color: oklch(50% 10% 200 / 40%);
         
@@ -45,11 +47,12 @@
         background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
     }
 
-    .color-scheme {
+    /* .color-scheme {
         position: absolute;
         top: 1rem;
         right: 1rem;
-    }
+    } */
+
 </style>
 
 <nav>
@@ -60,13 +63,13 @@
     {/each}
 </nav>
 
-<label class="color-scheme", style="position: absolute; top: 1rem; right: 1rem;">
+<!-- <label class="color-scheme", style="position: absolute; top: 1rem; right: 1rem;">
     Theme:
     <select bind:value={ colorScheme }>
         <option value="light dark">Automatic</option>
         <option value="light">Light Mode</option>
         <option value="dark">Dark Mode</option>
     </select>
-</label>
+</label> -->
 
 <slot />

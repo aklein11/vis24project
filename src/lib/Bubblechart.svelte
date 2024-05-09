@@ -75,16 +75,6 @@
         .append('g')
         .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
-        svg.append("text")
-            .attr("class", "chart title")
-            .attr("x", width / 2)
-            .attr("y", 8) // Adjust the chart title position
-            .attr("text-anchor", "middle")
-            .style("font-size", "20px")
-            .style("font-weight", "bold")
-            .text("Complaint Types filed for Condominiums, 2019 to Present");
-        console.log("ZIP", zipcode);
-
   
       // Add bubbles
     const circles = svg.selectAll('circle')

@@ -65,13 +65,6 @@
 		stroke: white; 
 	}
 	
-	.axis path,
-	.axis line {
-		fill: none;
-		stroke: black;
-		shape-rendering: crispEdges;
-	}
-
 	.x-axisNarr text {
 		fill: orange;
 		font-weight: bold;
@@ -84,10 +77,4 @@
 		/* stroke: black; */
 	}
 
-	.x-axis-narr-text {
-        text-anchor: end;
-        transform: rotate(-45deg);
-        transform-origin: end;
-        white-space: nowrap; /* Prevent text wrapping */
-    }
 </style>

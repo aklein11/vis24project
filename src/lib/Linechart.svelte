@@ -55,17 +55,7 @@
             .attr("y", -50) // Push the y-axis label further to the left
             .attr("x", -height / 2)
             .text("Number of Distinct Buildings or Complaints in a Year");
-
-        // Add Chart Title
-        svg.append("text")
-            .attr("class", "chart title")
-            .attr("x", width / 2)
-            .attr("y", -20) // Adjust the chart title position
-            .attr("text-anchor", "middle")
-            .style("font-size", "20px")
-            .style("font-weight", "bold")
-            .text("Complaints Filed about Condominium Buildings");
-
+            
             // Create a legend to the right of the chart within the margin space
         const legend = svg.append("g")
             .attr("class", "legend")
