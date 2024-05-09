@@ -262,60 +262,61 @@
             </strong></p>
         </div>
     </div>
-
 </div>
 
-{#if $zipcode !== '' && cambridgeZip.indexOf($zipcode) !== -1}
-    <p>Complaints about Condominiums over Time in <strong>{zipcode}</strong> </p>
-    <blockquote>
-        For Cambridge, we did not have data on condominium complaints.
-    </blockquote>
-{:else}
-    <Scrolly>
-        <p>Complaints about Condominiums over Time in <strong>
-            {#if $zipcode !== ''}
-                {$zipcode}
-            {:else}
-                Boston and Cambridge
-            {/if}
-        </strong></p>
-        <svelte:fragment slot="viz">
-            <div class="scrolly-container">
-                <Linechart query={ $zipcode }/>
-            </div>
-        </svelte:fragment>
-    </Scrolly>
+<div class="parent-container">
+    {#if $zipcode !== '' && cambridgeZip.indexOf($zipcode) !== -1}
+        <p>Complaints about Condominiums over Time in <strong>{zipcode}</strong> </p>
+        <blockquote>
+            For Cambridge, we did not have data on condominium complaints.
+        </blockquote>
+    {:else}
+        <Scrolly>
+            <p>Complaints about Condominiums over Time in <strong>
+                {#if $zipcode !== ''}
+                    {$zipcode}
+                {:else}
+                    Boston and Cambridge
+                {/if}
+            </strong></p>
+            <svelte:fragment slot="viz">
+                <div class="scrolly-container">
+                    <Linechart query={ $zipcode }/>
+                </div>
+            </svelte:fragment>
+        </Scrolly>
 
-    <Scrolly>
-        <p>Types of Complaints in <strong>
-            {#if $zipcode !== ''}
-                {$zipcode}
-            {:else}
-                Boston
-            {/if}
-        </strong></p>
-        <svelte:fragment slot="viz">
-            <div class="scrolly-container">
-                <WordCloud query={ $zipcode }/>
-            </div>
-        </svelte:fragment>
-    </Scrolly>
+        <Scrolly>
+            <p>Most Common Complaints in <strong>
+                {#if $zipcode !== ''}
+                    {$zipcode}
+                {:else}
+                    Boston
+                {/if}
+            </strong></p>
+            <svelte:fragment slot="viz">
+                <div class="scrolly-container">
+                    <Bubblechart query={ $zipcode }/>
+                </div>
+            </svelte:fragment>
+        </Scrolly>
 
-    <Scrolly>
-        <p>Most Common Complaints in <strong>
-            {#if $zipcode !== ''}
-                {$zipcode}
-            {:else}
-                Boston
-            {/if}
-        </strong></p>
-        <svelte:fragment slot="viz">
-            <div class="scrolly-container">
-                <Bubblechart query={ $zipcode }/>
-            </div>
-        </svelte:fragment>
-    </Scrolly>
-{/if}
+        <Scrolly>
+            <p>Types of Complaints in <strong>
+                {#if $zipcode !== ''}
+                    {$zipcode}
+                {:else}
+                    Boston
+                {/if}
+            </strong></p>
+            <svelte:fragment slot="viz">
+                <div class="scrolly-container">
+                    <WordCloud query={ $zipcode }/>
+                </div>
+            </svelte:fragment>
+        </Scrolly>
+    {/if}
+</div>
 
 <h2> What is Being Done? </h2>
 
