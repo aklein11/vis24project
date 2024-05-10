@@ -80,9 +80,9 @@
     const circles = svg.selectAll('circle')
         .data(packedData.slice(1)) // Exclude the root node
         .enter().append('circle')
-        .attr('cx', d => d.x)
+        .attr('cx', d => d.x - 40)
         .attr('cy', d => d.y)
-        .attr('r', d => d.r) // Use the packed radius directly
+        .attr('r', d => 0.6 * d.r) // Use the packed radius directly
         .attr('fill', d => colorScale(d.data["Description (group)"]))
         .attr('opacity', 0.7);
 
@@ -180,20 +180,20 @@
           // Update existing circles
           circles.transition()
             .duration(750)
-            .attr('cx', d => d.x)
+            .attr('cx', d => d.x - 40)
             .attr('cy', d => d.y)
-            .attr('r', d => d.r);
+            .attr('r', d => 0.6 * d.r);
 
           // Enter new circles
           circles.enter().append('circle')
-            .attr('cx', d => d.x)
+            .attr('cx', d => d.x - 40)
             .attr('cy', d => d.y)
             .attr('r', 0) // Start at 0 radius and transition to the new radius
             .attr('fill', d => colorScale(d.data["Description (group)"]))
             .attr('opacity', 0.7)
             .transition()
             .duration(750)
-            .attr('r', d => d.r); // Transition to the correct radius
+            .attr('r', d => 0.6* d.r); // Transition to the correct radius
 
           
 
