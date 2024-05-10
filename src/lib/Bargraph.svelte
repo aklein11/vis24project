@@ -67,9 +67,6 @@
 </script>
 
 
-<link rel="stylesheet" href="style.css"> 
-
-<h3 class="graph-title">Year Converted Property was Built</h3>
 <BarChart dataArray={yearBuiltDataArray} />
 
 <blockquote>

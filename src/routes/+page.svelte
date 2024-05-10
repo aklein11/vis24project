@@ -32,7 +32,7 @@
     <title>Condo Conversions in Greater Boston </title>
 </svelte:head>
 
-<!-- Separate sections with unique class for each type of chart -->
+<link rel="stylesheet" href="style.css"> 
 <style>
     .page-title {
         text-align: center;
@@ -241,24 +241,28 @@
     {$zipcode}
     <div class="sub-charts-container">
         <div class="bargraph-container">
+            <h3 class="graph-title">Year Converted Properties were Built in
+                <strong>
+                    {#if $zipcode !== ''}
+                        {$zipcode}
+                    {:else}
+                        Boston and Cambridge
+                    {/if}
+                </strong>
+            </h3>
             <Bargraph query={ $zipcode }/>
-            <p>Age of Buildings that are Most Likely to be Converted to Condos in <strong>
-                {#if $zipcode !== ''}
-                    {$zipcode}
-                {:else}
-                    Boston and Cambridge
-                {/if}
-            </strong></p>
         </div>
         <div class="piechart-container">
+            <h3 class="graph-title">Types of Buildings Most Likely to be Converted in 
+                <strong>
+                    {#if $zipcode !== ''}
+                        {$zipcode}
+                    {:else}
+                        Boston and Cambridge
+                    {/if}
+                </strong>
+            </h3>
             <Piechart query={ $zipcode }/> 
-            <p>Types of Buildings the are Most Likely to be Converted in <strong>
-                {#if $zipcode !== ''}
-                    {$zipcode}
-                {:else}
-                    Boston and Cambridge
-                {/if}
-            </strong></p>
         </div>
     </div>
 </div>
@@ -272,27 +276,29 @@
     {:else}
         <div class="sub-charts-container">
             <div class="bargraph-container">
-                <Linechart query={ $zipcode }/>
-                <p>Complaints about Condominiums over Time in <strong>
-                    {#if $zipcode !== ''}
-                        {$zipcode}
-                    {:else}
-                        Boston and Cambridge
-                    {/if}
+                <h3 class="graph-title">Complaints about Condominiums over Time in 
+                    <strong>
+                        {#if $zipcode !== ''}
+                            {$zipcode}
+                        {:else}
+                            Boston and Cambridge
+                        {/if}
                     </strong>
-                </p>
+                </h3>
+                <Linechart query={ $zipcode }/>
             </div>
 
             <div class="piechart-container">
-                <Bubblechart query={ $zipcode }/>
-                <p>Most Common Complaints in <strong>
-                    {#if $zipcode !== ''}
-                        {$zipcode}
-                    {:else}
-                        Boston
-                    {/if}
+                <h3 class="graph-title">Most Common Complaints in 
+                    <strong>
+                        {#if $zipcode !== ''}
+                            {$zipcode}
+                        {:else}
+                            Boston and Cambridge
+                        {/if}
                     </strong>
-                </p>
+                </h3>
+                <Bubblechart query={ $zipcode }/>
             </div>
         </div>
 

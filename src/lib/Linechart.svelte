@@ -227,7 +227,6 @@
   });
 </script>
 
-<h3>Condo Complaints</h3>
 
 <blockquote scrolly-container>
     The <a href="https://data.boston.gov/dataset/rentsmart"> RentSmart dataset </a> contains data from Boston’s 311 line and Boston’s Inspectional Services Division on residential property complaints from 2019 to the present. 

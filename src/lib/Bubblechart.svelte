@@ -252,7 +252,6 @@
     });
 </script>
 
-<h3>Complaints by Zipcode</h3>
 
 <blockquote scrolly-container>
   We categorized the complaints into groups to demonstrate the impact of condominium development both on residents and the surrounding neighborhood.
