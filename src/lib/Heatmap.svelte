@@ -5,7 +5,7 @@
     let data = [];
   
     // Dimensions and margins of the graph
-    const margin = { top: 110, right: 80, bottom: 225, left: 150 };
+    const margin = { top: 110, right: 80, bottom: 225, left: 160 };
     const width = 850 - margin.left - margin.right;
     const height = 850 - margin.top - margin.bottom;
   
@@ -96,8 +96,9 @@
         const yPosition = y(d['LU post groups']); // Position at the top of the rectangle
 
         tooltip
-          .html("The value of this cell is: " + d['Count of LU post'])
-          .style("left", (event.pageX + 50) + "px") // Use pageX for more stable positioning relative to the page, add offset for clarity
+          .html("There are " + d['Count of LU post'] + " total conversions of this type")
+          .style('font-size', '15px')
+          .style("left", (event.pageX + 25) + "px") // Use pageX for more stable positioning relative to the page, add offset for clarity
           .style("top", (event.pageY - tooltip.node().offsetHeight - 50) + "px"); // Use pageY and adjust for tooltip height
     };
     const mouseleave = function(event,d) {
@@ -131,7 +132,8 @@
           .style("text-anchor", "end")
           .attr("dx", "-.8em")
           .attr("dy", ".15em")
-          .attr("transform", "rotate(-90)");
+          .attr("transform", "rotate(-90)")
+          .style('font-size', '15px');
 
       // Remove the domain line
       xAxis.select('.domain').remove();
@@ -140,9 +142,9 @@
       svg.append('text')
           .attr('text-anchor', 'middle')
           .attr('x', width / 2)
-          .attr('y', height + margin.bottom - 60)
-          .text('Property type before conversion')
-          .style('font-size', '14px');
+          .attr('y', height + margin.bottom - 25)
+          .text('Type Before')
+          .style('font-size', '18px');
   
       // Build Y scales and axis
       const y = d3.scaleBand()
@@ -152,6 +154,7 @@
 
       // Append the Y-axis
       svg.append('g')
+          .style('font-size', '15px')
           .call(d3.axisLeft(y).tickSize(0))
           .select('.domain').remove();
 
@@ -159,18 +162,19 @@
       svg.append('text')
           .attr('text-anchor', 'middle')
           .attr('transform', 'rotate(-90)')
-          .attr('y', -margin.left + 20)
-          .attr('x', -(height / 2))
-          .text('Property type after conversion')
-          .style('font-size', '14px');
+          .attr('y', -margin.left + 15)
+          .attr('x', -(height / 2) - 20)
+          .text('Type After')
+          .style('font-size', '18px');
 
       // Titles and subtitles for the heatmap
       svg.append('text')
           .attr('x', 0)
           .attr('y', -50)
           .attr('text-anchor', 'left')
-          .style('font-size', '22px')
-          .text('Conversion of Property Types: Before and After');
+          .style('font-size', '20px')
+          .style('font-weight', 'bold')
+          .text('Frequency of Conversion Property Types: Before and After');
 
       // Build color scale
       // const myColor = d3.scaleSequential()
@@ -241,7 +245,7 @@ legend.append('text')
     .attr('y', -10)
     .text('Count')
     .attr('font-weight', 'bold')
-    .style('font-size', '12px');
+    .style('font-size', '15px');
     }
   </script>
   
