@@ -34,6 +34,7 @@
 
 <link rel="stylesheet" href="style.css"> 
 <style>
+  
     .page-title {
         text-align: center;
     }
@@ -82,13 +83,13 @@
         margin-left: 10px;
     }
 
-    p {
+    /* p {
         font-size: 20px;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: normal;
         margin-left: 0px;
         overflow: scroll;
-    }
+    } */
 
     .text-narr {
         font-size: 20px;
@@ -102,6 +103,9 @@
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
+    h3{
+        font-size: 22px;
+    }
     .h2-narr {
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
@@ -243,7 +247,6 @@
 <text class="text-viz">
     What makes a condo conversion more likely? The heatmap below maps the frequency of property conversions with the initial property type on the X-Axis and the converted property type on the Y-Axis. 
     <br>
-    <br>
     Move your cursor around the heatmap to see the specific frequencies for each of the conversion types.
     <br>
     <br>
@@ -251,20 +254,21 @@
 
 <Heatmap />
 
-<text class="text-viz">
+<p class="text-viz">
 
 As shown in the heatmap, most properties are converted to condos, and this trend is even more prominent for residential homes. As discussed earlier in the Medford multifamily condo conversion example, conversions of multifamily homes to condos can make it financially burdensome for families to find housing in Boston.
-</text>
+</p>
 
 <h3> Impact of the Condo Conversions </h3>
 <text class="text-viz">
     
-    <a href="https://data.boston.gov/dataset/rentsmart/resource/dc615ff7-2ff3-416a-922b-f0f334f085d0?filters=property_type%3ACondominium%20Main" >RentSmart</a> has released a dataset about tenant / contractor complaints from Boston's 311 and the City's Inspectional Services Division buildings from the years of 2019 to 2023. 
+    <a href="https://data.boston.gov/dataset/rentsmart/resource/dc615ff7-2ff3-416a-922b-f0f334f085d0?filters=property_type%3ACondominium%20Main" >The City of Boston's RentSmart</a> maintains data about tenant / contractor complaints from Boston's 311 report and the City's Inspectional Services Division buildings. The data has been collected from the years of 2019 to 2023. 
     
     Taking all the complaints about condominiums, the following chart shows the gradual change in the sheer number of complaints and the top categories.
     
 </text>
 
+<text class="bar-heading"> Frequency of Complaint Type </text>
 <RaceBarChart />
 
 <text class="text-viz"> 
@@ -274,11 +278,11 @@ As shown in the heatmap, most properties are converted to condos, and this trend
 <h2> Visualize Impact in Your Zipcode </h2>
 
 <text class="text-viz">
-    On the map, <strong>click a Boston or Cambridge zip code</strong> to see the locations of condo conversions (starting from 2015) in the region. 
+    On the map, <strong>click on a Boston or Cambridge zip code</strong> to see the locations of condo conversions (starting from 2015) in the region. 
     
-    Once you click a zipcode, the locations of the condo conversions in the area will be highlighted with </text> <strong class="red"> red dots </strong>.
+    Once you click a zipcode, the condo conversions in the area will be shown in <strong class="red"> red dots </strong>. </text>
 
-    <text class="text-viz">  You can <strong>hover over the dots to learn more about the condo conversions</strong> and look at the <strong>associated charts</strong> to learn more about the overall zipcode.
+    <text class="text-viz">  You can <strong>hover over the <strong class="red"> dots </strong> to learn more about each condo conversion </strong> and <strong> look at the charts below </strong> to learn more about condo conversions in the zipcode.
 </text>
 
 <div class="parent-container">
@@ -287,7 +291,6 @@ As shown in the heatmap, most properties are converted to condos, and this trend
         <Map bind:zipcode={ $zipcode }/>
     </div>
 
-    {$zipcode}
     <div class="sub-charts-container">
         <div class="bargraph-container">
             <h3 class="graph-title">Year Converted Properties were Built in

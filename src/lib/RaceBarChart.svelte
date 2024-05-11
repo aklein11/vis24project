@@ -6,7 +6,7 @@
   let index = 0; // This will track the current date index for the animation
 
   onMount(() => {
-    const margin = { top: 20, right: 20, bottom: 100, left: 250 };
+    const margin = { top: 20, right: 20, bottom: 100, left: 450 };
     const width = 1000 - margin.left - margin.right;
     const height = 700 - margin.top - margin.bottom;
 
@@ -30,10 +30,12 @@
     // Append the axes to the svg
     svg.append('g')
       .attr('class', 'x axis')
+      .style('font-size', '18px')
       .attr('transform', 'translate(0,' + height + ')');
 
     svg.append('g')
-      .attr('class', 'y axis');
+      .attr('class', 'y axis')
+      .style('font-size', '18px');
 
       const updateBars = () => {
   const currentDateData = data[index];
@@ -85,9 +87,17 @@
   svg.append('text')
     .attr('class', 'current-date-text')
     .attr('x', width / 2)
-    .attr('y', height + margin.top + 20)
+    .attr('y', height + margin.top + 30)
     .attr('text-anchor', 'middle')
-    .text('Current Date Data: ' + currentDateData.Date);
+    .style('font-size', '18px')
+    .text('Number of Complaints since ' + currentDateData.Date);
+
+    // svg.append('text')
+    //       .attr('x', 150)
+    //       .attr('y', 0)
+    //       .style('font-size', '20px')
+    //       .style('font-weight', 'bold')
+    //       .text('Frequency of Complaint Type');
 
   if (index < data.length) setTimeout(updateBars, 250); // Schedule next update
 };

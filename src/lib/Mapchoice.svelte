@@ -197,6 +197,7 @@
 
     .reset-button{
         margin-bottom: 5px;
+        font-size: 18px;
     }
 
     .map-toolbar {
@@ -204,6 +205,14 @@
         margin-bottom: 5px;
         justify-content: space-between;
         align-items: baseline;
+    }
+
+    strong{
+        font-size: 18px;
+    }
+
+    .red{
+        color: red;
     }
 
 </style>
@@ -214,9 +223,9 @@
         <button on:click={resetMap} class="reset-button" > Reset Map </button>
         
         {#if currentZipcode === null}
-            No zip code selected
+            <strong> No zip code selected </strong>
         {:else}
-            <b>Selected zip code: {"0" + currentZipcode}</b>
+            <strong> Selected zip code: <strong class="red">{"0" + currentZipcode}  </strong> </strong>
         {/if}
     </div>
 </div>
