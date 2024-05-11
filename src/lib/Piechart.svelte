@@ -50,9 +50,6 @@
 </script>
 
 
-<link rel="stylesheet" href="../static/style.css"> 
-
-<h3 class="graph-title">Building Type Converted into Condominiums</h3>
 <Pie data={pieData} bind:selectedIndex={selectedZipcodeIndex} />
 
 <blockquote scrolly-container>    

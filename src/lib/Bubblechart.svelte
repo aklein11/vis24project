@@ -8,7 +8,7 @@
   
     let svg;
     let radiusScale; // For bubble sizes
-    let width = 960, height = 500;
+    let width = 500, height = 500;
     const margin = { top: 20, right: 20, bottom: 30, left: 40 };
     const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
@@ -80,9 +80,9 @@
     const circles = svg.selectAll('circle')
         .data(packedData.slice(1)) // Exclude the root node
         .enter().append('circle')
-        .attr('cx', d => d.x)
+        .attr('cx', d => d.x - 40)
         .attr('cy', d => d.y)
-        .attr('r', d => d.r) // Use the packed radius directly
+        .attr('r', d => 0.6 * d.r) // Use the packed radius directly
         .attr('fill', d => colorScale(d.data["Description (group)"]))
         .attr('opacity', 0.7);
 
@@ -180,20 +180,20 @@
           // Update existing circles
           circles.transition()
             .duration(750)
-            .attr('cx', d => d.x)
+            .attr('cx', d => d.x - 40)
             .attr('cy', d => d.y)
-            .attr('r', d => d.r);
+            .attr('r', d => 0.6 * d.r);
 
           // Enter new circles
           circles.enter().append('circle')
-            .attr('cx', d => d.x)
+            .attr('cx', d => d.x - 40)
             .attr('cy', d => d.y)
             .attr('r', 0) // Start at 0 radius and transition to the new radius
             .attr('fill', d => colorScale(d.data["Description (group)"]))
             .attr('opacity', 0.7)
             .transition()
             .duration(750)
-            .attr('r', d => d.r); // Transition to the correct radius
+            .attr('r', d => 0.6* d.r); // Transition to the correct radius
 
           
 
@@ -252,7 +252,6 @@
     });
 </script>
 
-<h1>Complaints by Zipcode</h1>
 
 <blockquote scrolly-container>
   We categorized the complaints into groups to demonstrate the impact of condominium development both on residents and the surrounding neighborhood.

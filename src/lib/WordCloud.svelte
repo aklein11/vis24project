@@ -14,8 +14,8 @@
     //       height = 450 - margin.top - margin.bottom;
     // Increase the dimensions to provide more space
     const margin = { top: 10, right: 10, bottom: 10, left: 10 },
-          width = 650 - margin.left - margin.right,
-          height = 650 - margin.top - margin.bottom;
+          width = 800 - margin.left - margin.right,
+          height = 800 - margin.top - margin.bottom;
 
     async function loadData() {
         data = await d3.csv("complaints_count_zipcode.csv");
