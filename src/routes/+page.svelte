@@ -206,28 +206,28 @@
 </Scrolly>
 
 <h2> Factors that Influence Condo Conversions </h2>
-<blockquote>
+<text>
     We were really interested in determining the factors that impacted the likelihood of a condo conversion within the Greater Boston Area. Aside from the age of the buildings, our analysis primarily focused on the building type before and after conversions. In the heatmap below, you can see the number of property conversions where the initial property type is on the X Axis and the final property type is on the Y Axis. As you can see, most properties are converted to condos, specifically residential homes.
 
     Click around to see the number of properties converted in the Boston and Cambridge area.
-</blockquote>
+</text>
 
 <Heatmap />
 
 <h2> Impact of the Condo Conversions </h2>
-<blockquote>
+<text>
     
     <a href="https://data.boston.gov/dataset/rentsmart/resource/dc615ff7-2ff3-416a-922b-f0f334f085d0?filters=property_type%3ACondominium%20Main" >RentSmart</a> has released a dataset about tenant / contractor complaints from Boston's 311 and the City's Inspectional Services Division buildings from the years of 2019 to 2023. 
     
     Taking all the complaints about condominiums, the following chart shows the gradual change in the sheer number of complaints and the top categories.
     
-</blockquote>
+</text>
 
 <RaceBarChart />
 
-<blockquote> 
+<text> 
     As we can see, the main complaints are Improper Storage Trash, Extermination and Mold Concerns, Abandoned Vehicles, Permit Issues, and Failure to restore basic structural and utility needs.
-</blockquote>
+</text>
 
 <h2> Visualize Impact in Your Zipcode </h2>
 
@@ -277,9 +277,9 @@
 <div class="parent-container">
     {#if $zipcode !== '' && cambridgeZip.indexOf($zipcode) !== -1}
         <p>Complaints about Condominiums over Time in <strong>{$zipcode}</strong> </p>
-        <blockquote>
+        <text>
             For Cambridge, we did not have data on condominium complaints.
-        </blockquote>
+        </text>
     {:else}
         <div class="sub-charts-container">
             <div class="bargraph-container">
@@ -326,7 +326,7 @@
 
 <h2> What is Being Done? </h2>
 
-<blockquote scrolly-container>
+<text>
     <p class="test">Boston has passed protections on condo conversions of older buildings; the <a href="https://www.boston.gov/condominium-and-cooperative-conversion-ordinance"> Condominium and Cooperative Conversion Ordinance (c.a. 1999, amended 2021) </a> provides rights to tenants of buildings constructed pre-1983 with 4+ rental units. 
         <a href="https://www.boston.gov/sites/default/files/file/2022/08/Conversion%20Ordinance%20Summary%2C%20English.pdf"> This ordinance specifies a required notification period, a set relocation payment, and the requirement that tenants have the right to purchase their unit, among other protections. </a>
     </p>
@@ -342,4 +342,4 @@
     <p class="test">    
     Thank you to the Metropolitan Area Planning Council, our professors, and the teaching staff for guidance on our project!
     </p>
-</blockquote>
+</text>
