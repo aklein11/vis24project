@@ -72,6 +72,42 @@
         }
     });
 
+        // create a tooltip
+        const tooltip = d3.select("#heatmap")
+        .append("div")
+        .style("opacity", 0)
+        .attr("class", "tooltip")
+        .style("background-color", "white")
+        .style("border", "solid")
+        .style("border-width", "2px")
+        .style("border-radius", "5px")
+        .style("padding", "5px");
+
+    // Three function that change the tooltip when user hover / move / leave a cell
+    const mouseover = function(event,d) {
+        tooltip
+        .style("opacity", 1)
+        d3.select(this)
+        .style("stroke", "black")
+        .style("opacity", 1)
+    };
+    const mousemove = function(event, d) {
+        const xPosition = x(d['LU prior groups']) + x.bandwidth(); // Position at the right of the rectangle
+        const yPosition = y(d['LU post groups']); // Position at the top of the rectangle
+
+        tooltip
+          .html("The value of this cell is: " + d['Count of LU post'])
+          .style("left", (event.pageX + 50) + "px") // Use pageX for more stable positioning relative to the page, add offset for clarity
+          .style("top", (event.pageY - tooltip.node().offsetHeight - 50) + "px"); // Use pageY and adjust for tooltip height
+    };
+    const mouseleave = function(event,d) {
+        tooltip
+        .style("opacity", 0)
+        d3.select(this)
+        .style("stroke", "none")
+        .style("opacity", 0.8)
+    };
+  
 
       // Define SVG and its inner grouping element
       const svg = d3.select('#heatmap')
@@ -146,42 +182,6 @@
       .domain(d3.extent(mappedData, d => +d['Count of LU post']));
 
 
-    // create a tooltip
-    const tooltip = d3.select("#heatmap")
-        .append("div")
-        .style("opacity", 0)
-        .attr("class", "tooltip")
-        .style("background-color", "white")
-        .style("border", "solid")
-        .style("border-width", "2px")
-        .style("border-radius", "5px")
-        .style("padding", "5px");
-
-    // Three function that change the tooltip when user hover / move / leave a cell
-    const mouseover = function(event,d) {
-        tooltip
-        .style("opacity", 1)
-        d3.select(this)
-        .style("stroke", "black")
-        .style("opacity", 1)
-    };
-    const mousemove = function(event, d) {
-        const xPosition = x(d['LU prior groups']) + x.bandwidth(); // Position at the right of the rectangle
-        const yPosition = y(d['LU post groups']); // Position at the top of the rectangle
-
-        tooltip
-          .html("The exact value of<br>this cell is: " + d['Count of LU post'])
-          .style("left", (event.pageX + 10) + "px") // Use pageX for more stable positioning relative to the page, add offset for clarity
-          .style("top", (event.pageY - tooltip.node().offsetHeight - 10) + "px"); // Use pageY and adjust for tooltip height
-    };
-    const mouseleave = function(event,d) {
-        tooltip
-        .style("opacity", 0)
-        d3.select(this)
-        .style("stroke", "none")
-        .style("opacity", 0.8)
-    };
-  
     // Add the squares
     // Use completeData to draw the heatmap
 svg.selectAll('rect')
