@@ -83,33 +83,37 @@
 
     .test {
         font-size: 20px;
-        margin-top: 50px;
         font-weight: normal;
         margin-left: 0px;
         overflow: scroll;
     }
 
+    .red{
+        color: red;
+    }
+
     a {
-        font-weight:bold;
-        text-decoration: none;
+        font-weight:normal;
+        text-decoration: underline;
+        color:black;
     }
 </style>
 
 <div class="page-title">
-    <h3>Interactive Data Visualization Final Project</h3>
-    <h1> Greater Boston Infested with Condomoniums</h1>
+    <h1>Condo Conversions Intensify Housing Unaffordability in Boston</h1>
     <h3>Caroline Cunningham, Sejal Gupta, Abigail Klein, Stephen Wilson</h3>    
 </div>
 
+<br>
+
 <h2> What are Condo Conversions? </h2>
 
-<p>
-    <p class="test"> <a href="https://www.mapc.org/wp-content/uploads/2021/12/10.-MC2050-Homes-for-Everyone-Brief.pdf">Greater Boston ranks 3rd in the most expensive housing markets in the United States, </a> and <a href="https://homesforprofit.mapc.org/report"> 51% of Boston residents are forced to spend over the recommended income percentage (30%) on rent</a>
+    <p class="test"> <a href="https://www.mapc.org/wp-content/uploads/2021/12/10.-MC2050-Homes-for-Everyone-Brief.pdf">Greater Boston ranks 3rd in the most expensive housing markets in the United States, </a> and <a href="https://homesforprofit.mapc.org/report"> 51% of Boston residents are forced to spend over the recommended income percentage (30%) on rent. </a>
         There are many sources of pressure on prices in Boston’s housing market – from zoning restrictions that hinder development of new housing to outside investors who drive up rent 
         </p>
         <p class="test">
-            <a href="https://homesforprofit.mapc.org/report"> Affecting renters, residents are often displaced due to price increases when outside investors convert the buildings they live in into condominiums. </a> We refer to buildings being converted into condomniums as "condo conversions". Price increases from condo conversions contribute to housing unaffordability and the further inaccessability of impacted neighborhoods.
-        </p>
+    <a href="https://homesforprofit.mapc.org/report"> Affecting renters, residents are often displaced due to price increases when outside investors convert the buildings they live in into condominiums. </a> We refer to buildings being converted into condomniums as "condo conversions". Price increases from condo conversions contribute to housing unaffordability and the further inaccessability of impacted neighborhoods.
+    </p>
     
 
 <h2> Examples of Condo Conversions in Boston </h2>
@@ -185,8 +189,11 @@
 
 <Scrolly>
     <p>
-        Our dataset tracks condo conversions in Boston and Cambridge from 2015 to 2023. There have been <strong> 2530 </strong> total condo conversions, plotted over time to the right.
+        Our dataset tracks condo conversions in Boston and Cambridge from 2015 to 2023.
     </p>           
+    <p>
+        There have been <strong> 2530 </strong> total condo conversions, plotted over time to the right.
+    </p>
     <svelte:fragment slot="viz">
         <div class="scrolly-container">
             <Plot2023 query={ '2023' }/>
@@ -223,13 +230,13 @@
 
 <h2> Visualize Impact in Your Zipcode </h2>
 
-<blockquote>
+<text>
     On the map, <strong>click a Boston or Cambridge zip code</strong> to see the locations of condo conversions (starting from 2015) in the region. 
     
-    Once you click a zipcode, the locations of the condo conversions in the area will be highlighted with red dots.
+    Once you click a zipcode, the locations of the condo conversions in the area will be highlighted with </text> <strong class="red"> red dots </strong>.
 
-    You can <strong>hover over the dots to learn more about the condo conversions</strong> and look at the <strong>associated charts</strong> to learn more about the overall zipcode.
-</blockquote>
+    <text>  You can <strong>hover over the dots to learn more about the condo conversions</strong> and look at the <strong>associated charts</strong> to learn more about the overall zipcode.
+</text>
 
 <div class="parent-container">
 
