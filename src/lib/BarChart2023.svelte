@@ -51,11 +51,11 @@
 		<!-- TODO: format the following line such that the years are at a 45 degree angle so that we can srink the bar chart and still read them -->
 		<g transform={`translate(0, ${height})`} class="x-axisNarr">
 			<!-- X axis will be drawn here by D3 -->
-			<text x={width / 2} y={40} text-anchor="middle" style="font-size: 16px">Year Built</text>
+			<text x={width / 2} y={40} text-anchor="middle" style="font-size: 18px">Year Built</text>
 		</g>
 		<g class="y-axisNarr">
 			<!-- Y axis will be drawn here by D3 -->
-			<text x={-height / 2} y={-50} transform="rotate(-90)" text-anchor="middle" style="font-size: 16px">Number of Buildings</text>
+			<text x={-height / 2} y={-50} transform="rotate(-90)" text-anchor="middle" style="font-size: 18px" >Number of Buildings</text>
 		</g>
 	</g>
 </svg>
@@ -66,14 +66,16 @@
 	}
 	
 	.x-axisNarr text {
-		fill: orange;
-		font-weight: bold;
+		fill: black;
+		font-weight: normal;
+		font-size: 18px;
 		/* stroke: black; */
 	}
 
 	.y-axisNarr text {
-		fill: orange;
-		font-weight: bold;
+		fill: black;
+		font-weight: normal;
+		font-size: 200px;
 		/* stroke: black; */
 	}
 

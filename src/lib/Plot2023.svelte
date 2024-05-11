@@ -79,6 +79,9 @@
 <BarChart2023 dataArrayNarr={yearBuiltDataArrayNarr} />
 
 <style>
+    h3{
+        font-size: 20px;
+    }
     .zipcodes {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
