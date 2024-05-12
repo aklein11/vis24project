@@ -82,6 +82,7 @@
             .attr("height", height + margin.top + margin.bottom)
           .append("g")
             .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")");
+
     }
 
     function drawChart(zipcode) {
@@ -145,6 +146,7 @@
     // svg.selectAll("text").attr("transform", d => `translate(${[d.x, d.y]})rotate(${d.rotate})`);
     }
 
+
     $: if (query) {
         drawChart(query);
     }
@@ -160,8 +162,3 @@
 </style>
 
 <div id="wordcloud"></div>
-
-<text>
-The most common keywords associated with RentSmart complaints are highlighted above. 
-</text>
-  

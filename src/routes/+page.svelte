@@ -125,6 +125,16 @@
         overflow: scroll;
     }
 
+    .text-viz-center {
+        font-size: 20px;
+        text-align: center;
+        font-weight: normal;
+        margin-left: 0px;
+        overflow: scroll;
+    }
+
+
+
 
     .red{
         color: red;
@@ -278,7 +288,7 @@ As shown in the heatmap, most properties are converted to condos, and this trend
     
 </text>
 
-<text class="bar-heading"> Frequency of Complaint Type </text>
+<h3> Frequency of Complaint Type </h3>
 <RaceBarChart />
 
 <text class="text-viz"> 
@@ -388,10 +398,8 @@ As shown in the heatmap, most properties are converted to condos, and this trend
             </strong>
             {/if}
         </h3>
-            
+        <text class="text-viz-center"> The most common keywords associated with RentSmart complaints are highlighted below. </text>
         <br>
-        <br>
-
             <WordCloud query={ $zipcode }/>
     {/if}
 </div>
