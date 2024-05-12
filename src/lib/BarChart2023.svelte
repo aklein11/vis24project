@@ -46,7 +46,7 @@
 						y={yScale(d.count)}
 						width={xScale.bandwidth()}
 						height={height - yScale(d.count)}
-						fill="orange" />
+						fill="#558B2F" />
 		{/each}
 		<!-- TODO: format the following line such that the years are at a 45 degree angle so that we can srink the bar chart and still read them -->
 		<g transform={`translate(0, ${height})`} class="x-axisNarr">
