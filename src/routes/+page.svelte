@@ -62,8 +62,6 @@
 
     .map-container {
         width: 100%;
-        /* You may add margins or paddings as needed */
-        /* NEW COMMIT */
     }
 
     .sub-charts-container {
@@ -306,7 +304,7 @@ As shown in the heatmap, most properties are converted to condos, and this trend
             <Bargraph query={ $zipcode }/>
         </div>
         <div class="piechart-container">
-            <h3 class="graph-title">Types of Buildings Most Likely to be Converted in 
+            <h3 class="graph-title">Types of Buildings Most Likely to be Converted to Condos in 
                     {#if $zipcode !== ''}
                     <strong class="blue">
                         {$zipcode}
@@ -362,7 +360,6 @@ As shown in the heatmap, most properties are converted to condos, and this trend
             </div>
         </div>
 
-        
         <br>
         <br>
         
@@ -379,7 +376,7 @@ As shown in the heatmap, most properties are converted to condos, and this trend
         </h3>
         <text class="text-viz-center"> The most common keywords associated with RentSmart complaints are highlighted below. </text>
         <br>
-            <WordCloud query={ $zipcode }/>
+        <WordCloud query={ $zipcode }/>
     {/if}
 </div>
 
