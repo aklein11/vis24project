@@ -227,6 +227,14 @@
   });
 </script>
 
+<style>
+        a {
+        font-weight:normal;
+        text-decoration: underline;
+        color:black;
+    }
+
+</style>
 
 <svg id="linechart-svg" width="960" height="500"></svg>
 

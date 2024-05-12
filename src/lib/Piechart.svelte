@@ -49,6 +49,14 @@
     $: selectedZipcode = selectedZipcodeIndex > -1 ? pieData[selectedZipcodeIndex].label : null;
 </script>
 
+<style>
+        a {
+        font-weight:normal;
+        text-decoration: underline;
+        color:black;
+    }
+</style>
+
 
 <Pie data={pieData} bind:selectedIndex={selectedZipcodeIndex} />
 

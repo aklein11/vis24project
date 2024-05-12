@@ -211,8 +211,8 @@
         font-size: 18px;
     }
 
-    .red{
-        color: red;
+    .blue{
+        color: #3A89C9;
     }
 
 </style>
@@ -225,7 +225,7 @@
         {#if currentZipcode === null}
             <strong> No zip code selected </strong>
         {:else}
-            <strong> Selected zip code: <strong class="red">{"0" + currentZipcode}  </strong> </strong>
+            <strong> Selected zip code: <strong class="blue">{"0" + currentZipcode}  </strong> </strong>
         {/if}
     </div>
 </div>

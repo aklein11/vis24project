@@ -64,13 +64,13 @@
 			<!-- X axis is drawn here by D3 -- do not delete -->
 		</g>
 		<g transform={`translate(0, ${height})`} class="x-axis-label">
-			<text x={width / 2} y={50} text-anchor="middle" style="font-size: 16px">
+			<text x={width / 2} y={50} text-anchor="middle" style="font-size: 18px">
 				Year Built
 			</text>
 		</g>
-		<g class="y-axis">
+		<g class="y-axis text">
 			<!-- Y axis will be drawn here by D3 -->
-			<text x={-height / 2} y={-45} transform="rotate(-90)" text-anchor="middle" style="font-size: 16px">Number of Buildings</text>
+			<text x={-height / 2} y={-45} transform="rotate(-90)" text-anchor="middle" style="font-size: 18px">Number of Buildings</text>
 		</g>
 	</g>
 </svg>
@@ -84,12 +84,14 @@
 	.x-axis-label text {
 		fill: orange;
 		font-weight: bold;
+		font-size: 18px;
 		/* stroke: black; */
 	}
 
 	.y-axis text {
 		fill: orange;
 		font-weight: bold;
+		font-size: 18px;
 		/* stroke: black; */
 	}
 

@@ -130,10 +130,20 @@
         color: red;
     }
 
+
+    .blue{
+        color: #3A89C9;
+    }
+
     a {
         font-weight:normal;
         text-decoration: underline;
         color:black;
+    }
+
+    .center{
+        text-align: center;
+        font-size: 20px;
     }
 </style>
 
@@ -294,25 +304,29 @@ As shown in the heatmap, most properties are converted to condos, and this trend
     <div class="sub-charts-container">
         <div class="bargraph-container">
             <h3 class="graph-title">Year Converted Properties were Built in
-                <strong>
-                    {#if $zipcode !== ''}
-                        {$zipcode}
-                    {:else}
-                        Boston and Cambridge
-                    {/if}
+                {#if $zipcode !== ''}
+                <strong class="blue">
+                    {$zipcode}
                 </strong>
-            </h3>
+                {:else}
+                <strong>
+                    Boston and Cambridge
+                </strong>
+                {/if}
+        </h3>
             <Bargraph query={ $zipcode }/>
         </div>
         <div class="piechart-container">
             <h3 class="graph-title">Types of Buildings Most Likely to be Converted in 
-                <strong>
                     {#if $zipcode !== ''}
+                    <strong class="blue">
                         {$zipcode}
+                    </strong>
                     {:else}
+                    <strong>
                         Boston and Cambridge
+                    </strong>
                     {/if}
-                </strong>
             </h3>
             <Piechart query={ $zipcode }/> 
         </div>
@@ -321,34 +335,38 @@ As shown in the heatmap, most properties are converted to condos, and this trend
 
 <div class="parent-container">
     {#if $zipcode !== '' && cambridgeZip.indexOf($zipcode) !== -1}
-        <p>Complaints about Condominiums over Time in <strong>{$zipcode}</strong> </p>
-        <text>
+        <h3 class="graph-title">Complaints about Condominiums over Time in <strong class="blue">{$zipcode}</strong> </h3>
+        <text class="center">
             For Cambridge, we did not have data on condominium complaints.
         </text>
     {:else}
         <div class="sub-charts-container">
             <div class="bargraph-container">
                 <h3 class="graph-title">Complaints about Condominiums over Time in 
-                    <strong>
-                        {#if $zipcode !== ''}
+                    {#if $zipcode !== ''}
+                        <strong class="blue">
                             {$zipcode}
+                        </strong>
                         {:else}
-                            Boston and Cambridge
+                        <strong>
+                            Boston
+                        </strong>
                         {/if}
-                    </strong>
                 </h3>
                 <Linechart query={ $zipcode }/>
             </div>
 
             <div class="piechart-container">
                 <h3 class="graph-title">Most Common Complaints in 
-                    <strong>
-                        {#if $zipcode !== ''}
-                            {$zipcode}
-                        {:else}
-                            Boston and Cambridge
-                        {/if}
+                    {#if $zipcode !== ''}
+                    <strong class="blue">
+                        {$zipcode}
                     </strong>
+                    {:else}
+                    <strong>
+                        Boston
+                    </strong>
+                    {/if}
                 </h3>
                 <Bubblechart query={ $zipcode }/>
             </div>
@@ -357,13 +375,17 @@ As shown in the heatmap, most properties are converted to condos, and this trend
         
 
         
-        <p>Types of Complaints in <strong>
+        <h3 class="graph-title">Types of Complaints in 
             {#if $zipcode !== ''}
+            <strong class="blue">
                 {$zipcode}
+            </strong>
             {:else}
+            <strong>
                 Boston
+            </strong>
             {/if}
-            </strong></p>
+        </h3>
             
             <WordCloud query={ $zipcode }/>
     {/if}

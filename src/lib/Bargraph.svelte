@@ -66,6 +66,14 @@
     }
 </script>
 
+<style>
+    a {
+        font-weight:normal;
+        text-decoration: underline;
+        color:black;
+    }
+</style>
+
 
 <BarChart dataArray={yearBuiltDataArray} />
 
