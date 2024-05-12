@@ -228,9 +228,8 @@
 </script>
 
 
-<blockquote scrolly-container>
-    The <a href="https://data.boston.gov/dataset/rentsmart"> RentSmart dataset </a> contains data from Boston’s 311 line and Boston’s Inspectional Services Division on residential property complaints from 2019 to the present. 
-    </blockquote>
-
-
 <svg id="linechart-svg" width="960" height="500"></svg>
+
+<text>
+    The <a href="https://data.boston.gov/dataset/rentsmart"> RentSmart dataset </a> contains data from Boston’s 311 line and Boston’s Inspectional Services Division on residential property complaints from 2019 to the present. 
+</text>

@@ -253,11 +253,6 @@
 </script>
 
 
-<blockquote scrolly-container>
-  We categorized the complaints into groups to demonstrate the impact of condominium development both on residents and the surrounding neighborhood.
-  </blockquote>
-
-
 <div class="container">
   <svg id="bubblechart-svg"></svg>
 
@@ -271,6 +266,12 @@
       {/each}
   </ul>
 </div>
+
+<br>
+
+<text scrolly-container>
+  We categorized the complaints into groups to demonstrate the impact of condominium development both on residents and the surrounding neighborhood.
+</text>
 
 
 <style>

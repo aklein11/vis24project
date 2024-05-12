@@ -30,7 +30,7 @@
     // Append the axes to the svg
     svg.append('g')
       .attr('class', 'x axis')
-      .style('font-size', '18px')
+      .style('font-size', '15px')
       .attr('transform', 'translate(0,' + height + ')');
 
     svg.append('g')
