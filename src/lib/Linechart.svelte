@@ -53,7 +53,9 @@
             .attr("text-anchor", "middle")
             .attr("x", width / 2)
             .attr("y", height + 50) // Push the x-axis label further down
-            .text("Year");
+            .style('font-weight', 'bold')
+            .style('font-size', '18px')
+            .text("Complaint Year");
         
         // Y scale and axis initialization
         y = d3.scaleLinear()
@@ -68,7 +70,9 @@
             .attr("transform", "rotate(-90)")
             .attr("y", -40) // Push the y-axis label further to the left
             .attr("x", -height / 2-15)
-            .text("Complaints (Hundreds)");
+            .style('font-weight', 'bold')
+            .style('font-size', '18px')
+            .text("Complaint Count (in Hundreds)");
             
             // Create a legend to the right of the chart within the margin space
         const legend = svg.append("g")
@@ -76,8 +80,8 @@
             .attr("transform", `translate(${width + 50}, ${20})`);
     
         const legendData = [
-            {color: "steelblue", label: "# of Complaints Filed Per Year"},
-            {color: "red", label: "# of Distinct Buildings"}
+            {color: "red", label: "# of Complaints Filed Per Year"},
+            {color: "#2196F3", label: "# of Distinct Buildings"}
         ];
     
         // Determine the width of the legend box based on text length
@@ -202,7 +206,7 @@
                 .data([plotData])
                 .attr("class", "line-count")
                 .attr("fill", "none")
-                .attr("stroke", "steelblue")
+                .attr("stroke", "red")
                 .attr("stroke-width", 1.5)
                 .attr("d", lineCount);
         }
@@ -212,7 +216,7 @@
                 .data([plotData])
                 .attr("class", "line-discounted")
                 .attr("fill", "none")
-                .attr("stroke", "red")
+                .attr("stroke", "#2196F3")
                 .attr("stroke-width", 1.5)
                 .attr("d", lineDiscounted);
         }
