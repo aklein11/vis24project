@@ -124,20 +124,33 @@
                     popup.remove();
                 }
 
-                popup = new mapboxgl.Popup()
+            //     popup = new mapboxgl.Popup()
+            //         .setLngLat(coordinates)
+            //         .setHTML(`
+            //             <strong>Address:</strong> ${properties.address} <br>
+            //             <strong>Zipcode:</strong> ${properties.zipcode} <br>
+            //             <strong>Year Built:</strong> ${parseInt(properties.year_built)} <br>
+            //             <strong>Building Type Before:</strong> ${labelDict[properties.prior_building]} <br>
+            //             <strong>Building Type After:</strong> ${labelDict[properties.post_building]} <br>
+            //             <strong>Year Converted:</strong> ${parseInt(properties.year_converted)} <br>
+            //             <strong>Value Before:</strong> $${properties.value_prior.toLocaleString()} <br>
+            //             <strong>Value After:</strong> $${properties.value_post.toLocaleString()} <br>
+            //         `) // Customize your tooltip content here
+            //         .addTo(map);
+            // });
+
+            popup = new mapboxgl.Popup()
                     .setLngLat(coordinates)
                     .setHTML(`
                         <strong>Address:</strong> ${properties.address} <br>
-                        <strong>Zipcode:</strong> ${properties.zipcode} <br>
+                        <strong>Year Converted:</strong> ${parseInt(properties.year_converted)} <br>
                         <strong>Year Built:</strong> ${parseInt(properties.year_built)} <br>
                         <strong>Building Type Before:</strong> ${labelDict[properties.prior_building]} <br>
                         <strong>Building Type After:</strong> ${labelDict[properties.post_building]} <br>
-                        <strong>Year Converted:</strong> ${parseInt(properties.year_converted)} <br>
-                        <strong>Value Before:</strong> $${properties.value_prior.toLocaleString()} <br>
-                        <strong>Value After:</strong> $${properties.value_post.toLocaleString()} <br>
                     `) // Customize your tooltip content here
                     .addTo(map);
             });
+
 
             map.on('mouseleave', 'points', () => {
                 map.getCanvas().style.cursor = '';
