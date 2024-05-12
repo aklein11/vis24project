@@ -52,7 +52,7 @@
             .attr("class", "x label")
             .attr("text-anchor", "middle")
             .attr("x", width / 2)
-            .attr("y", height + 40) // Push the x-axis label further down
+            .attr("y", height + 50) // Push the x-axis label further down
             .text("Year");
         
         // Y scale and axis initialization
@@ -66,9 +66,9 @@
             .attr("class", "y label")
             .attr("text-anchor", "middle")
             .attr("transform", "rotate(-90)")
-            .attr("y", -50) // Push the y-axis label further to the left
-            .attr("x", -height / 2)
-            .text("Number of Distinct Buildings or Complaints in a Year");
+            .attr("y", -40) // Push the y-axis label further to the left
+            .attr("x", -height / 2-15)
+            .text("Complaints (Hundreds)");
             
             // Create a legend to the right of the chart within the margin space
         const legend = svg.append("g")
@@ -143,8 +143,8 @@
             if (!yearlyData[year]) {
                 yearlyData[year] = { count: 0, discounted: 0 };
             }
-            yearlyData[year].count += +d['Number of Complaints Filed Per Year'];
-            yearlyData[year].discounted += +d['Number of Distinct Condominum Buildings the Complaints are Filed About'];
+            yearlyData[year].count += +d['Number of Complaints Filed Per Year']/100;
+            yearlyData[year].discounted += +d['Number of Distinct Condominum Buildings the Complaints are Filed About']/100;
         });
 
         // Convert the processed object into an array suitable for D3.js
@@ -171,12 +171,14 @@
         .call(d3.axisBottom(x))
         .selectAll("text")
         .attr("transform", "translate(-10,0)rotate(-45)")
+        .style('font-size', '12px')
         .style("text-anchor", "end");
 
         // Update Y axis
         y.domain([0, d3.max(plotData, d => Math.max(d.count, d.discounted))]);
         svg.select(".y-axis") // Select the existing y-axis
         .transition()
+        .style('font-size', '12px')
         .duration(750)
         .call(d3.axisLeft(y));
 
@@ -235,7 +237,7 @@
     }
 
     text{
-        font-size: 18px;
+        font-size: 20px;
     }
 
 </style>
@@ -243,5 +245,9 @@
 <svg id="linechart-svg" width="960" height="500"></svg>
 
 <text>
-    The <a href="https://data.boston.gov/dataset/rentsmart"> RentSmart dataset </a> contains data from Boston’s 311 line and Boston’s Inspectional Services Division on residential property complaints from 2019 to the present. 
+    Shown above is the number of complaints as compared to the number of distinct buildings involved in the complaints. 
+    <p>
+    For all of Boston, from 2019 to 2023 we see an increase in the # of complaints over time and a slight increase in the # of distinct buildings involved in the complaints.  
+    </p>
+    Data sourced from the RentSmart dataset.
 </text>

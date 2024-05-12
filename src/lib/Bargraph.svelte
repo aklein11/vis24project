@@ -74,7 +74,7 @@
     }
 
     text{
-        font-size: 18px;
+        font-size: 20px;
     }
 </style>
 
@@ -85,7 +85,10 @@
 <br>
 <text>
     <a href="https://homesforprofit.mapc.org/report"> Investors upgrading residential properties into condos can displace residents due to subsequent rent increases. </a> 
-    Here, we display the number of condo conversions against the year the building was built. While imperfect, we use how early a building was constructed as a proxy for 
-    how likely the condo conversion upgraded the property.
+    
+    <br>
+    <br>
+    While imperfect, we use how early a building was constructed as a proxy for 
+    how likely the condo conversion upgraded the property, thus potentially raising rents. 
 </text>
 

@@ -251,8 +251,7 @@
       drawChart(query); // Initially draw bubbles for a default zipcode
     });
 </script>
-
-
+  
 <div class="container">
   <svg id="bubblechart-svg"></svg>
 
@@ -270,8 +269,9 @@
 <br>
 
 <text>
-  We categorized the complaints into groups to demonstrate the impact of condominium development both on residents and the surrounding neighborhood.
+  We group the complaints from RentSmart to demonstrate the impact of condominium development both on residents and on the surrounding neighborhood.
 </text>
+
 
 
 <style>
@@ -313,6 +313,7 @@ overflow: visible; /* Do not clip shapes outside the viewBox */
         display:inline-block;
         margin-right: 5px;
         border-radius: 50%;
+        font-size: '15px';
         /* aspect-ratio: 1 / 1;  */
     }
   .bubble-legend-color {
@@ -322,7 +323,7 @@ overflow: visible; /* Do not clip shapes outside the viewBox */
   }
 
   text{
-        font-size: 18px;
+        font-size: 20px;
     }
 
 </style>

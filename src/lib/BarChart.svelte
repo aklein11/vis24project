@@ -21,7 +21,6 @@
 
 	onMount(() => {
 		containerWidth = document ? parseInt(d3.select('.bargraph-container').style('width'), 10) : 700;
-		
 		xAxis = d3.axisBottom(xScale).tickFormat(d3.format('d'));
 	 	yAxis = d3.axisLeft(yScale).ticks(5);
 		window.addEventListener('resize', () => {
@@ -35,8 +34,8 @@
 	function updateScales() {
 		xAxis = d3.axisBottom(xScale).tickFormat(d3.format('d'));
 	 	yAxis = d3.axisLeft(yScale).ticks(5);
-		d3.select('.x-axis').call(xAxis).selectAll('text').style('text-anchor', 'end').attr('dx', '-.8em').attr('dy', '.15em').attr("transform", "rotate(-45)");
-		d3.select('.y-axis').call(yAxis);
+		d3.select('.x-axis').call(xAxis).selectAll('text').style('text-anchor', 'end').style('font-size', '12px').attr('dx', '-.8em').attr('dy', '.15em').attr("transform", "rotate(-45)");
+		d3.select('.y-axis').style('font-size', '12px').call(yAxis);
 	}
 
 	// Reactive statement for handling changes in dataArray
@@ -68,7 +67,7 @@
 				Year Built
 			</text>
 		</g>
-		<g class="y-axis text">
+		<g class="y-axis">
 			<!-- Y axis will be drawn here by D3 -->
 			<text x={-height / 2} y={-45} transform="rotate(-90)" text-anchor="middle" style="font-size: 18px">Number of Buildings</text>
 		</g>
@@ -84,16 +83,15 @@
 	.x-axis-label text {
 		fill: orange;
 		font-weight: bold;
-		font-size: 18px;
+		font-size: 20px;
 		/* stroke: black; */
 	}
 
 	.y-axis text {
 		fill: orange;
 		font-weight: bold;
-		font-size: 18px;
+		font-size: 20px;
 		/* stroke: black; */
 	}
-
 
 </style>

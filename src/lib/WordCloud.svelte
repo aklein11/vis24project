@@ -14,8 +14,8 @@
     //       height = 450 - margin.top - margin.bottom;
     // Increase the dimensions to provide more space
     const margin = { top: 10, right: 10, bottom: 10, left: 10 },
-          width = 800 - margin.left - margin.right,
-          height = 800 - margin.top - margin.bottom;
+          width = 750 - margin.left - margin.right,
+          height = 750 - margin.top - margin.bottom;
 
     async function loadData() {
         data = await d3.csv("complaints_count_zipcode.csv");
@@ -96,7 +96,7 @@
           .size([width, height])
           .words(filteredData)
           .padding(5)
-          .rotate(() => ~~(Math.random() * 2) * 90)
+          .rotate(() => ~~(0 * 2) * 90)
         //   .fontSize(d => fontSizeScale(Math.max(d.size, 1))) // Ensure no zero sizes
         //   .fontSize(d => fontSizeScale(d.size)) // Use the scaling function for font size
           .fontSize(d => d.size)
@@ -152,4 +152,16 @@
     onMount(loadData);
 </script>
 
+<style>
+      text{
+        font-size: 20px;
+        text-align: center;
+    }
+</style>
+
 <div id="wordcloud"></div>
+
+<text>
+The most common keywords associated with RentSmart complaints are highlighted above. 
+</text>
+  

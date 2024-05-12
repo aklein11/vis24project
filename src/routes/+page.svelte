@@ -335,7 +335,7 @@ As shown in the heatmap, most properties are converted to condos, and this trend
 
 <div class="parent-container">
     {#if $zipcode !== '' && cambridgeZip.indexOf($zipcode) !== -1}
-        <h3 class="graph-title">Complaints about Condominiums over Time in <strong class="blue">{$zipcode}</strong> </h3>
+        <h3 class="graph-title"> Complaints about Condominiums over Time in  <strong class="blue">{$zipcode}</strong> </h3>
         <text class="center">
             For Cambridge, we did not have data on condominium complaints.
         </text>
@@ -347,9 +347,10 @@ As shown in the heatmap, most properties are converted to condos, and this trend
                         <strong class="blue">
                             {$zipcode}
                         </strong>
+                        (in Hundreds)
                         {:else}
                         <strong>
-                            Boston
+                            Boston (in Hundreds)
                         </strong>
                         {/if}
                 </h3>
@@ -376,7 +377,7 @@ As shown in the heatmap, most properties are converted to condos, and this trend
         <br>
         <br>
         
-        <h3 class="graph-title">Types of Complaints in 
+        <h3 class="graph-title">Common Complaint Keywords in
             {#if $zipcode !== ''}
             <strong class="blue">
                 {$zipcode}
