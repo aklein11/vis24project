@@ -84,11 +84,13 @@
 <br>
 <br>
 <text>
-    <a href="https://homesforprofit.mapc.org/report"> Investors upgrading residential properties into condos can displace residents due to subsequent rent increases. </a> 
+    <a href="https://homesforprofit.mapc.org/report"> 
+        Investors upgrading residential properties into condos can displace residents due to subsequent rent increases. 
+    </a> 
     
     <br>
     <br>
-    While imperfect, we use how early a building was constructed as a proxy for 
-    how likely the condo conversion upgraded the property, thus potentially raising rents. 
+    We use a building's age as a metric to gague the probability that a conversion upgraded the property, 
+    thus potentially raising rents. These conversions are for all building types, not just condominiums.
 </text>
 
