@@ -369,7 +369,7 @@ As shown in the heatmap, most properties are converted to condos, and this trend
             </div>
 
             <div class="piechart-container">
-                <h3 class="graph-title">Most Common Complaints in 
+                <h3 class="graph-title">Top 5 Complaints in 
                     {#if $zipcode !== ''}
                     <strong class="blue">
                         {$zipcode}
