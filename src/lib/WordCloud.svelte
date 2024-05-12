@@ -112,7 +112,7 @@
             // .style("font-size", d => `${fontSizeScale(Math.max(d.size, 1))}px`) // Apply scaled size
             // .style("font-size", d => `${fontSizeScale(d.size)}px`) // Apply scaled size
             .style("font-size", d => d.size)
-            .style("fill", "#69b3a2")
+            .style("fill", "#FF8F00")
             .attr("text-anchor", "middle")
             .style("font-family", "Impact")
             .attr("transform", d => `translate(${[d.x, d.y]})rotate(${d.rotate})`)

@@ -211,11 +211,19 @@
         
     <p class="text-narr">In 2018, <a href="https://www.cambridgeday.com/2018/02/17/renters-at-a-brand-new-somerville-building-surprised-by-news-millbrooks-going-condo/?fbclid=IwAR3Y-EiEl1r1ZK_-NN2MNZzoPoUJDLR5jyG2PFacnB6fe3GGT1VDTIT7J-k" target="_blank"> Berkeley Investments acquired Millbrook Lofts in Somerville </a> to convert into condominiums.
     </p>   
-    <p class="text-narr">
-        In an outcry, the Millbrook Lofts Tenants’ Association argued that there would be multiple incidental expenses for residents needing to move. </p>
-    <p class="text-narr">
-        Given Boston's tight real estate market, renters living in buildings set to be converted may difficulties finding a new place to rent. 
-        <br>
+    <p class="text-narr">  In an outcry, the Millbrook Lofts Tenants’ Association argued that there would be multiple incidental expenses for residents needing to move. </p>
+    <p class="text-narr">    Given Boston's tight real estate market, renters living in buildings set to be converted may difficulties finding a new place to rent. 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        
     </p>                     
     <svelte:fragment slot="viz">
         <div class="scrolly-container">
@@ -223,29 +231,43 @@
         </div>
         <a href="https://www.cambridgeday.com/2018/02/17/renters-at-a-brand-new-somerville-building-surprised-by-news-millbrooks-going-condo/?fbclid=IwAR3Y-EiEl1r1ZK_-NN2MNZzoPoUJDLR5jyG2PFacnB6fe3GGT1VDTIT7J-k" target="_blank">Image Credit</a>
     </svelte:fragment>
+
     <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 </Scrolly>
 
 <h2> Investigation in Boston and Cambridge Condo Conversions  </h2>
 
 <p class="text-viz">
     Our dataset tracks condo conversions in Boston and Cambridge from 2015 to 2023. We will use this dataset to explore condo conversions in Greater Boston from a variety of angles.
-</p>           
+</p>  
 
-
-<div class="scrolly-container">
-    <Plot2023 query={ '2023' }/>
-</div>
 <p class="text-viz">
-    There have been <strong> 2530 </strong> total condo conversions, plotted over time to the right.
-</p>
-<br/>
+    There have been <strong> 2530 </strong> total condo conversions, plotted over time below.
+</p>    
 
-<h3> Factors that Influence Condo Conversions </h3>
+<Scrolly>
+    <svelte:fragment slot="viz">
+        <div class="scrolly-container">
+            <Plot2023 query={ '2023' }/>
+        </div>
+        <p>
+        </p>        
+    </svelte:fragment>
+
+</Scrolly>
+
+<h3> Types of Properties Likely to Become Condos </h3>
 <text class="text-viz">
     What makes a condo conversion more likely? The heatmap below maps the frequency of property conversions with the initial property type on the X-Axis and the converted property type on the Y-Axis. 
     <br>
-    Move your cursor around the heatmap to see the specific frequencies for each of the conversion types.
+    <br>
+    <strong>Move your cursor around the heatmap  </strong> to see the specific frequencies for each of the conversion types.
     <br>
 </text>
 
@@ -345,7 +367,7 @@ As shown in the heatmap, most properties are converted to condos, and this trend
             </div>
 
             <div class="piechart-container">
-                <h3 class="graph-title">Most Common Complaints in 
+                <h3 class="graph-title">Frequency of Top 5 Complaints in 
                     {#if $zipcode !== ''}
                     <strong class="blue">
                         {$zipcode}
