@@ -264,7 +264,7 @@
 
 </Scrolly>
 
-<h3> Factors that Influence Condo Conversions </h3>
+<h3> Types of Properties Likely to Become Condos </h3>
 <text class="text-viz">
     What makes a condo conversion more likely? The heatmap below maps the frequency of property conversions with the initial property type on the X-Axis and the converted property type on the Y-Axis. 
     <br>
@@ -328,7 +328,7 @@ As shown in the heatmap, most properties are converted to condos, and this trend
             <Bargraph query={ $zipcode }/>
         </div>
         <div class="piechart-container">
-            <h3 class="graph-title">Types of Buildings Most Likely to be Converted in 
+            <h3 class="graph-title">Building Types Most Frequently Converted in 
                     {#if $zipcode !== ''}
                     <strong class="blue">
                         {$zipcode}
@@ -369,7 +369,7 @@ As shown in the heatmap, most properties are converted to condos, and this trend
             </div>
 
             <div class="piechart-container">
-                <h3 class="graph-title">Top 5 Complaints in 
+                <h3 class="graph-title">Frequency of Top 5 Complaints in 
                     {#if $zipcode !== ''}
                     <strong class="blue">
                         {$zipcode}

@@ -10,7 +10,7 @@
     let radiusScale; // For bubble sizes
     let width = 500, height = 500;
     const margin = { top: 20, right: 20, bottom: 30, left: 40 };
-    const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+    const colorScale = d3.scaleOrdinal(d3.schemeDark2);
 
     async function drawChart(zipcode) {
       // Load data
@@ -260,8 +260,8 @@
           {console.log("bubble legend filteredata ", filteredData)}
           <li class="bubble-legend-item" style="--color: { colorScale(d['Description (group)']) }">
               <span class="swatch"></span>
-              {d["Description (group)"]} <em>({d["Count of Description"]})</em>
-          </li>
+              {d["Description (group)"]}<em> ({d["Count of Description"]}) </em>
+          </li> 
       {/each}
   </ul>
 </div>
@@ -287,6 +287,10 @@ overflow: visible; /* Do not clip shapes outside the viewBox */
       gap: 10px;
       align-items: horizontal;
       gap: 1em;
+  }
+
+  li{
+    font-size: 16px;
   }
 
   .bubble-legend {
