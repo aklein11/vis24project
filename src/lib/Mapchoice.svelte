@@ -13,6 +13,24 @@
     const initialCenter = [-71.0589, 42.3301];
     const initialZoom = 10;
 
+    const labelDict = {"CM": "Building broken into condo units",
+                    "R1": "1-Family",
+                    "R2": "2-Family",
+                    "R3": "3-Family",
+                    "R4": "4-6 Units",
+                    "A": "7+ Units",
+                    "RL": "Residential Lot",
+                "CD": "Condo",
+                "CC": "Commercial Condo",
+            "C": "Commercial",
+        "RC": "Mixed Use",
+        "CL": "Commercial Land",
+        "CP": "Condo Parking",
+        "I": "Industrial",
+        "E": "Exempt",
+        "EA": "Exempt"}
+
+
     onMount(async () => {
         map = new mapboxgl.Map({
             container: 'map',
@@ -112,11 +130,11 @@
                         <strong>Address:</strong> ${properties.address} <br>
                         <strong>Zipcode:</strong> ${properties.zipcode} <br>
                         <strong>Year Built:</strong> ${parseInt(properties.year_built)} <br>
-                        <strong>Post Building Type:</strong> ${properties.post_building} <br>
-                        <strong>Prior Building Type:</strong> ${properties.prior_building} <br>
+                        <strong>Building Type Before:</strong> ${labelDict[properties.prior_building]} <br>
+                        <strong>Building Type After:</strong> ${labelDict[properties.post_building]} <br>
                         <strong>Year Converted:</strong> ${parseInt(properties.year_converted)} <br>
-                        <strong>Value Prior-Conversion:</strong> $${properties.value_prior.toLocaleString()} <br>
-                        <strong>Value Post-Conversion:</strong> $${properties.value_post.toLocaleString()} <br>
+                        <strong>Value Before:</strong> $${properties.value_prior.toLocaleString()} <br>
+                        <strong>Value After:</strong> $${properties.value_post.toLocaleString()} <br>
                     `) // Customize your tooltip content here
                     .addTo(map);
             });

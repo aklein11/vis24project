@@ -173,6 +173,8 @@
     <a href="https://homesforprofit.mapc.org/report"> Affecting renters, residents are often displaced due to price increases when outside investors convert the buildings they live in into condominiums. </a> We refer to buildings being converted into condomniums as "condo conversions". Price increases from condo conversions contribute to housing unaffordability and the further inaccessability of impacted neighborhoods.
     </p>
     
+<br>
+<br>
 
 <h2 class="h2-narr"> Examples of Condo Conversions in Boston </h2>
 
@@ -180,7 +182,8 @@
 
 <Scrolly>
     <p class="text-narr"><a href="https://www.gibsonsothebysrealty.com/blog/posts/2014/11/19/back-bay-luxury-real-estate-mandarin-oriental-to-convert-25-units-to-luxury-condos/"> Back Bay’s Mandarin Oriental complex converted 25 apartments into luxury condominium units. </a></p>
-    <p class="text-narr">The converted units were “predicted to take in some of the highest prices the condo sales market [had] seen”. Increasingly pricey new developments exasperbate Boston's housing crisis, making it increasingly hard for non-wealthy residents to call the city home.</p>
+    <p class="text-narr">The converted units were “predicted to take in some of the highest prices the condo sales market [had] seen”. </p>
+    <p class="text-narr">Increasingly pricey new developments exasperbate Boston's housing crisis, making it increasingly hard for non-wealthy residents to call the city home.</p>
 
     <svelte:fragment slot="viz">
         <div class="scrolly-container">
@@ -214,7 +217,7 @@
     <p class="text-narr">In 2018, <a href="https://www.cambridgeday.com/2018/02/17/renters-at-a-brand-new-somerville-building-surprised-by-news-millbrooks-going-condo/?fbclid=IwAR3Y-EiEl1r1ZK_-NN2MNZzoPoUJDLR5jyG2PFacnB6fe3GGT1VDTIT7J-k"> Berkeley Investments acquired Millbrook Lofts in Somerville </a> to convert into condominiums.
     </p>   
     <p class="text-narr">  In an outcry, the Millbrook Lofts Tenants’ Association argued that there would be multiple incidental expenses for residents needing to move. </p>
-    <p class="text-narr">    Given Boston's tight real estate market, renters living in buildings set to be converted may difficulties finding a new place to rent. 
+    <p class="text-narr">    Given Boston's tight real estate market, renters living in buildings set to be converted may face difficulties finding a new place to rent. 
         <br> 
         <br> 
         <br> 
@@ -234,19 +237,13 @@
         <a href="https://www.cambridgeday.com/2018/02/17/renters-at-a-brand-new-somerville-building-surprised-by-news-millbrooks-going-condo/?fbclid=IwAR3Y-EiEl1r1ZK_-NN2MNZzoPoUJDLR5jyG2PFacnB6fe3GGT1VDTIT7J-k">Image Credit</a>
     </svelte:fragment>
 
-    <br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 </Scrolly>
 
 <h2> Investigation in Boston and Cambridge Condo Conversions  </h2>
 
 <p class="text-viz">
-    Our dataset tracks condo conversions in Boston and Cambridge from 2015 to 2023. We will use this dataset to explore condo conversions in Greater Boston from a variety of angles.
+    Our dataset tracks condo conversions in Boston and Cambridge from 2015 to 2023. We invite you to explore condo conversions in Greater Boston from a variety of angles based on insights that we've curated from the dataset.
 </p>           
 
 <Scrolly>
@@ -267,6 +264,7 @@
 <text class="text-viz">
     What makes a condo conversion more likely? The heatmap below maps the frequency of property conversions with the initial property type on the X-Axis and the converted property type on the Y-Axis. 
     <br>
+    <br>
     Move your cursor around the heatmap to see the specific frequencies for each of the conversion types.
     <br>
     <br>
@@ -276,7 +274,7 @@
 
 <p class="text-viz">
 
-As shown in the heatmap, most properties are converted to condos, and this trend is even more prominent for residential homes. As discussed earlier in the Medford multifamily condo conversion example, conversions of multifamily homes to condos can make it financially burdensome for families to find housing in Boston.
+As shown in the heatmap, most properties are converted to condos, and this trend is even more prominent for residential homes. As discussed earlier in the Medford multifamily condo conversion vignette, conversions of multifamily homes to condos can make it financially burdensome for families to find housing in Boston.
 </p>
 
 <h3> Impact of the Condo Conversions </h3>
@@ -288,14 +286,14 @@ As shown in the heatmap, most properties are converted to condos, and this trend
     
 </text>
 
-<h3> Frequency of Complaint Type </h3>
+<h3> Frequency of Complaint Type over Time </h3>
 <RaceBarChart />
 
 <text class="text-viz"> 
-    As we can see, the main complaints are Improper Storage Trash, Extermination and Mold Concerns, Abandoned Vehicles, Permit Issues, and Failure to restore basic structural and utility needs.
+    The main complaints aggregated over time are Improper Storage Trash, Extermination and Mold Concerns, Abandoned Vehicles, Permit Issues, and Failure to restore basic structural and utility needs.
 </text>
 
-<h2> Visualize Impact in Your Zipcode </h2>
+<h2> Visualize Condo Conversions in Your Zipcode </h2>
 
 <text class="text-viz">
     On the map, <strong>click on a Boston or Cambridge zip code</strong> to see the locations of condo conversions (starting from 2015) in the region. 
@@ -368,7 +366,7 @@ As shown in the heatmap, most properties are converted to condos, and this trend
             </div>
 
             <div class="piechart-container">
-                <h3 class="graph-title">Most Common Complaints in 
+                <h3 class="graph-title">Top Five Complaints in 
                     {#if $zipcode !== ''}
                     <strong class="blue">
                         {$zipcode}
