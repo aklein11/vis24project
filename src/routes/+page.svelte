@@ -267,7 +267,7 @@
     What makes a condo conversion more likely? The heatmap below maps the frequency of property conversions with the initial property type on the X-Axis and the converted property type on the Y-Axis. 
     <br>
     <br>
-    <strong>Move your cursor around the heatmap  </strong> to see the specific frequencies for each of the conversion types.
+    Move your cursor around the heatmap to see the specific frequencies for each of the conversion types.
     <br>
 </text>
 
@@ -297,11 +297,11 @@ As shown in the heatmap, most properties are converted to condos, and this trend
 <h2> Visualize Impact in Your Zipcode </h2>
 
 <text class="text-viz">
-    On the map, <strong>click on a Boston or Cambridge zip code</strong> to see the locations of condo conversions (starting from 2015) in the region. 
+    On the map, click on a Boston or Cambridge zip code  to see the locations of condo conversions (starting from 2015) in the region. 
     
     Once you click a zipcode, the condo conversions in the area will be shown in <strong class="red"> red dots </strong>. </text>
 
-    <text class="text-viz">  You can <strong>hover over the <strong class="red"> dots </strong> to learn more about each condo conversion </strong> and <strong> look at the charts below </strong> to learn more about condo conversions in the zipcode.
+    <text class="text-viz">  You can hover over the <strong class="red"> red dots </strong> to learn more about each condo conversion and  look at the charts below to learn more about condo conversions in the zipcode.
 </text>
 
 <div class="parent-container">
