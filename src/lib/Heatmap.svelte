@@ -220,7 +220,7 @@ const paddingRight = 30;  // Increase padding if the legend still appears too ce
 
 // Update the transform attribute for the legend group
 const legend = svg.append('g')
-    .attr('transform', `translate(${svgWidth - legendWidth - paddingRight}, 50)`);
+    .attr('transform', `translate(${svgWidth - legendWidth - paddingRight}, 310)`);
 
 // Add legend elements (rectangles and text)
 legend.selectAll('rect')
