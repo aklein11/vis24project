@@ -269,7 +269,7 @@
 
 <br>
 
-<text scrolly-container>
+<text>
   We categorized the complaints into groups to demonstrate the impact of condominium development both on residents and the surrounding neighborhood.
 </text>
 
@@ -320,4 +320,9 @@ overflow: visible; /* Do not clip shapes outside the viewBox */
     height: 20px;
     margin-right: 5px;
   }
+
+  text{
+        font-size: 18px;
+    }
+
 </style>

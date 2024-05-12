@@ -373,7 +373,8 @@ As shown in the heatmap, most properties are converted to condos, and this trend
         </div>
 
         
-
+        <br>
+        <br>
         
         <h3 class="graph-title">Types of Complaints in 
             {#if $zipcode !== ''}
@@ -387,6 +388,9 @@ As shown in the heatmap, most properties are converted to condos, and this trend
             {/if}
         </h3>
             
+        <br>
+        <br>
+
             <WordCloud query={ $zipcode }/>
     {/if}
 </div>

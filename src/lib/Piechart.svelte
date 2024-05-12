@@ -55,12 +55,20 @@
         text-decoration: underline;
         color:black;
     }
+
+    text{
+        font-size: 18px;
+    }
+
 </style>
 
 
 <Pie data={pieData} bind:selectedIndex={selectedZipcodeIndex} />
 
-<blockquote scrolly-container>    
+<br>
+<br>
+
+<text>    
     Families and renters can be displaced when their homes are converted into luxury condos. This effect is especially prevalent when multi-family housing is converted into condos. To estimate the impact of condo conversions on families, we display the most common building types converted into condos.
     <p> Note: Legend adapted from <a href="https://www.cityofboston.gov/images_documents/land_use_codes%5B1%5D_tcm3-8867.pdf"> City of Boston LAND USE CODES </a>   </p>
-</blockquote>
+</text>

@@ -234,6 +234,10 @@
         color:black;
     }
 
+    text{
+        font-size: 18px;
+    }
+
 </style>
 
 <svg id="linechart-svg" width="960" height="500"></svg>
